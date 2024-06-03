@@ -12,7 +12,7 @@ import { isTeacher } from "@/lib/teacher";
 export const NavbarRoutes = () => {
 
     const { userId } = useAuth();
-    
+
 
     const pathname = usePathname();
 
@@ -43,7 +43,7 @@ export const NavbarRoutes = () => {
                 ) : null
                 }
                 <UserButton 
-                    afterSignOutUrl="/"
+                    afterSignOutUrl="/sign-in"
                 />
             </div>
         </>

@@ -4,7 +4,7 @@ import { redirect } from "@/node_modules/next/navigation";
 import { db } from "@/lib/db";
 import Link from "next/link"
 import { ArrowLeft, Loader2 } from "lucide-react";
-import { Icon, LayoutDashboard, Eye, Video } from "lucide-react";
+import { Icon, LayoutDashboard, Eye, Video, BookCheck } from "lucide-react";
 import { IconBadge } from "@/components/icon-badge";
 import { ChapterTitleForm } from "./_components/chapter-title-form";
 import { ChapterDescriptionForm } from "./_components/chapter-description-form";
@@ -12,6 +12,7 @@ import { ChapterAccessForm } from "./_components/chapter-access-form";
 import { ChapterVideoForm } from "./_components/chapter-video-form";
 import { Banner } from "@/components/banner";
 import { ChapterActions } from "./_components/chapter-actions";
+import { ChapterQuizForm } from "./_components/chapter-quiz-form";
 
 const ChapterIdPage = async ({
     params
@@ -97,6 +98,9 @@ const ChapterIdPage = async ({
 
                             <ChapterDescriptionForm 
                                 initialData={chapter} 
+                                courseId={params.courseId}
+                                chapterId={params.chapterId}/>
+                            <ChapterQuizForm
                                 courseId={params.courseId}
                                 chapterId={params.chapterId}/>
                         </div>

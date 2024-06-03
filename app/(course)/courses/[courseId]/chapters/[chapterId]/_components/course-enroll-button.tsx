@@ -6,6 +6,7 @@ import toast from "react-hot-toast";
 
 import { Button } from "@/components/ui/button";
 import { formatPrice } from "@/lib/formats";
+import { useRouter } from "next/navigation";
 
 interface CourseEnrollButtonProps {
   price: number;
@@ -18,13 +19,15 @@ export const CourseEnrollButton = ({
 }: CourseEnrollButtonProps) => {
   const [isLoading, setIsLoading] = useState(false);
 
+  const router = useRouter();
+
   const onClick = async () => {
     try {
       setIsLoading(true);
 
       const response = await axios.post(`/api/courses/${courseId}/checkout`)
 
-      window.location.assign(response.data.url);
+      router.push(response.data.url);
     } catch {
       toast.error("Something went wrong");
     } finally {
