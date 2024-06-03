@@ -11,7 +11,7 @@ import { ListChecks } from "lucide-react";
 import { CircleDollarSign, File } from "lucide-react";
 import { PriceForm } from "./_components/price-form";
 import { AttachmentForm } from "./_components/attachment-form";
-import { ChaptersForm } from "./_components/chapters-form";
+import { SectionsForm } from "./_components/sections-form";
 import { Banner } from "@/components/banner";
 import { Actions } from "./_components/actions";
 
@@ -33,7 +33,7 @@ const CourseIdPage = async({
             userId
         },
         include: {
-            chapters: {
+            sections: {
                 orderBy: {
                     position: "asc",
                 },
@@ -62,7 +62,7 @@ const CourseIdPage = async({
         course.imageUrl,
         course.price,
         course.categoryId,
-        course.chapters.some(chapter => chapter.isPublished),
+        course.sections.some(section => section.isPublished),
     ];
 
     const totalFields = requiredFields.length;
@@ -129,9 +129,9 @@ const CourseIdPage = async({
                         <div>
                             <div className="flex items-center gap-x-2">
                                 <IconBadge icon={ListChecks}/>
-                                <h2 className="text-xl">Course chapters</h2>
+                                <h2 className="text-xl">Course sections</h2>
                             </div>
-                            <ChaptersForm 
+                            <SectionsForm 
                                 initialData={course}
                                 courseId={course.id}
                             />

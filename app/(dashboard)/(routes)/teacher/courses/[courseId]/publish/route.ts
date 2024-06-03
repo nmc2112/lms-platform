@@ -20,22 +20,22 @@ export async function PATCH(
                 id: params.courseId,
                 userId
             },
-            include: {
-                chapters: {
-                    include: {
-                        muxData: true
-                    }
-                }
-            }
+            // include: {
+            //     chapters: {
+            //         include: {
+            //             muxData: true
+            //         }
+            //     }
+            // }
         })
 
         if(!course) {
             return new NextResponse("Not found", { status: 404});
         }
 
-        const hasPublishedChapter = course.chapters.some((chapter) => chapter.isPublished);
+        const hasPublishedSection = course.sections.some((section) => section.isPublished);
 
-        if(!course.title || !course.description || !course.imageUrl || !course.categoryId || !hasPublishedChapter){
+        if(!course.title || !course.description || !course.imageUrl || !course.categoryId || !hasPublishedSection){
             return new NextResponse("Missing required fields", {status: 401});
         }
 

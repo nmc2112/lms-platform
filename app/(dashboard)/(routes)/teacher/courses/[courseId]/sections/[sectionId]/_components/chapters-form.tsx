@@ -21,13 +21,14 @@ import toast from "react-hot-toast";
 import { useRouter } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { Textarea } from "@/components/ui/textarea";
-import { Course } from "@prisma/client";
+import { Chapter, Course, Section } from "@prisma/client";
 import { PlusCircle } from "lucide-react";
 import { ChaptersList } from "./chapters-list";
 
 interface ChaptersFormProps {
-    initialData: Course;
+    initialData: Section & { chapters: Chapter[] };
     courseId: string;
+    sectionId: string;
 }
 
 const formSchema = z.object({
@@ -37,7 +38,9 @@ const formSchema = z.object({
 
 export const ChaptersForm = ({
     initialData,
-    courseId}: ChaptersFormProps) => {
+    courseId,
+    sectionId}
+    : ChaptersFormProps) => {
 
     const [isCreating, setIsCreating] = useState(false);    
     const [isUpdating, setIsUpdating] = useState(false);    
@@ -57,8 +60,8 @@ export const ChaptersForm = ({
 
     const onSubmit = async (values:  z.infer<typeof formSchema>) => {
         try {
-            await axios.post(`/api/courses/${courseId}/chapters`, values);
-            toast.success("Chapter created");
+            await axios.post(`/api/courses/${courseId}/sections/${sectionId}/chapters`, values);
+            toast.success("Chapters created");
             toggleCreating();
             router.refresh();
         } catch (error) {
@@ -70,7 +73,7 @@ export const ChaptersForm = ({
         try {
             setIsUpdating(true);
 
-            await axios.put(`/api/courses/${courseId}/chapters/reorder`, {
+            await axios.put(`/api/courses/${courseId}/sections/${sectionId}/chapters/reorder`, {
                 list: updateData
             })
             toast.success("Chapters reordered");
@@ -83,7 +86,7 @@ export const ChaptersForm = ({
     }
 
     const onEdit = (id: string) => {
-        router.push(`/teacher/courses/${courseId}/chapters/${id}`);
+        router.push(`/teacher/courses/${courseId}/sections/${sectionId}/chapters/${id}`);
     }
 
     return(
@@ -94,7 +97,7 @@ export const ChaptersForm = ({
                 </div>
             )}
             <div className="font-medium flex items-center justify-between">
-                Course chapters
+                Section chapters
                 <Button onClick={toggleCreating} variant="ghost">
                     {isCreating ? (
                         <>Cancel</>
@@ -112,11 +115,11 @@ export const ChaptersForm = ({
                     "text-sm mt-2",
                     !initialData.chapters && "text-slate-500 italic"
                 )}>
-                    {!initialData.chapters.length && "No chapters"}
-                    <ChaptersList
-                        onEdit={onEdit}
-                        onReorder={onReorder}
-                        items={initialData.chapters || []}
+                {!initialData.chapters.length && "No chapters"}
+                <ChaptersList
+                    onEdit={onEdit}
+                    onReorder={onReorder}
+                    items={initialData.chapters || []}
                     />
                 </div>
             )}

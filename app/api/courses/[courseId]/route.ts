@@ -5,11 +5,6 @@ import Mux from "@mux/mux-node";
 import { isTeacher } from "@/lib/teacher";
 import { use } from "react";
 
-const mux = new Mux({
-    tokenId:process.env.MUX_TOKEN_ID,
-    tokenSecret:process.env.MUX_TOKEN_SECRET,
-});
-
 export async function DELETE(
     req: Request,
     { params }: { params: { courseId: string}}
@@ -25,24 +20,11 @@ export async function DELETE(
                 where: {
                     id: params.courseId,
                     userId: userId
-                },
-                include: {
-                    chapters:{
-                        include: {
-                            muxData: true
-                        }
-                    }
                 }
             })
 
             if(!course){
                 return new NextResponse("Not Found", { status: 404 });
-            }
-
-            for(const chapter of course.chapters) {
-                if(chapter.muxData?.assetId) {
-                    await mux.video.assets.delete(chapter.muxData.assetId);
-                }
             }
 
             const deletedCourse = await db.course.delete({

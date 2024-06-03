@@ -10,7 +10,7 @@ const mux = new Mux({
 
 export async function DELETE(
     req: Request,
-    {params}: {params:{ courseId:string; chapterId:string}}
+    {params}: {params:{ sectionId:string; chapterId:string}}
 ){
     try {
         const { userId } = auth();
@@ -19,21 +19,21 @@ export async function DELETE(
             return new NextResponse("Unauthorized", {status: 401})
         }
 
-        const ownCourse = await db.course.findUnique({
+        const ownSection = await db.course.findUnique({
             where:{
-                id: params.courseId,
+                id: params.sectionId,
                 userId: userId
             }
         })
 
-        if(!ownCourse){
+        if(!ownSection){
             return new NextResponse("Unauthorized", {status: 401})
         }
 
         const chapter = await db.chapter.findUnique({
             where:{
                 id: params.chapterId,
-                courseId: params.courseId,
+                sectionId: params.sectionId,
             }
         }) 
 
@@ -63,17 +63,17 @@ export async function DELETE(
             }
         });
 
-        const publishedChaptersInCourse = await db.chapter.findMany({
+        const publishedChaptersInSection = await db.chapter.findMany({
             where: {
-                courseId: params.courseId,
+                sectionId: params.sectionId,
                 isPublished: true
             }
         })
 
-        if(!publishedChaptersInCourse.length){
+        if(!publishedChaptersInSection.length){
             await db.course.update({
                 where: {
-                    id: params.courseId,
+                    id: params.sectionId,
                 },
                 data: {
                     isPublished: false
@@ -92,7 +92,7 @@ export async function DELETE(
 export async function PATCH(
     req: Request,
     { params }: { params: {
-        courseId: string;
+        sectionId: string;
         chapterId: string
     }}
 ){
@@ -105,21 +105,21 @@ export async function PATCH(
             return new NextResponse("Unauthorized", {status: 401})
         }
 
-        const ownCourse = await db.course.findUnique({
+        const ownSection = await db.course.findUnique({
             where:{
-                id: params.courseId,
+                id: params.sectionId,
                 userId: userId,
             }
         })
 
-        if(!ownCourse){
+        if(!ownSection){
             return new NextResponse("Unauthorized", {status: 401})
         }
 
         const chapter = await db.chapter.update({
             where:{
                 id: params.chapterId,
-                courseId: params.courseId,
+                sectionId: params.sectionId,
             },
             data:{
                 ...values

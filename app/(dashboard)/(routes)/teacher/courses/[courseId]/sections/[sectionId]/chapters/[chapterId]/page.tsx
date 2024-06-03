@@ -17,7 +17,7 @@ import { ChapterQuizForm } from "./_components/chapter-quiz-form";
 const ChapterIdPage = async ({
     params
 }: {
-    params: {courseId: string; chapterId: string}
+    params: {courseId: string; sectionId:string; chapterId: string}
 }) => {
     const { userId } = auth();
 
@@ -28,7 +28,7 @@ const ChapterIdPage = async ({
     const chapter = await db.chapter.findUnique({
         where: {
             id: params.chapterId,
-            courseId: params.courseId
+            sectionId: params.sectionId
         },
         include: {
             muxData: true
