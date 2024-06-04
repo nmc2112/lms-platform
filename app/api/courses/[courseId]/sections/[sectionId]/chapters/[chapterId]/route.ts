@@ -71,7 +71,7 @@ export async function DELETE(
         })
 
         if(!publishedChaptersInSection.length){
-            await db.course.update({
+            await db.section.update({
                 where: {
                     id: params.sectionId,
                 },
@@ -105,10 +105,9 @@ export async function PATCH(
             return new NextResponse("Unauthorized", {status: 401})
         }
 
-        const ownSection = await db.course.findUnique({
+        const ownSection = await db.section.findUnique({
             where:{
-                id: params.sectionId,
-                userId: userId,
+                id: params.sectionId
             }
         })
 
@@ -160,7 +159,7 @@ export async function PATCH(
         return NextResponse.json(chapter);
 
     } catch (error) {
-        console.log("[COURSE_CHAPTER_ID]", error);
+        console.log("[SECTION_CHAPTER_ID]", error);
         return new NextResponse("Internal Error", {status: 500})
         
     }

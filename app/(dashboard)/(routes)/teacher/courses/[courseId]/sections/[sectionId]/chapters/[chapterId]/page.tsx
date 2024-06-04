@@ -42,7 +42,7 @@ const ChapterIdPage = async ({
     const requiredFields = [
         chapter.title,
         chapter.description, 
-        chapter.videoUrl
+        // chapter.videoUrl
     ]
     
     const totalFields = requiredFields.length;
@@ -64,11 +64,11 @@ const ChapterIdPage = async ({
                 <div className="flex items-center justify-between">
                     <div className="w-full">
                         <Link
-                            href={`/teacher/courses/${params.courseId}`}
+                            href={`/teacher/courses/${params.courseId}/sections/${params.sectionId}`}
                             className="flex items-center text-sm hover:opacity-75 transition mb-6"
                         >
                             <ArrowLeft className="h-4 w-4 mr-2"/> 
-                            Back to course setup
+                            Back to section setup
                         </Link>
                         <div className="flex items-center justify-between w-full">
                             <div className="flex flex-col gap-y-2">
@@ -78,6 +78,7 @@ const ChapterIdPage = async ({
                             <ChapterActions
                                 disabled={!isComplete}
                                 courseId={params.courseId}
+                                sectionId={params.sectionId}
                                 chapterId={params.chapterId}
                                 isPublished={chapter.isPublished}
                             />
@@ -94,14 +95,18 @@ const ChapterIdPage = async ({
                             <ChapterTitleForm 
                                 initialData={chapter} 
                                 courseId={params.courseId}
+                                sectionId={params.sectionId}
                                 chapterId={params.chapterId}/>
 
                             <ChapterDescriptionForm 
                                 initialData={chapter} 
                                 courseId={params.courseId}
+                                sectionId={params.sectionId}
                                 chapterId={params.chapterId}/>
+
                             <ChapterQuizForm
                                 courseId={params.courseId}
+                                sectionId={params.sectionId}
                                 chapterId={params.chapterId}/>
                         </div>
                         <div>
@@ -112,6 +117,7 @@ const ChapterIdPage = async ({
                             <ChapterAccessForm 
                                 initialData={chapter} 
                                 courseId={params.courseId} 
+                                sectionId={params.sectionId}
                                 chapterId={params.chapterId}/>
                         </div>
                     </div>
@@ -123,6 +129,7 @@ const ChapterIdPage = async ({
                         <ChapterVideoForm 
                             initialData={chapter} 
                             courseId={params.courseId} 
+                            sectionId={params.sectionId}
                             chapterId={params.chapterId}
                         />
                     </div>

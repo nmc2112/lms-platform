@@ -12,6 +12,7 @@ import { useRouter } from "next/navigation";
 interface ChapterActionsProps {
     disabled: boolean;
     courseId: string;
+    sectionId: string;
     chapterId: string;
     isPublished: boolean;
 }
@@ -19,6 +20,7 @@ interface ChapterActionsProps {
 export const ChapterActions = ({
     disabled,
     courseId,
+    sectionId,
     chapterId,
     isPublished
 }: ChapterActionsProps) => {
@@ -30,11 +32,11 @@ export const ChapterActions = ({
             setIsLoading(true);
 
             if(isPublished) {
-                await axios.patch(`/api/courses/${courseId}/chapters/${chapterId}/unpublish`);
+                await axios.patch(`/api/courses/${courseId}/sections/${sectionId}/chapters/${chapterId}/unpublish`);
                 toast.success('Chapter unpublished');
             }
             else{
-                await axios.patch(`/api/courses/${courseId}/chapters/${chapterId}/publish`);
+                await axios.patch(`/api/courses/${courseId}/sections/${sectionId}/chapters/${chapterId}/publish`);
                 toast.success('Chapter published');
             }
             router.refresh();
@@ -50,11 +52,11 @@ export const ChapterActions = ({
         try {
             setIsLoading(true);
 
-            await axios.delete(`/api/courses/${courseId}/chapters/${chapterId}`);
+            await axios.delete(`/api/courses/${courseId}/sections/${sectionId}/chapters/${chapterId}`);
 
             toast.success("Chapter deleted");
             router.refresh();
-            router.push(`/teacher/courses/${courseId}`);
+            router.push(`/teacher/courses/${courseId}/sections/${sectionId}`);
             
         } catch (error) {
             toast.error("Something went wrong")

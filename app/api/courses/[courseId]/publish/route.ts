@@ -18,23 +18,16 @@ export async function PATCH(
       where: {
         id: params.courseId,
         userId,
-      },
-      include: {
-        chapters: {
-          include: {
-            muxData: true,
-          }
-        }
       }
+
     });
 
     if (!course) {
       return new NextResponse("Not found", { status: 404 });
     }
 
-    const hasPublishedChapter = course.chapters.some((chapter) => chapter.isPublished);
 
-    if (!course.title || !course.description || !course.imageUrl || !course.categoryId || !hasPublishedChapter) {
+    if (!course.title || !course.description || !course.imageUrl || !course.categoryId) {
       return new NextResponse("Missing required fields", { status: 401 });
     }
 

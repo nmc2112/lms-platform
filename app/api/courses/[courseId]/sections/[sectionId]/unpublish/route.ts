@@ -5,7 +5,7 @@ import { NextResponse } from "@/node_modules/next/server";
 
 export async function PATCH(
     req: Request,
-    { params }: { params: { courseId:string; chapterId: string}}
+    { params }: { params: { courseId:string; sectionId: string}}
 ){
     try {
         const { userId } = auth();
@@ -25,9 +25,9 @@ export async function PATCH(
             return new NextResponse("Unauthorized", {status:401})
         }
 
-        const unpublishedChapter = await db.chapter.update({
+        const unpublishedSection = await db.section.update({
             where: {
-                id: params.chapterId,
+                id: params.sectionId,
                 courseId: params.courseId
             },
             data: {
@@ -35,14 +35,14 @@ export async function PATCH(
             }
         })
 
-        const publishedChaptersInCourse = await db.chapter.findMany({
+        const publishedSectionsInCourse = await db.section.findMany({
             where:{
                 courseId: params.courseId,
                 isPublished: true,
             }
         })
 
-        if(!publishedChaptersInCourse.length){
+        if(!publishedSectionsInCourse.length){
             await db.course.update({
                 where: {
                     id: params.courseId
@@ -53,9 +53,9 @@ export async function PATCH(
             })
         }
 
-        return NextResponse.json(unpublishedChapter);
+        return NextResponse.json(unpublishedSection);
     } catch (error) {
-        console.log("[CHAPTER_PUBLISH]", error);
+        console.log("[SECTION_UNPUBLISH]", error);
         return new NextResponse('Internal Error', {status: 500})
     }
 }

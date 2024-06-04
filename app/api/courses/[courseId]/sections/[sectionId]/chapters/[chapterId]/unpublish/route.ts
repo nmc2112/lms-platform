@@ -5,7 +5,10 @@ import { NextResponse } from "@/node_modules/next/server";
 
 export async function PATCH(
     req: Request,
-    { params }: { params: { courseId:string; chapterId: string}}
+    { params }: { params: { 
+        courseId:string; 
+        sectionId: string,
+        chapterId: string}}
 ){
     try {
         const { userId } = auth();
@@ -14,38 +17,37 @@ export async function PATCH(
             return new NextResponse("Unauthorized", {status:401})
         }
 
-        const ownCourse = await db.course.findUnique({
+        const ownSection = await db.section.findUnique({
             where: {
-                id: params.courseId,
-                userId
+                id: params.sectionId
             }
         })
 
-        if(!ownCourse){
-            return new NextResponse("Unauthorized", {status:401})
+        if(!ownSection){
+            return new NextResponse("Unauthorized", {status:404})
         }
 
         const unpublishedChapter = await db.chapter.update({
             where: {
                 id: params.chapterId,
-                courseId: params.courseId
+                sectionId: params.sectionId
             },
             data: {
                 isPublished: false
             }
         })
 
-        const publishedChaptersInCourse = await db.chapter.findMany({
+        const publishedChaptersInSection = await db.chapter.findMany({
             where:{
-                courseId: params.courseId,
+                sectionId: params.sectionId,
                 isPublished: true,
             }
         })
 
-        if(!publishedChaptersInCourse.length){
-            await db.course.update({
+        if(!publishedChaptersInSection.length){
+            await db.section.update({
                 where: {
-                    id: params.courseId
+                    id: params.sectionId
                 },
                 data: {
                     isPublished: false
@@ -55,7 +57,7 @@ export async function PATCH(
 
         return NextResponse.json(unpublishedChapter);
     } catch (error) {
-        console.log("[CHAPTER_PUBLISH]", error);
+        console.log("[CHAPTER_UNPUBLISH]", error);
         return new NextResponse('Internal Error', {status: 500})
     }
 }

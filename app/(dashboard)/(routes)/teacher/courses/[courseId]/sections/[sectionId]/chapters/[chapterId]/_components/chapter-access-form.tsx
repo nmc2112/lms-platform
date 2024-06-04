@@ -30,6 +30,7 @@ import { Checkbox } from "@/components/ui/checkbox";
 interface ChapterAccessFormProps {
     initialData: Chapter;
     courseId: string;
+    sectionId: string;
     chapterId: string;
 }
 
@@ -40,6 +41,7 @@ const formSchema = z.object({
 export const ChapterAccessForm = ({
     initialData,
     courseId,
+    sectionId,
     chapterId
 }: ChapterAccessFormProps) => {
 
@@ -61,7 +63,7 @@ export const ChapterAccessForm = ({
     const onSubmit = async (values:  z.infer<typeof formSchema>) => {
         console.log(values)
         try {
-            await axios.patch(`/api/courses/${courseId}/chapters/${chapterId}`, values);
+            await axios.patch(`/api/courses/${courseId}/sections/${sectionId}/chapters/${chapterId}`, values);
             toast.success("Chapter updated");
             toggleEdit();
             router.refresh();

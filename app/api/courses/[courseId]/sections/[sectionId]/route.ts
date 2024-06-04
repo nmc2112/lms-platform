@@ -114,7 +114,7 @@ export async function PATCH(
         return NextResponse.json(section);
 
     } catch (error) {
-        console.log("[SECTION_CHAPTER_ID]", error);
+        console.log("[COURSE_CHAPTER_ID]", error);
         return new NextResponse("Internal Error", {status: 500})
         
     }

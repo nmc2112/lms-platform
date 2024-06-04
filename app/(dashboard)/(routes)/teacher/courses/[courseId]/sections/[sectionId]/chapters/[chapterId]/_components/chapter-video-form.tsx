@@ -20,6 +20,7 @@ import { init } from "next/dist/compiled/webpack/webpack";
 interface ChapterVideoFormProps {
     initialData: Chapter & { muxData?: MuxData | null};
     courseId: string;
+    sectionId: string;
     chapterId: string;
 }
 
@@ -30,6 +31,7 @@ const formSchema = z.object({
 export const ChapterVideoForm = ({
     initialData,
     courseId,
+    sectionId,
     chapterId
 }: ChapterVideoFormProps) => {
 
@@ -41,7 +43,7 @@ export const ChapterVideoForm = ({
 
     const onSubmit = async (values:  z.infer<typeof formSchema>) => {
         try {
-            await axios.patch(`/api/courses/${courseId}/chapters/${chapterId}`, values);
+            await axios.patch(`/api/courses/${courseId}/sections/${sectionId}/chapters/${chapterId}`, values);
             toast.success("Chapter updated");
             toggleEdit();
             router.refresh();

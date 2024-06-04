@@ -4,7 +4,11 @@ import { NextResponse } from "@/node_modules/next/server";
 
 export async function PATCH(
     req: Request,
-    { params }: { params: { courseId:string; chapterId: string}}
+    { params }: { params: { 
+        courseId:string; 
+        sectionId: string,
+        chapterId: string
+    }}
 ){
     try {
         const { userId } = auth();
@@ -13,38 +17,30 @@ export async function PATCH(
             return new NextResponse("Unauthorized", {status:401})
         }
 
-        const ownCourse = await db.course.findUnique({
+        const ownSection = await db.section.findUnique({
             where: {
-                id: params.courseId,
-                userId
+                id: params.sectionId
             }
         })
 
-        if(!ownCourse){
+        if(!ownSection){
             return new NextResponse("Unauthorized", {status:404})
         }
 
         const chapter = await db.chapter.findUnique({
             where: {
-                id: params.chapterId,
-                courseId: params.courseId
+                id: params.chapterId
             }
         })
 
-        const muxData = await db.muxData.findUnique({
-            where: {
-                chapterId: params.chapterId,
-            }
-        })
-
-        if(!chapter || !muxData || !chapter.title || !chapter.description || !chapter.videoUrl){
+        if(!chapter || !chapter.title || !chapter.description){
             return new NextResponse("Missing required fields", {status:400})
         }
 
         const publishedChapter = await db.chapter.update({
             where: {
                 id: params.chapterId,
-                courseId: params.courseId
+                sectionId: params.sectionId
             },
             data: {
                 isPublished: true

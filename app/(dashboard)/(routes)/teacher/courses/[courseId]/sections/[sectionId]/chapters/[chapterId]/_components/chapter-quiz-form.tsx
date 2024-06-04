@@ -27,11 +27,13 @@ import { Preview } from "@/components/preview";
 
 interface ChapterQuizFormProps {
     courseId: string;
+    sectionId: string;
     chapterId: string;
 }
 
 export const ChapterQuizForm = ({
     courseId,
+    sectionId,
     chapterId
 }: ChapterQuizFormProps) => {
 
@@ -39,7 +41,7 @@ export const ChapterQuizForm = ({
 
 
     const onEdit = (id: string) => {
-        router.push(`/teacher/courses/${courseId}/chapters/${id}/questions`);
+        router.push(`/teacher/courses/${courseId}/sections/${sectionId}/chapters/${id}/questions`);
     }
 
     return(
