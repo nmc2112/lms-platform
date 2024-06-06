@@ -14,7 +14,7 @@ import { CourseProgressButton } from "./_components/course-progress-button";
 const ChapterIdPage = async ({
   params
 }: {
-  params: { courseId: string; chapterId: string }
+  params: { courseId: string; sectionId:string;chapterId: string }
 }) => {
   const { userId } = auth();
   
@@ -24,6 +24,7 @@ const ChapterIdPage = async ({
 
   const {
     chapter,
+    section,
     course,
     muxData,
     attachments,
@@ -32,8 +33,9 @@ const ChapterIdPage = async ({
     purchase,
   } = await getChapter({
     userId,
-    chapterId: params.chapterId,
     courseId: params.courseId,
+    sectionId: params.sectionId,
+    chapterId: params.chapterId,
   });
 
   if (!chapter || !course) {

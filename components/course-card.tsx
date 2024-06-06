@@ -10,7 +10,7 @@ interface CourseCardProps {
   id: string;
   title: string;
   imageUrl: string;
-  chaptersLength: number;
+  sectionsLength: number;
   price: number;
   progress: number | null;
   category: string;
@@ -20,7 +20,7 @@ export const CourseCard = ({
   id,
   title,
   imageUrl,
-  chaptersLength,
+  sectionsLength,
   price,
   progress,
   category
@@ -47,7 +47,7 @@ export const CourseCard = ({
             <div className="flex items-center gap-x-1 text-slate-500">
               <IconBadge size="sm" icon={BookOpen} />
               <span>
-                {chaptersLength} {chaptersLength === 1 ? "Chapter" : "Chapters"}
+                {sectionsLength} {sectionsLength === 1 ? "Section" : "Sections"}
               </span>
             </div>
           </div>

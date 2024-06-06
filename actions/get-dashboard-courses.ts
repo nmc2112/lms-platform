@@ -1,10 +1,11 @@
-import { Category, Chapter, Course } from "@prisma/client";
+import { Category, Chapter, Course, Section } from "@prisma/client";
 
 import { db } from "@/lib/db";
 import { getProgress } from "@/actions/get-progress";
 
 type CourseWithProgressWithCategory = Course & {
   category: Category;
+  sections: Section[];
   chapters: Chapter[];
   progress: number | null;
 };
@@ -24,7 +25,7 @@ export const getDashboardCourses = async (userId: string): Promise<DashboardCour
         course: {
           include: {
             category: true,
-            chapters: {
+            sections: {
               where: {
                 isPublished: true,
               }

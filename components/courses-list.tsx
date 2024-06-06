@@ -4,7 +4,7 @@ import { CourseCard } from "@/components/course-card";
 
 type CourseWithProgressWithCategory = Course & {
   category: Category | null;
-  chapters: { id: string }[];
+  sections: { id: string }[];
   progress: number | null;
 };
 
@@ -24,7 +24,7 @@ export const CoursesList = ({
             id={item.id}
             title={item.title}
             imageUrl={item.imageUrl!}
-            chaptersLength={item.chapters.length}
+            sectionsLength={item.sections.length}
             price={item.price!}
             progress={item.progress}
             category={item?.category?.name!}

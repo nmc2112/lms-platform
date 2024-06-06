@@ -12,7 +12,10 @@ const CourseLayout = async ({
   params
 }: {
   children: React.ReactNode;
-  params: { courseId: string };
+  params: { 
+    courseId: string,
+    sectionId: string
+  };
 }) => {
   const { userId } = auth();
 
@@ -25,14 +28,14 @@ const CourseLayout = async ({
       id: params.courseId,
     },
     include: {
-      chapters: {
+      sections: {
         where: {
           isPublished: true,
         },
         include: {
-          userProgress: {
-            where: {
-              userId,
+          chapters: {
+            orderBy: {
+              position: "asc",
             }
           }
         },

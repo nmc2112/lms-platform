@@ -4,12 +4,14 @@ import { Attachment, Chapter } from "@prisma/client";
 interface GetChapterProps {
   userId: string;
   courseId: string;
+  sectionId: string;
   chapterId: string;
 };
 
 export const getChapter = async ({
   userId,
   courseId,
+  sectionId,
   chapterId,
 }: GetChapterProps) => {
   try {
@@ -32,6 +34,13 @@ export const getChapter = async ({
       }
     });
 
+    const section = await db.section.findUnique({
+      where: {
+        isPublished: true,
+        id: courseId,
+      }
+    });
+
     const chapter = await db.chapter.findUnique({
       where: {
         id: chapterId,
@@ -39,8 +48,8 @@ export const getChapter = async ({
       }
     });
 
-    if (!chapter || !course) {
-      throw new Error("Chapter or course not found");
+    if (!chapter || !course || !section) {
+      throw new Error("Chapter or course of section not found");
     }
 
     let muxData = null;
@@ -64,7 +73,7 @@ export const getChapter = async ({
 
       nextChapter = await db.chapter.findFirst({
         where: {
-          courseId: courseId,
+          sectionId: sectionId,
           isPublished: true,
           position: {
             gt: chapter?.position,
@@ -87,6 +96,7 @@ export const getChapter = async ({
 
     return {
       chapter,
+      section,
       course,
       muxData,
       attachments,
@@ -98,6 +108,7 @@ export const getChapter = async ({
     console.log("[GET_CHAPTER]", error);
     return {
       chapter: null,
+      section: null,
       course: null,
       muxData: null,
       attachments: [],

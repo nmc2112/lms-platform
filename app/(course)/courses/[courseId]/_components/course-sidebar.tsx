@@ -1,5 +1,5 @@
 import { auth } from "@clerk/nextjs/server";
-import { Chapter, Course, UserProgress } from "@prisma/client";
+import { Chapter, Course, Section, UserProgress } from "@prisma/client";
 import { redirect } from "next/navigation";
 
 import { db } from "@/lib/db";
@@ -9,7 +9,7 @@ import { CourseSidebarItem } from "./course-sidebar-item";
 
 interface CourseSidebarProps {
   course: Course & {
-    chapters: (Chapter & {
+    sections: (Section[] & {
       userProgress: UserProgress[] | null;
     })[];
   };
@@ -49,15 +49,15 @@ export const CourseSidebar = async ({
         )}
       </div>
       <div className="flex flex-col w-full">
-        {course.chapters.map((chapter) => (
+        {course.sections.map((section) => (
           <CourseSidebarItem
-            key={chapter.id}
-            id={chapter.id}
-            label={chapter.title}
-            isCompleted={!!chapter.userProgress?.[0]?.isCompleted}
-            courseId={course.id}
-            // isLocked={!chapter.isFree}
-            isLocked={!chapter.isFree && !purchase}
+            key={section.id}
+            id={section.id}
+            label={section.title}
+            // isCompleted={!!section.chapters.userProgress?.[0]?.isCompleted}
+            courseId={course.id} isCompleted={false} isLocked={false} 
+            chapters={section.chapters}           // isLocked={!chapter.isFree}
+            // isLocked={!section.isFree && !purchase}
           />
         ))}
       </div>

@@ -37,6 +37,34 @@ model Attachment {
   @@index([courseId])
 }
 
+model User{
+  id String @id @default(uuid())
+  userClerkId String 
+  username String 
+  password String
+  name String
+  email String
+  role String
+  requests TeacherRequest[] 
+}
+
+model TeacherRequest{
+  id String @id @default(uuid())
+  name String
+  url String @db.Text
+
+  userClerkId String
+  user User @relation(fields: [userClerkId], references: [id], onDelete: Cascade)
+
+  
+  createdAt DateTime @default(now())
+  updateAt DateTime @updatedAt
+
+  @@index([userClerkId])
+}
+
+
+
 model Course{
   id String @id @default(uuid())
   userId String
@@ -176,3 +204,4 @@ model StripeCustomer {
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 }
+
