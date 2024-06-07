@@ -2,32 +2,49 @@ import { db } from "@/lib/db";
 
 export const getProgress = async (
   userId: string,
-  sectionId: string,
+  courseId: string,
 ): Promise<number> => {
   try {
-    const publishedChapters = await db.chapter.findMany({
+    // Fetch all chapters in the course (regardless of publication status)
+    const allChapters = await db.chapter.findMany({
       where: {
-        sectionId: sectionId,
-        isPublished: true,
+        section: {
+          courseId: courseId,
+        },
       },
       select: {
         id: true,
       }
     });
 
-    const publishedChapterIds = publishedChapters.map((chapter) => chapter.id);
+    const totalChapters = allChapters.length;
+    console.log("Total Chapters in Course:", totalChapters, "Course ID:", courseId);
 
-    const validCompletedChapters = await db.userProgress.count({
+    // Fetch chapters in the course that the user has completed
+    const completedChapters = await db.userProgress.findMany({
       where: {
         userId: userId,
-        // chapterId: {
-        //   in: publishedChapterIds,
-        // },
+        chapter: {
+          section: {
+            courseId: courseId,
+          },
+        },
         isCompleted: true,
+      },
+      select: {
+        chapterId: true,
       }
     });
 
-    const progressPercentage = (validCompletedChapters / publishedChapterIds.length) * 100;
+    const completedChapterCount = completedChapters.length;
+    console.log("Completed Chapters Count:", completedChapterCount);
+
+    if (totalChapters === 0) {
+      return 0; // Avoid division by zero if no chapters are in the course
+    }
+
+    const progressPercentage = (completedChapterCount / totalChapters) * 100;
+    console.log("Progress Percentage:", progressPercentage);
 
     return progressPercentage;
   } catch (error) {

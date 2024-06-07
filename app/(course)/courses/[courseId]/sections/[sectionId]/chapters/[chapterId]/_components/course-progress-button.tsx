@@ -11,6 +11,7 @@ import { useConfettiStore } from "@/hooks/use-confetti-store";
 
 interface CourseProgressButtonProps {
   chapterId: string;
+  sectionId: string;
   courseId: string;
   isCompleted?: boolean;
   nextChapterId?: string;
@@ -18,6 +19,7 @@ interface CourseProgressButtonProps {
 
 export const CourseProgressButton = ({
   chapterId,
+  sectionId,
   courseId,
   isCompleted,
   nextChapterId
@@ -30,7 +32,7 @@ export const CourseProgressButton = ({
     try {
       setIsLoading(true);
 
-      await axios.put(`/api/courses/${courseId}/chapters/${chapterId}/progress`, {
+      await axios.put(`/api/courses/${courseId}/sections/${sectionId}/chapters/${chapterId}/progress`, {
         isCompleted: !isCompleted
       });
 
@@ -39,7 +41,7 @@ export const CourseProgressButton = ({
       }
 
       if (isCompleted && nextChapterId) {
-        router.push(`/courses/${courseId}/chapters/${nextChapterId}`);
+        router.push(`/courses/${courseId}/sections/${sectionId}/chapters/${nextChapterId}`);
       }
 
       toast.success("Progress updated");
@@ -52,6 +54,8 @@ export const CourseProgressButton = ({
   }
 
   const Icon = isCompleted ? XCircle : CheckCircle
+
+  
 
   return (
     <Button

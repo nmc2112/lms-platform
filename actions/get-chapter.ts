@@ -37,7 +37,7 @@ export const getChapter = async ({
     const section = await db.section.findUnique({
       where: {
         isPublished: true,
-        id: courseId,
+        id: sectionId,
       }
     });
 
@@ -49,7 +49,7 @@ export const getChapter = async ({
     });
 
     if (!chapter || !course || !section) {
-      throw new Error("Chapter or course of section not found");
+      throw new Error("Chapter or course or section not found");
     }
 
     let muxData = null;

@@ -34,6 +34,16 @@ const CourseLayout = async ({
         },
         include: {
           chapters: {
+            where: {
+              isPublished: true,
+            },
+            include: {
+              userProgress: {
+                where: {
+                  userId,
+                }
+              }
+            },
             orderBy: {
               position: "asc",
             }
@@ -49,6 +59,8 @@ const CourseLayout = async ({
   if (!course) {
     return redirect("/sign-in");
   }
+
+  console.log("course: ",course)
 
   const progressCount = await getProgress(userId, course.id);
 

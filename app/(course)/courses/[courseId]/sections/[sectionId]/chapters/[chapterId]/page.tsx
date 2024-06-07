@@ -38,7 +38,7 @@ const ChapterIdPage = async ({
     chapterId: params.chapterId,
   });
 
-  if (!chapter || !course) {
+  if (!chapter || !course || !section) {
     return redirect("/sign-in")
   }
 
@@ -61,7 +61,10 @@ const ChapterIdPage = async ({
         />
       )}
       <div className="flex flex-col max-w-4xl mx-auto pb-20">
+        {/* <div className="p-4">
+        </div> */}
         <div className="p-4">
+          {chapter.videoUrl ? (
           <VideoPlayer
             chapterId={params.chapterId}
             title={chapter.title}
@@ -71,7 +74,9 @@ const ChapterIdPage = async ({
             isLocked={isLocked}
             completeOnEnd={completeOnEnd}
           />
-        </div>
+          ) : null}
+</div>
+
         <div>
           <div className="p-4 flex flex-col md:flex-row items-center justify-between">
             <h2 className="text-2xl font-semibold mb-2">
@@ -82,8 +87,8 @@ const ChapterIdPage = async ({
                 chapterId={params.chapterId}
                 courseId={params.courseId}
                 nextChapterId={nextChapter?.id}
-                isCompleted={!!userProgress?.isCompleted}
-              />
+                isCompleted={!!userProgress?.isCompleted} 
+                sectionId={params.sectionId}  />
             ) : (
               <CourseEnrollButton
                 courseId={params.courseId}

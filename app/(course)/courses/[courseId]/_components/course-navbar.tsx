@@ -6,7 +6,9 @@ import { NavbarRoutes } from "@/components/navbar-routes";
 interface CourseNavbarProps {
   course: Course & {
     sections: (Section & {
-      userProgress: UserProgress[] | null;
+      chapters: (Chapter & {
+        userProgress: UserProgress[];
+      })[];
     })[];
   };
   progressCount: number;

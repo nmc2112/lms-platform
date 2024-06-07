@@ -12,7 +12,9 @@ import { CourseSidebar } from "./course-sidebar";
 interface CourseMobileSidebarProps {
   course: Course & {
     sections: (Section & {
-      userProgress: UserProgress[] | null;
+      chapters: (Chapter & {
+        userProgress: UserProgress[];
+      })[];
     })[];
   };
   progressCount: number;

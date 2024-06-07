@@ -38,6 +38,28 @@ const ClassroomsList = () => {
     setShowModal(false);
   };
 
+  const viewDetails = (id) => {
+    router.push(`/admin/class-manage/details/${id}`);
+  };
+
+  const getExcelFile = async () => {
+    try {
+      // Fetch the file from your API
+      const response = await ClassroomService.downloadTemplate()
+  
+      // Create a link element and trigger the download
+      const url = window.URL.createObjectURL(new Blob([response.data]));
+      const link = document.createElement('a');
+      link.href = url;
+      link.setAttribute('download', 'template.xlsx'); // Specify the file name
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    } catch (error) {
+      console.error('Error downloading the file', error);
+    }
+  }
+
   return (
     <div className="bg-gray-100 p-6">
       <div className="max-w-md mx-auto bg-white rounded-lg shadow-md overflow-hidden md:max-w-7xl">
@@ -61,9 +83,11 @@ const ClassroomsList = () => {
                   <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">ID</th>
                   <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Subject Name</th>
                   <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Total Students</th>
+                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Teacher</th>
                   <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Meeting Link</th>
                   <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Start Time</th>
                   <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">End Time</th>
+                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Details</th>
                 </tr>
               </thead>
               <tbody className="bg-white divide-y divide-gray-200">
@@ -77,9 +101,18 @@ const ClassroomsList = () => {
                       <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{classroom.id}</td>
                       <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{classroom.subjectName}</td>
                       <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{classroom.totalStudents}</td>
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{classroom.teacherName}</td>
                       <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500"><a className='text-blue-500 underline' href={classroom.meetingLink}>Link</a></td>
                       <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{new Date(classroom.startTime).toLocaleString()}</td>
                       <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{new Date(classroom.endTime).toLocaleString()}</td>
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                        <button
+                          className="px-2 py-1 bg-indigo-500 text-white font-semibold rounded-lg shadow-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-opacity-75"
+                          onClick={() => viewDetails(classroom.id)}
+                        >
+                          View Details
+                        </button>
+                      </td>
                     </tr>
                   ))
                 )}
@@ -91,7 +124,7 @@ const ClassroomsList = () => {
       <Modal show={showModal} onClose={closeModal}>
         <h2 className="text-xl font-bold mb-4">Import Data</h2>
         <p>You can download the template Excel file for importing data.</p>
-        <a href="/template.xlsx" className="text-blue-500 underline mt-2">Download Excel Template</a>
+        <button className="text-blue-500 underline mt-2" onClick={getExcelFile}>Download Excel Template</button>
       </Modal>
     </div>
   );

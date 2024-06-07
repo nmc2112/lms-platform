@@ -29,9 +29,9 @@ const AddClassPage = () => {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    // console.log(`Changed field ${name} to ${value}`); 
+    console.log(`Changed field ${name} to ${value}`); 
     setFormData({ ...formData, [name]: value });
-    // console.log(formData)
+    console.log(formData)
   };
 
   const handleSubmit = async (e) => {
@@ -85,11 +85,11 @@ const AddClassPage = () => {
                 <select
                   id="teacherId"
                   name="teacherId"
-                  // value={formData.teacherId}
+                  value={formData.teacherId}
                   onChange={handleChange}
                   className="mt-2 px-3 py-2 bg-white border shadow-sm border-gray-300 placeholder-gray-400 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 block w-full rounded-md sm:text-sm"
                 >
-                  {/* <option value="" disabled>Select a teacher</option> */}
+                  <option value="" disabled>Select a teacher</option>
                   {teachers.map((teacher) => (
                     <option key={teacher.id} value={teacher.id}>{teacher.name}</option>
                   ))}

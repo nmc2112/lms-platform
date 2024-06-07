@@ -10,7 +10,10 @@ class UserService {
     getTeachers(){
         return axios.get(USER_API_BASE_URL + "/get-all-teachers");
     }
-
+    
+    getStudents(){
+        return axios.get(USER_API_BASE_URL + "/get-all-students");
+    }
 }
 
 export default new UserService();

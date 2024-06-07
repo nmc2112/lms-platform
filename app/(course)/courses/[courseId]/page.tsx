@@ -15,16 +15,16 @@ const CourseIdPage = async ({
         where: {
           isPublished: true,
         },
-        // include: {
-        //   chapters: {
-        //     where: {
-        //       isPublished: true,
-        //     },
-        //     orderBy: {
-        //       position: "asc"
-        //     }
-        //   }
-        // },
+        include: {
+          chapters: {
+            where: {
+              isPublished: true,
+            },
+            orderBy: {
+              position: "asc"
+            }
+          }
+        },
         orderBy: {
           position: "asc"
         }
@@ -37,7 +37,7 @@ const CourseIdPage = async ({
     return redirect("/sign-in");
   }
 
-  // return redirect(`/courses/${course.id}/sections/${course.sections[0].id}/chapters/${course.sections[0].chapters[0].id}`);
+  return redirect(`/courses/${course.id}/sections/${course.sections[0].id}/chapters/${course.sections[0].chapters[0].id}`);
 }
  
 export default CourseIdPage;
