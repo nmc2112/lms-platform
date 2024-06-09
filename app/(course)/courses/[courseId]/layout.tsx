@@ -47,6 +47,8 @@ const CourseLayout = async ({
                 orderBy :{
                   createdAt: "asc"
                 }
+              },
+              questions: {
               }
             },
             orderBy: {

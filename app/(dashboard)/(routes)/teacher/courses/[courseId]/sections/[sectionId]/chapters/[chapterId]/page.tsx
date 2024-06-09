@@ -26,12 +26,13 @@ const ChapterIdPage = async ({
         return redirect("/sign-in")
     }
 
-    const chapter = await db.chapter.findUniqueOrThrow({
+    const chapter = await db.chapter.findUnique({
         where: {
             id: params.chapterId,
         },
         include: {
-            attachments: true
+            attachments: true,
+            questions: true
         }
     })
 
@@ -105,6 +106,7 @@ const ChapterIdPage = async ({
                                 chapterId={params.chapterId}/>
 
                             <ChapterQuizForm
+                                initialData={chapter}
                                 courseId={params.courseId}
                                 sectionId={params.sectionId}
                                 chapterId={params.chapterId}/>

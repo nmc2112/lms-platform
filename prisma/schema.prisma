@@ -108,7 +108,7 @@ model Chapter {
 
   attachments ChapterAttachment[]
   userProgress UserProgress[]
-  quizzes     Quiz[]
+  questions     Question[]
 
   createdAt   DateTime     @default(now())
   updatedAt   DateTime     @updatedAt
@@ -116,16 +116,6 @@ model Chapter {
   @@index([sectionId])
 }
 
-
-model Quiz{
-  id String @id @default(uuid())
-  title String
-  questions Question[]
-  
-  chapterId String @unique
-  chapter Chapter @relation(fields: [chapterId], references: [id], onDelete: Cascade)
-
-}
 model ChapterAttachment {
   id String @id @default(uuid())
   name String
@@ -142,14 +132,15 @@ model ChapterAttachment {
 }
 
 
-model Question{
-  id String @id @default(uuid())
-  content String
-  options Json
-  answer String
+model Question {
+  id            String   @id @default(uuid())
+  content       String
+  options       Json     // JSON array to store multiple options
+  correctOption Int      // Index of the correct option
+  chapter       Chapter  @relation(fields: [chapterId], references: [id], onDelete: Cascade)
+  chapterId     String
 
-  quizId String @unique
-  quiz Quiz @relation(fields: [quizId], references: [id], onDelete: Cascade)
+  @@index([chapterId])
 }
 
 

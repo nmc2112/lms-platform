@@ -1,5 +1,5 @@
 import { db } from "@/lib/db";
-import { Attachment, Chapter } from "@prisma/client";
+import { Attachment, Chapter, Question } from "@prisma/client";
 
 interface GetChapterProps {
   userId: string;
@@ -7,6 +7,10 @@ interface GetChapterProps {
   sectionId: string;
   chapterId: string;
 };
+
+interface ExtendedChapter extends Chapter {
+  questions: Question[];
+}
 
 export const getChapter = async ({
   userId,
@@ -46,8 +50,11 @@ export const getChapter = async ({
       where: {
         id: chapterId,
         isPublished: true,
+      },
+      include: {
+        questions: true, // Include questions in the query
       }
-    });
+    }) as ExtendedChapter;
 
     if (!chapter || !course || !section) {
       throw new Error("Chapter or course or section not found");
@@ -64,8 +71,6 @@ export const getChapter = async ({
         }
       });
     }
-
-    
 
     if (chapter.isFree || purchase) {
       muxData = await db.muxData.findUnique({

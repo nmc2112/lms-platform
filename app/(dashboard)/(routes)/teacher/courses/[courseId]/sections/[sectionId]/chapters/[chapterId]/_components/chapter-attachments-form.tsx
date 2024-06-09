@@ -36,10 +36,6 @@ export const ChapterAttachmentForm = ({
 
     const router = useRouter();
 
-    useEffect(() => {
-        console.log("Initial Data:", initialData);
-    }, [initialData]);
-
     const onSubmit = async (values: z.infer<typeof formSchema>) => {
         console.log(values);
         try {

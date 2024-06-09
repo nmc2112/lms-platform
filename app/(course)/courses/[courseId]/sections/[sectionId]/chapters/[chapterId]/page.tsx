@@ -13,17 +13,25 @@ import { CourseProgressButton } from "./_components/course-progress-button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import CourseInfo from "./_components/course-info";
 import HtmlRenderer from "./_components/html-renderer";
+import QuizForm from "./_components/quiz-form";
 
 const ChapterIdPage = async ({
   params
 }: {
-  params: { courseId: string; sectionId:string;chapterId: string }
+  params: { courseId: string; sectionId: string; chapterId: string }
 }) => {
   const { userId } = auth();
   
   if (!userId) {
     return redirect("/sign-in");
-  } 
+  }
+
+  const chapterData = await getChapter({
+    userId,
+    courseId: params.courseId,
+    sectionId: params.sectionId,
+    chapterId: params.chapterId,
+  });
 
   const {
     chapter,
@@ -31,22 +39,16 @@ const ChapterIdPage = async ({
     course,
     muxData,
     attachments,
-    resources,
     nextChapter,
     userProgress,
     purchase,
-  } = await getChapter({
-    userId,
-    courseId: params.courseId,
-    sectionId: params.sectionId,
-    chapterId: params.chapterId,
-  });
+  } = chapterData;
 
   if (!chapter || !course || !section) {
-    return redirect("/sign-in")
+    return redirect("/sign-in");
   }
 
-  console.log(course)
+  console.log(course);
 
   const isLocked = !chapter.isFree && !purchase;
   const completeOnEnd = !!purchase && !userProgress?.isCompleted;
@@ -79,9 +81,15 @@ const ChapterIdPage = async ({
               completeOnEnd={completeOnEnd}
             />
           ) : (
-            <div className="flex flex-col min-h-[50vh] p-5">
-              <HtmlRenderer content={chapter.description} />
-            </div>
+            <>
+              {chapter.questions && chapter.questions.length > 0 ? (
+                <QuizForm questions={chapter.questions} />
+              ) : (
+                <div className="flex flex-col min-h-[50vh] p-5">
+                  <HtmlRenderer content={chapter.description} />
+                </div>
+              )}
+            </>
           )}
         </div>
       </div>

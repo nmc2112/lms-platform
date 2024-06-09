@@ -1,11 +1,11 @@
 "use client";
 
-import { CheckCircle, ChevronDown, ChevronUp, Lock, PlayCircle, StickyNote, Folder, FileText } from "lucide-react";
+import { CheckCircle, ChevronDown, ChevronUp, Lock, PlayCircle, StickyNote, Folder, FileText, HelpCircle } from "lucide-react";
 import { usePathname, useRouter } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { useState, useEffect } from "react";
 import axios from "axios";
-import { Chapter, ChapterAttachment, UserProgress } from "@prisma/client";
+import { Chapter, ChapterAttachment, Question, UserProgress } from "@prisma/client";
 import { useConfettiStore } from "@/hooks/use-confetti-store";
 import toast from "react-hot-toast";
 
@@ -13,7 +13,7 @@ interface CourseSidebarItemProps {
   label: string;
   id: string;
   courseId: string;
-  chapters: { id: string, title: string, isPublished: boolean, isFree: boolean, videoUrl?: string, userProgress: UserProgress[], attachments: ChapterAttachment[] }[];
+  chapters: { id: string, title: string, isPublished: boolean, isFree: boolean, videoUrl?: string | null, userProgress: UserProgress[], attachments: ChapterAttachment[], questions: Question[] }[];
   isPurchase: boolean;
 }
 
@@ -49,6 +49,8 @@ export const CourseSidebarItem = ({
   const [resourcesOpen, setResourcesOpen] = useState<{ [key: string]: boolean }>({});
 
   useEffect(() => {
+    console.log("Chapters with Questions:", chapters); // Log chapters with questions
+
     const completedChapters = chapters.filter(chapter => 
       Array.isArray(chapter.userProgress) && chapter.userProgress.length > 0 
       && chapter.userProgress[0].isCompleted
@@ -144,6 +146,8 @@ export const CourseSidebarItem = ({
             const isViewing = pathname?.includes(chapter.id);
             const duration = videoDurations[chapter.id];
 
+            console.log(`Questions for Chapter ${chapter.id}:`, chapter.questions); // Log questions for each chapter
+
             return (
               <div 
                 key={chapter.id} 
@@ -178,7 +182,13 @@ export const CourseSidebarItem = ({
                           <span>{duration ? `${duration}min` : "Loading..."}</span>
                         </>
                       ) : (
-                        <StickyNote className="h-4 w-4 mr-1" />
+                        <>
+                          {chapter.questions && chapter.questions.length > 0 ? (
+                            <></>
+                          ) : (
+                            <StickyNote className="h-4 w-4 mr-1" />
+                          )}
+                        </>
                       )}
                     </div>
                     {chapter.attachments && chapter.attachments.length > 0 && (
