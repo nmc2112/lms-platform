@@ -13,6 +13,7 @@ import { ChapterVideoForm } from "./_components/chapter-video-form";
 import { Banner } from "@/components/banner";
 import { ChapterActions } from "./_components/chapter-actions";
 import { ChapterQuizForm } from "./_components/chapter-quiz-form";
+import { ChapterAttachmentForm } from "./_components/chapter-attachments-form";
 
 const ChapterIdPage = async ({
     params
@@ -25,13 +26,12 @@ const ChapterIdPage = async ({
         return redirect("/sign-in")
     }
 
-    const chapter = await db.chapter.findUnique({
+    const chapter = await db.chapter.findUniqueOrThrow({
         where: {
             id: params.chapterId,
-            sectionId: params.sectionId
         },
         include: {
-            muxData: true
+            attachments: true
         }
     })
 
@@ -108,6 +108,12 @@ const ChapterIdPage = async ({
                                 courseId={params.courseId}
                                 sectionId={params.sectionId}
                                 chapterId={params.chapterId}/>
+
+                            <ChapterAttachmentForm
+                                initialData={chapter}
+                                courseId={params.courseId}
+                                sectionId={params.sectionId}
+                                chapterId={params.chapterId} />
                         </div>
                         <div>
                             <div className="flex items-center gap-x-2">

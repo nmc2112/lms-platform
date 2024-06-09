@@ -24,7 +24,8 @@ const formSchema = z.object({
 
 export const AttachmentForm = ({
     initialData,
-    courseId}: AttachmentFormProps) => {
+    courseId
+}: AttachmentFormProps) => {
 
     const [isEditing, setIsEditing] = useState(false);    
     const [deletingId, setDeletingId] = useState<string | null>(null);

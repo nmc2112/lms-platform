@@ -42,6 +42,11 @@ const CourseLayout = async ({
                 where: {
                   userId,
                 }
+              },
+              attachments: {
+                orderBy :{
+                  createdAt: "asc"
+                }
               }
             },
             orderBy: {
@@ -60,10 +65,9 @@ const CourseLayout = async ({
     return redirect("/sign-in");
   }
 
-  console.log("course: ",course)
+  // console.log("course: ",course)
 
   const progressCount = await getProgress(userId, course.id);
-
   return (
     <div className="h-full">
       <div className="h-[80px] md:pl-80 fixed inset-y-0 w-full z-50">

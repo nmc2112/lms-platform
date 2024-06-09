@@ -31,6 +31,7 @@ export const getChapter = async ({
       },
       select: {
         price: true,
+        description:true
       }
     });
 
@@ -63,6 +64,8 @@ export const getChapter = async ({
         }
       });
     }
+
+    
 
     if (chapter.isFree || purchase) {
       muxData = await db.muxData.findUnique({

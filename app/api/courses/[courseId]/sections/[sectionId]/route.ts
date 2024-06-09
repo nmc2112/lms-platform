@@ -42,7 +42,7 @@ export async function DELETE(
         }
 
 
-        const deletedSection = await db.chapter.delete({
+        const deletedSection = await db.section.delete({
             where: {
                 id: params.sectionId
             }

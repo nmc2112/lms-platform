@@ -10,7 +10,7 @@ const mux = new Mux({
 
 export async function DELETE(
     req: Request,
-    {params}: {params:{ sectionId:string; chapterId:string}}
+    {params}: {params:{ courseId:string;sectionId:string; chapterId:string}}
 ){
     try {
         const { userId } = auth();
@@ -21,7 +21,7 @@ export async function DELETE(
 
         const ownSection = await db.course.findUnique({
             where:{
-                id: params.sectionId,
+                id: params.courseId,
                 userId: userId
             }
         })

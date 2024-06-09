@@ -15,7 +15,6 @@ import { FileUpload } from "@/components/file-upload";
 import { Video } from "lucide-react";
 
 import MuxPlayer from "@mux/mux-player-react";
-import { init } from "next/dist/compiled/webpack/webpack";
 
 interface ChapterVideoFormProps {
     initialData: Chapter & { muxData?: MuxData | null};

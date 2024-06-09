@@ -10,6 +10,9 @@ import { Preview } from "@/components/preview";
 import { VideoPlayer } from "./_components/video-player";
 import { CourseEnrollButton } from "./_components/course-enroll-button";
 import { CourseProgressButton } from "./_components/course-progress-button";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import CourseInfo from "./_components/course-info";
+import HtmlRenderer from "./_components/html-renderer";
 
 const ChapterIdPage = async ({
   params
@@ -28,6 +31,7 @@ const ChapterIdPage = async ({
     course,
     muxData,
     attachments,
+    resources,
     nextChapter,
     userProgress,
     purchase,
@@ -42,12 +46,13 @@ const ChapterIdPage = async ({
     return redirect("/sign-in")
   }
 
+  console.log(course)
 
   const isLocked = !chapter.isFree && !purchase;
   const completeOnEnd = !!purchase && !userProgress?.isCompleted;
 
   return ( 
-    <div>
+    <div className="flex flex-col min-h-screen">
       {userProgress?.isCompleted && (
         <Banner
           variant="success"
@@ -60,70 +65,121 @@ const ChapterIdPage = async ({
           label="You need to purchase this course to watch this chapter."
         />
       )}
-      <div className="flex flex-col max-w-4xl mx-auto pb-20">
-        {/* <div className="p-4">
-        </div> */}
-        <div className="p-4">
+      <div className="flex flex-col max-w-7xl mx-auto w-full">
+        <div className="p-2">
           {chapter.videoUrl ? (
-          <VideoPlayer
-            chapterId={params.chapterId}
-            title={chapter.title}
-            courseId={params.courseId}
-            nextChapterId={nextChapter?.id}
-            playbackId={muxData?.playbackId!}
-            isLocked={isLocked}
-            completeOnEnd={completeOnEnd}
-          />
-          ) : null}
-</div>
-
-        <div>
-          <div className="p-4 flex flex-col md:flex-row items-center justify-between">
-            <h2 className="text-2xl font-semibold mb-2">
-              {chapter.title}
-            </h2>
-            {purchase ? (
-              <CourseProgressButton
-                chapterId={params.chapterId}
-                courseId={params.courseId}
-                nextChapterId={nextChapter?.id}
-                isCompleted={!!userProgress?.isCompleted} 
-                sectionId={params.sectionId}  />
-            ) : (
-              <CourseEnrollButton
-                courseId={params.courseId}
-                price={course.price!}
-              />
-            )}
-          </div>
-          <Separator />
-          <div>
-            <Preview value={chapter.description!} />
-          </div>
-          {!!attachments.length && (
-            <>
-              <Separator />
-              <div className="p-4">
-                {attachments.map((attachment) => (
-                  <a 
-                    href={attachment.url}
-                    target="_blank"
-                    key={attachment.id}
-                    className="flex items-center p-3 w-full bg-sky-200 border text-sky-700 rounded-md hover:underline"
-                  >
-                    <File />
-                    <p className="line-clamp-1">
-                      {attachment.name}
-                    </p>
-                  </a>
-                ))}
-              </div>
-            </>
+            <VideoPlayer
+              chapterId={params.chapterId}
+              title={chapter.title}
+              courseId={params.courseId}
+              sectionId={params.sectionId}
+              nextChapterId={nextChapter?.id}
+              playbackId={muxData?.playbackId!}
+              isLocked={isLocked}
+              completeOnEnd={completeOnEnd}
+            />
+          ) : (
+            <div className="flex flex-col min-h-[50vh] p-5">
+              <HtmlRenderer content={chapter.description} />
+            </div>
           )}
         </div>
       </div>
+      <div className="w-full px-4"> 
+        <div className="p-2 flex flex-col md:flex-row items-center justify-between mx-auto w-full">
+          <h4 className="text-xl font-semibold mb-2">
+            {chapter.title}
+          </h4>
+          {purchase ? (
+            <CourseProgressButton
+              chapterId={params.chapterId}
+              courseId={params.courseId}
+              nextChapterId={nextChapter?.id}
+              isCompleted={!!userProgress?.isCompleted} 
+              sectionId={params.sectionId}  />
+          ) : (
+            <CourseEnrollButton
+              courseId={params.courseId}
+              price={course.price!}
+            />
+          )}
+        </div>
+        <div className="flex flex-col mx-auto w-full">
+          <Tabs defaultValue="overview" className="w-full">
+            <TabsList className="mb-2 w-full">
+              <TabsTrigger 
+                value="overview" 
+                className="px-6 font-medium border-b-2 border-transparent hover:border-gray-300 w-full text-center"
+              >
+                Overview
+              </TabsTrigger>
+              <TabsTrigger 
+                value="notes" 
+                className="px-6 font-medium border-b-2 border-transparent hover:border-gray-300 w-full text-center"
+              >
+                Notes
+              </TabsTrigger>
+              <TabsTrigger 
+                value="announcements" 
+                className="px-6 font-medium border-b-2 border-transparent hover:border-gray-300 w-full text-center"
+              >
+                Announcements
+              </TabsTrigger>
+              <TabsTrigger 
+                value="reviews" 
+                className="px-6 font-medium border-b-2 border-transparent hover:border-gray-300 w-full text-center"
+              >
+                Reviews
+              </TabsTrigger>
+            </TabsList>
+            <Separator />
+            <TabsContent value="overview" className="flex-grow">
+              <p className="text-xl p-4">{course.description!} </p>
+              <CourseInfo/>
+              {!!attachments.length && (
+                <>
+                  <Separator />
+                  <div className="p-4">
+                    {attachments.map((attachment) => (
+                      <a 
+                        href={attachment.url}
+                        target="_blank"
+                        key={attachment.id}
+                        className="flex items-center p-3 w-full bg-sky-200 border text-sky-700 rounded-md hover:underline"
+                      >
+                        <File />
+                        <p className="line-clamp-1">
+                          {attachment.name}
+                        </p>
+                      </a>
+                    ))}
+                  </div>
+                </>
+              )}
+            </TabsContent>
+            <TabsContent value="notes" className="flex-grow">
+              <div className="flex flex-col items-center justify-center text-center p-4">
+                <b className="text-xl">No notes posted yet</b>
+                <p className="text-slate-500">The instructor hasn’t added any notes to this course yet.</p>
+              </div>
+            </TabsContent>
+            <TabsContent value="announcements" className="flex-grow">
+              <div className="flex flex-col items-center justify-center text-center p-4">
+                <b className="text-xl">No announcements posted yet</b>
+                <p className="text-slate-500">The instructor hasn’t added any announcements to this course yet. Announcements are used to inform you of updates or additions to the course.</p>
+              </div>
+            </TabsContent>
+            <TabsContent value="reviews" className="flex-grow">
+              <div className="flex flex-col items-center justify-center text-center p-4">
+                <b className="text-xl">No reviews posted yet</b>
+                <p className="text-slate-500">There are no reviews for this course yet.</p>
+              </div>
+            </TabsContent>
+          </Tabs>
+        </div>
+      </div>
     </div>
-   );
+  );
 }
- 
+
 export default ChapterIdPage;

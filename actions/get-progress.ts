@@ -11,6 +11,7 @@ export const getProgress = async (
         section: {
           courseId: courseId,
         },
+        isPublished: true,
       },
       select: {
         id: true,
