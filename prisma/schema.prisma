@@ -64,7 +64,7 @@ model Course{
 
   sections Section[]
   attachments Attachment[]
-
+  comments Comment[]
   purchases Purchase[]
 
   createdAt DateTime @default(now())
@@ -72,6 +72,34 @@ model Course{
 
   @@index([categoryId])
   @@fulltext([title])
+}
+
+model Purchase{
+  id String @id @default(uuid())
+  userId String
+  
+  courseId String
+  course Course @relation(fields: [courseId], references: [id], onDelete: Cascade)
+
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@unique([userId,courseId])
+  @@index([courseId])
+
+}
+model Comment {
+  id        String    @id @default(uuid())
+  text      String    @db.Text
+  userId    String
+
+  courseId  String
+  course    Course    @relation(fields: [courseId], references: [id], onDelete: Cascade)
+  
+  createdAt DateTime  @default(now())
+
+  @@index([courseId])
 }
 
 model Section{
@@ -168,21 +196,6 @@ model UserProgress{
   @@unique([userId, chapterId])
 }
 
-model Purchase{
-  id String @id @default(uuid())
-  userId String
-  
-  courseId String
-  course Course @relation(fields: [courseId], references: [id], onDelete: Cascade)
-
-
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
-
-  @@unique([userId,courseId])
-  @@index([courseId])
-
-}
 
 model StripeCustomer {
   id String @id @default(uuid())

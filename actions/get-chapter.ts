@@ -1,5 +1,5 @@
 import { db } from "@/lib/db";
-import { Attachment, Chapter, Question } from "@prisma/client";
+import { Attachment, Chapter, ChapterAttachment, Question } from "@prisma/client";
 
 interface GetChapterProps {
   userId: string;
@@ -9,6 +9,7 @@ interface GetChapterProps {
 };
 
 interface ExtendedChapter extends Chapter {
+  attachments: ChapterAttachment[];
   questions: Question[];
 }
 
@@ -35,7 +36,8 @@ export const getChapter = async ({
       },
       select: {
         price: true,
-        description:true
+        description:true,
+        comments: true
       }
     });
 
@@ -52,7 +54,9 @@ export const getChapter = async ({
         isPublished: true,
       },
       include: {
-        questions: true, // Include questions in the query
+        questions: true,
+        attachments: true
+         // Include questions in the query
       }
     }) as ExtendedChapter;
 

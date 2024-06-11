@@ -14,6 +14,8 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import CourseInfo from "./_components/course-info";
 import HtmlRenderer from "./_components/html-renderer";
 import QuizForm from "./_components/quiz-form";
+import SlideForm from "./_components/slide-form";
+import DiscussForm from "./_components/discuss-form";
 
 const ChapterIdPage = async ({
   params
@@ -85,12 +87,21 @@ const ChapterIdPage = async ({
               {chapter.questions && chapter.questions.length > 0 ? (
                 <QuizForm questions={chapter.questions} />
               ) : (
-                <div className="flex flex-col min-h-[50vh] p-5">
-                  <HtmlRenderer content={chapter.description} />
-                </div>
+                <>
+                  {chapter.attachments.length === 1 ? (
+                    <div className="flex flex-col min-h-[50vh] p-5">
+                      <SlideForm url={chapter.attachments[0].url} />
+                    </div>
+                  ) : (
+                    <div className="flex flex-col min-h-[50vh] p-5">
+                      <HtmlRenderer content={chapter.description} />
+                    </div>
+                  )}
+                </>
               )}
             </>
           )}
+
         </div>
       </div>
       <div className="w-full px-4"> 
@@ -131,7 +142,7 @@ const ChapterIdPage = async ({
                 value="announcements" 
                 className="px-6 font-medium border-b-2 border-transparent hover:border-gray-300 w-full text-center"
               >
-                Announcements
+                Discuss
               </TabsTrigger>
               <TabsTrigger 
                 value="reviews" 
@@ -173,8 +184,7 @@ const ChapterIdPage = async ({
             </TabsContent>
             <TabsContent value="announcements" className="flex-grow">
               <div className="flex flex-col items-center justify-center text-center p-4">
-                <b className="text-xl">No announcements posted yet</b>
-                <p className="text-slate-500">The instructor hasn’t added any announcements to this course yet. Announcements are used to inform you of updates or additions to the course.</p>
+                <DiscussForm courseId={params.courseId}/>
               </div>
             </TabsContent>
             <TabsContent value="reviews" className="flex-grow">
@@ -191,3 +201,4 @@ const ChapterIdPage = async ({
 }
 
 export default ChapterIdPage;
+            
