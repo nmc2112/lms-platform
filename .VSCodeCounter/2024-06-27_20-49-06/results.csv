@@ -1,0 +1,732 @@
+"filename", "language", "JSON with Comments", "JSON", "TypeScript", "TypeScript React", "Markdown", "XML", "Prisma", "SQL", "JavaScript", "CSS", "comment", "blank", "total"
+"/Users/chaunguyen/Documents/lms-platform/.eslintrc.json", "JSON", 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 4
+"/Users/chaunguyen/Documents/lms-platform/README.md", "Markdown", 0, 0, 0, 0, 23, 0, 0, 0, 0, 0, 0, 14, 37
+"/Users/chaunguyen/Documents/lms-platform/actions/get-analytics.ts", "TypeScript", 0, 0, 49, 0, 0, 0, 0, 0, 0, 0, 0, 8, 57
+"/Users/chaunguyen/Documents/lms-platform/actions/get-chapter.ts", "TypeScript", 0, 0, 124, 0, 0, 0, 0, 0, 0, 0, 1, 14, 139
+"/Users/chaunguyen/Documents/lms-platform/actions/get-courses.ts", "TypeScript", 0, 0, 68, 0, 0, 0, 0, 0, 0, 0, 0, 8, 76
+"/Users/chaunguyen/Documents/lms-platform/actions/get-dashboard-courses.ts", "TypeScript", 0, 0, 51, 0, 0, 0, 0, 0, 0, 0, 0, 8, 59
+"/Users/chaunguyen/Documents/lms-platform/actions/get-progress.ts", "TypeScript", 0, 0, 46, 0, 0, 0, 0, 0, 0, 0, 2, 8, 56
+"/Users/chaunguyen/Documents/lms-platform/actions/get-section.ts", "TypeScript", 0, 0, 77, 0, 0, 0, 0, 0, 0, 0, 0, 11, 88
+"/Users/chaunguyen/Documents/lms-platform/app/(auth)/(routes)/sign-in/[[...sign-in]]/page.tsx", "TypeScript React", 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 1, 5
+"/Users/chaunguyen/Documents/lms-platform/app/(auth)/(routes)/sign-up/[[...sign-up]]/page.tsx", "TypeScript React", 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 1, 5
+"/Users/chaunguyen/Documents/lms-platform/app/(auth)/layout.tsx", "TypeScript React", 0, 0, 0, 13, 0, 0, 0, 0, 0, 0, 0, 2, 15
+"/Users/chaunguyen/Documents/lms-platform/app/(course)/courses/[courseId]/_components/course-mobile-sidebar.tsx", "TypeScript React", 0, 0, 0, 36, 0, 0, 0, 0, 0, 0, 0, 4, 40
+"/Users/chaunguyen/Documents/lms-platform/app/(course)/courses/[courseId]/_components/course-navbar.tsx", "TypeScript React", 0, 0, 0, 27, 0, 0, 0, 0, 0, 0, 0, 3, 30
+"/Users/chaunguyen/Documents/lms-platform/app/(course)/courses/[courseId]/_components/course-sidebar-item.tsx", "TypeScript React", 0, 0, 0, 214, 0, 0, 0, 0, 0, 0, 1, 21, 236
+"/Users/chaunguyen/Documents/lms-platform/app/(course)/courses/[courseId]/_components/course-sidebar.tsx", "TypeScript React", 0, 0, 0, 59, 0, 0, 0, 0, 0, 0, 0, 6, 65
+"/Users/chaunguyen/Documents/lms-platform/app/(course)/courses/[courseId]/layout.tsx", "TypeScript React", 0, 0, 0, 86, 0, 0, 0, 0, 0, 0, 1, 10, 97
+"/Users/chaunguyen/Documents/lms-platform/app/(course)/courses/[courseId]/page.tsx", "TypeScript React", 0, 0, 0, 42, 0, 0, 0, 0, 0, 0, 0, 7, 49
+"/Users/chaunguyen/Documents/lms-platform/app/(course)/courses/[courseId]/sections/[sectionId]/chapters/[chapterId]/_components/course-enroll-button.tsx", "TypeScript React", 0, 0, 0, 39, 0, 0, 0, 0, 0, 0, 0, 9, 48
+"/Users/chaunguyen/Documents/lms-platform/app/(course)/courses/[courseId]/sections/[sectionId]/chapters/[chapterId]/_components/course-info.tsx", "TypeScript React", 0, 0, 0, 38, 0, 0, 0, 0, 0, 0, 0, 6, 44
+"/Users/chaunguyen/Documents/lms-platform/app/(course)/courses/[courseId]/sections/[sectionId]/chapters/[chapterId]/_components/course-progress-button.tsx", "TypeScript React", 0, 0, 0, 59, 0, 0, 0, 0, 0, 0, 0, 13, 72
+"/Users/chaunguyen/Documents/lms-platform/app/(course)/courses/[courseId]/sections/[sectionId]/chapters/[chapterId]/_components/discuss-form.tsx", "TypeScript React", 0, 0, 0, 121, 0, 0, 0, 0, 0, 0, 2, 14, 137
+"/Users/chaunguyen/Documents/lms-platform/app/(course)/courses/[courseId]/sections/[sectionId]/chapters/[chapterId]/_components/html-renderer.tsx", "TypeScript React", 0, 0, 0, 12, 0, 0, 0, 0, 0, 0, 0, 4, 16
+"/Users/chaunguyen/Documents/lms-platform/app/(course)/courses/[courseId]/sections/[sectionId]/chapters/[chapterId]/_components/questions-list.tsx", "TypeScript React", 0, 0, 0, 24, 0, 0, 0, 0, 0, 0, 0, 4, 28
+"/Users/chaunguyen/Documents/lms-platform/app/(course)/courses/[courseId]/sections/[sectionId]/chapters/[chapterId]/_components/quiz-form.tsx", "TypeScript React", 0, 0, 0, 62, 0, 0, 0, 0, 0, 0, 0, 8, 70
+"/Users/chaunguyen/Documents/lms-platform/app/(course)/courses/[courseId]/sections/[sectionId]/chapters/[chapterId]/_components/review-form.tsx", "TypeScript React", 0, 0, 0, 160, 0, 0, 0, 0, 0, 0, 0, 14, 174
+"/Users/chaunguyen/Documents/lms-platform/app/(course)/courses/[courseId]/sections/[sectionId]/chapters/[chapterId]/_components/slide-form.tsx", "TypeScript React", 0, 0, 0, 7, 0, 0, 0, 0, 0, 0, 1, 1, 9
+"/Users/chaunguyen/Documents/lms-platform/app/(course)/courses/[courseId]/sections/[sectionId]/chapters/[chapterId]/_components/video-player.tsx", "TypeScript React", 0, 0, 0, 81, 0, 0, 0, 0, 0, 0, 0, 9, 90
+"/Users/chaunguyen/Documents/lms-platform/app/(course)/courses/[courseId]/sections/[sectionId]/chapters/[chapterId]/page.tsx", "TypeScript React", 0, 0, 0, 178, 0, 0, 0, 0, 0, 0, 0, 14, 192
+"/Users/chaunguyen/Documents/lms-platform/app/(dashboard)/(routes)/(root)/_components/info-card.tsx", "TypeScript React", 0, 0, 0, 24, 0, 0, 0, 0, 0, 0, 0, 2, 26
+"/Users/chaunguyen/Documents/lms-platform/app/(dashboard)/(routes)/(root)/page.tsx", "TypeScript React", 0, 0, 0, 34, 0, 0, 0, 0, 0, 0, 0, 5, 39
+"/Users/chaunguyen/Documents/lms-platform/app/(dashboard)/(routes)/assignments/[assignmentId]/_components/clock-duration.tsx", "TypeScript React", 0, 0, 0, 27, 0, 0, 0, 0, 0, 0, 1, 8, 36
+"/Users/chaunguyen/Documents/lms-platform/app/(dashboard)/(routes)/assignments/[assignmentId]/_components/quiz-form.tsx", "TypeScript React", 0, 0, 0, 135, 0, 0, 0, 0, 0, 0, 3, 21, 159
+"/Users/chaunguyen/Documents/lms-platform/app/(dashboard)/(routes)/assignments/[assignmentId]/page.tsx", "TypeScript React", 0, 0, 0, 27, 0, 0, 0, 0, 0, 0, 0, 7, 34
+"/Users/chaunguyen/Documents/lms-platform/app/(dashboard)/(routes)/assignments/_components/columns.tsx", "TypeScript React", 0, 0, 0, 60, 0, 0, 0, 0, 0, 0, 2, 7, 69
+"/Users/chaunguyen/Documents/lms-platform/app/(dashboard)/(routes)/assignments/_components/data-table.tsx", "TypeScript React", 0, 0, 0, 144, 0, 0, 0, 0, 0, 0, 0, 11, 155
+"/Users/chaunguyen/Documents/lms-platform/app/(dashboard)/(routes)/assignments/page.tsx", "TypeScript React", 0, 0, 0, 23, 0, 0, 0, 0, 0, 0, 0, 9, 32
+"/Users/chaunguyen/Documents/lms-platform/app/(dashboard)/(routes)/search/_components/categories.tsx", "TypeScript React", 0, 0, 0, 40, 0, 0, 0, 0, 0, 0, 0, 5, 45
+"/Users/chaunguyen/Documents/lms-platform/app/(dashboard)/(routes)/search/_components/category-item.tsx", "TypeScript React", 0, 0, 0, 51, 0, 0, 0, 0, 0, 0, 0, 9, 60
+"/Users/chaunguyen/Documents/lms-platform/app/(dashboard)/(routes)/search/page.tsx", "TypeScript React", 0, 0, 0, 38, 0, 0, 0, 0, 0, 0, 0, 11, 49
+"/Users/chaunguyen/Documents/lms-platform/app/(dashboard)/(routes)/teacher-apply/_components/application-form.tsx", "TypeScript React", 0, 0, 0, 93, 0, 0, 0, 0, 0, 0, 3, 10, 106
+"/Users/chaunguyen/Documents/lms-platform/app/(dashboard)/(routes)/teacher-apply/page.tsx", "TypeScript React", 0, 0, 0, 107, 0, 0, 0, 0, 0, 0, 0, 8, 115
+"/Users/chaunguyen/Documents/lms-platform/app/(dashboard)/(routes)/teacher/analytics/_components/chart.tsx", "TypeScript React", 0, 0, 0, 46, 0, 0, 0, 0, 0, 0, 0, 4, 50
+"/Users/chaunguyen/Documents/lms-platform/app/(dashboard)/(routes)/teacher/analytics/_components/data-card.tsx", "TypeScript React", 0, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 2, 34
+"/Users/chaunguyen/Documents/lms-platform/app/(dashboard)/(routes)/teacher/analytics/page.tsx", "TypeScript React", 0, 0, 0, 35, 0, 0, 0, 0, 0, 0, 0, 7, 42
+"/Users/chaunguyen/Documents/lms-platform/app/(dashboard)/(routes)/teacher/assignments/[assignmentId]/edit/page.tsx", "TypeScript React", 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 1, 5
+"/Users/chaunguyen/Documents/lms-platform/app/(dashboard)/(routes)/teacher/assignments/[assignmentId]/page.tsx", "TypeScript React", 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 1, 5
+"/Users/chaunguyen/Documents/lms-platform/app/(dashboard)/(routes)/teacher/assignments/_components/ClassAssignment.module.css", "CSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 38, 0, 7, 45
+"/Users/chaunguyen/Documents/lms-platform/app/(dashboard)/(routes)/teacher/assignments/_components/classroom-assignment.tsx", "TypeScript React", 0, 0, 0, 105, 0, 0, 0, 0, 0, 0, 1, 12, 118
+"/Users/chaunguyen/Documents/lms-platform/app/(dashboard)/(routes)/teacher/assignments/_components/columns.tsx", "TypeScript React", 0, 0, 0, 60, 0, 0, 0, 0, 0, 0, 2, 7, 69
+"/Users/chaunguyen/Documents/lms-platform/app/(dashboard)/(routes)/teacher/assignments/_components/data-table.tsx", "TypeScript React", 0, 0, 0, 135, 0, 0, 0, 0, 0, 0, 0, 9, 144
+"/Users/chaunguyen/Documents/lms-platform/app/(dashboard)/(routes)/teacher/assignments/create/page.tsx", "TypeScript React", 0, 0, 0, 22, 0, 0, 0, 0, 0, 0, 0, 3, 25
+"/Users/chaunguyen/Documents/lms-platform/app/(dashboard)/(routes)/teacher/assignments/page.tsx", "TypeScript React", 0, 0, 0, 26, 0, 0, 0, 0, 0, 0, 0, 6, 32
+"/Users/chaunguyen/Documents/lms-platform/app/(dashboard)/(routes)/teacher/courses/[courseId]/_components/actions.tsx", "TypeScript React", 0, 0, 0, 72, 0, 0, 0, 0, 0, 0, 0, 12, 84
+"/Users/chaunguyen/Documents/lms-platform/app/(dashboard)/(routes)/teacher/courses/[courseId]/_components/attachment-form.tsx", "TypeScript React", 0, 0, 0, 120, 0, 0, 0, 0, 0, 0, 0, 12, 132
+"/Users/chaunguyen/Documents/lms-platform/app/(dashboard)/(routes)/teacher/courses/[courseId]/_components/category-form.tsx", "TypeScript React", 0, 0, 0, 118, 0, 0, 0, 0, 0, 0, 0, 15, 133
+"/Users/chaunguyen/Documents/lms-platform/app/(dashboard)/(routes)/teacher/courses/[courseId]/_components/description-form.tsx", "TypeScript React", 0, 0, 0, 114, 0, 0, 0, 0, 0, 0, 0, 13, 127
+"/Users/chaunguyen/Documents/lms-platform/app/(dashboard)/(routes)/teacher/courses/[courseId]/_components/image-form.tsx", "TypeScript React", 0, 0, 0, 94, 0, 0, 0, 0, 0, 0, 0, 10, 104
+"/Users/chaunguyen/Documents/lms-platform/app/(dashboard)/(routes)/teacher/courses/[courseId]/_components/price-form.tsx", "TypeScript React", 0, 0, 0, 118, 0, 0, 0, 0, 0, 0, 0, 13, 131
+"/Users/chaunguyen/Documents/lms-platform/app/(dashboard)/(routes)/teacher/courses/[courseId]/_components/sections-form.tsx", "TypeScript React", 0, 0, 0, 146, 0, 0, 0, 0, 0, 0, 0, 17, 163
+"/Users/chaunguyen/Documents/lms-platform/app/(dashboard)/(routes)/teacher/courses/[courseId]/_components/sections-list.tsx", "TypeScript React", 0, 0, 0, 106, 0, 0, 0, 0, 0, 0, 0, 15, 121
+"/Users/chaunguyen/Documents/lms-platform/app/(dashboard)/(routes)/teacher/courses/[courseId]/_components/title-form.tsx", "TypeScript React", 0, 0, 0, 108, 0, 0, 0, 0, 0, 0, 0, 13, 121
+"/Users/chaunguyen/Documents/lms-platform/app/(dashboard)/(routes)/teacher/courses/[courseId]/page.tsx", "TypeScript React", 0, 0, 0, 157, 0, 0, 0, 0, 0, 0, 0, 13, 170
+"/Users/chaunguyen/Documents/lms-platform/app/(dashboard)/(routes)/teacher/courses/[courseId]/publish/route.ts", "TypeScript", 0, 0, 41, 0, 0, 0, 0, 0, 0, 0, 7, 11, 59
+"/Users/chaunguyen/Documents/lms-platform/app/(dashboard)/(routes)/teacher/courses/[courseId]/sections/[sectionId]/_components/chapters-form.tsx", "TypeScript React", 0, 0, 0, 149, 0, 0, 0, 0, 0, 0, 0, 17, 166
+"/Users/chaunguyen/Documents/lms-platform/app/(dashboard)/(routes)/teacher/courses/[courseId]/sections/[sectionId]/_components/chapters-list.tsx", "TypeScript React", 0, 0, 0, 106, 0, 0, 0, 0, 0, 0, 0, 15, 121
+"/Users/chaunguyen/Documents/lms-platform/app/(dashboard)/(routes)/teacher/courses/[courseId]/sections/[sectionId]/_components/section-actions.tsx", "TypeScript React", 0, 0, 0, 71, 0, 0, 0, 0, 0, 0, 0, 11, 82
+"/Users/chaunguyen/Documents/lms-platform/app/(dashboard)/(routes)/teacher/courses/[courseId]/sections/[sectionId]/chapters/[chapterId]/_components/chapter-access-form.tsx", "TypeScript React", 0, 0, 0, 128, 0, 0, 0, 0, 0, 0, 0, 13, 141
+"/Users/chaunguyen/Documents/lms-platform/app/(dashboard)/(routes)/teacher/courses/[courseId]/sections/[sectionId]/chapters/[chapterId]/_components/chapter-actions.tsx", "TypeScript React", 0, 0, 0, 73, 0, 0, 0, 0, 0, 0, 0, 11, 84
+"/Users/chaunguyen/Documents/lms-platform/app/(dashboard)/(routes)/teacher/courses/[courseId]/sections/[sectionId]/chapters/[chapterId]/_components/chapter-assignment-form.tsx", "TypeScript React", 0, 0, 0, 231, 0, 0, 0, 0, 0, 0, 1, 21, 253
+"/Users/chaunguyen/Documents/lms-platform/app/(dashboard)/(routes)/teacher/courses/[courseId]/sections/[sectionId]/chapters/[chapterId]/_components/chapter-attachments-form.tsx", "TypeScript React", 0, 0, 0, 122, 0, 0, 0, 0, 0, 0, 0, 11, 133
+"/Users/chaunguyen/Documents/lms-platform/app/(dashboard)/(routes)/teacher/courses/[courseId]/sections/[sectionId]/chapters/[chapterId]/_components/chapter-description-form.tsx", "TypeScript React", 0, 0, 0, 120, 0, 0, 0, 0, 0, 0, 0, 13, 133
+"/Users/chaunguyen/Documents/lms-platform/app/(dashboard)/(routes)/teacher/courses/[courseId]/sections/[sectionId]/chapters/[chapterId]/_components/chapter-quiz-form.tsx", "TypeScript React", 0, 0, 0, 231, 0, 0, 0, 0, 0, 0, 1, 21, 253
+"/Users/chaunguyen/Documents/lms-platform/app/(dashboard)/(routes)/teacher/courses/[courseId]/sections/[sectionId]/chapters/[chapterId]/_components/chapter-title-form.tsx", "TypeScript React", 0, 0, 0, 111, 0, 0, 0, 0, 0, 0, 0, 13, 124
+"/Users/chaunguyen/Documents/lms-platform/app/(dashboard)/(routes)/teacher/courses/[courseId]/sections/[sectionId]/chapters/[chapterId]/_components/chapter-video-form.tsx", "TypeScript React", 0, 0, 0, 98, 0, 0, 0, 0, 0, 0, 0, 11, 109
+"/Users/chaunguyen/Documents/lms-platform/app/(dashboard)/(routes)/teacher/courses/[courseId]/sections/[sectionId]/chapters/[chapterId]/page.tsx", "TypeScript React", 0, 0, 0, 137, 0, 0, 0, 0, 0, 0, 1, 12, 150
+"/Users/chaunguyen/Documents/lms-platform/app/(dashboard)/(routes)/teacher/courses/[courseId]/sections/[sectionId]/chapters/[chapterId]/unpublish/route.ts", "TypeScript", 0, 0, 37, 0, 0, 0, 0, 0, 0, 0, 0, 9, 46
+"/Users/chaunguyen/Documents/lms-platform/app/(dashboard)/(routes)/teacher/courses/[courseId]/sections/[sectionId]/page.tsx", "TypeScript React", 0, 0, 0, 86, 0, 0, 0, 0, 0, 0, 1, 9, 96
+"/Users/chaunguyen/Documents/lms-platform/app/(dashboard)/(routes)/teacher/courses/[courseId]/unpublish/route.ts", "TypeScript", 0, 0, 37, 0, 0, 0, 0, 0, 0, 0, 0, 9, 46
+"/Users/chaunguyen/Documents/lms-platform/app/(dashboard)/(routes)/teacher/courses/_components/columns.tsx", "TypeScript React", 0, 0, 0, 107, 0, 0, 0, 0, 0, 0, 2, 9, 118
+"/Users/chaunguyen/Documents/lms-platform/app/(dashboard)/(routes)/teacher/courses/_components/data-table.tsx", "TypeScript React", 0, 0, 0, 133, 0, 0, 0, 0, 0, 0, 0, 9, 142
+"/Users/chaunguyen/Documents/lms-platform/app/(dashboard)/(routes)/teacher/courses/page.tsx", "TypeScript React", 0, 0, 0, 27, 0, 0, 0, 0, 0, 0, 0, 8, 35
+"/Users/chaunguyen/Documents/lms-platform/app/(dashboard)/(routes)/teacher/create/page.tsx", "TypeScript React", 0, 0, 0, 100, 0, 0, 0, 0, 0, 0, 0, 8, 108
+"/Users/chaunguyen/Documents/lms-platform/app/(dashboard)/(routes)/teacher/layout.tsx", "TypeScript React", 0, 0, 0, 17, 0, 0, 0, 0, 0, 0, 0, 6, 23
+"/Users/chaunguyen/Documents/lms-platform/app/(dashboard)/(routes)/teacher/quesBanks/[quesBankId]/_components/questionbank-form.tsx", "TypeScript React", 0, 0, 0, 263, 0, 0, 0, 0, 0, 0, 3, 21, 287
+"/Users/chaunguyen/Documents/lms-platform/app/(dashboard)/(routes)/teacher/quesBanks/[quesBankId]/page.tsx", "TypeScript React", 0, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 7, 39
+"/Users/chaunguyen/Documents/lms-platform/app/(dashboard)/(routes)/teacher/quesBanks/_components/columns.tsx", "TypeScript React", 0, 0, 0, 60, 0, 0, 0, 0, 0, 0, 2, 7, 69
+"/Users/chaunguyen/Documents/lms-platform/app/(dashboard)/(routes)/teacher/quesBanks/_components/data-table.tsx", "TypeScript React", 0, 0, 0, 183, 0, 0, 0, 0, 0, 0, 2, 18, 203
+"/Users/chaunguyen/Documents/lms-platform/app/(dashboard)/(routes)/teacher/quesBanks/create/page.tsx", "TypeScript React", 0, 0, 0, 97, 0, 0, 0, 0, 0, 0, 0, 8, 105
+"/Users/chaunguyen/Documents/lms-platform/app/(dashboard)/(routes)/teacher/quesBanks/page.tsx", "TypeScript React", 0, 0, 0, 27, 0, 0, 0, 0, 0, 0, 0, 7, 34
+"/Users/chaunguyen/Documents/lms-platform/app/(dashboard)/_components/logo.tsx", "TypeScript React", 0, 0, 0, 11, 0, 0, 0, 0, 0, 0, 0, 0, 11
+"/Users/chaunguyen/Documents/lms-platform/app/(dashboard)/_components/mobile-sidebar.tsx", "TypeScript React", 0, 0, 0, 17, 0, 0, 0, 0, 0, 0, 0, 0, 17
+"/Users/chaunguyen/Documents/lms-platform/app/(dashboard)/_components/navbar.tsx", "TypeScript React", 0, 0, 0, 11, 0, 0, 0, 0, 0, 0, 0, 2, 13
+"/Users/chaunguyen/Documents/lms-platform/app/(dashboard)/_components/sidebar-item.tsx", "TypeScript React", 0, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 5, 53
+"/Users/chaunguyen/Documents/lms-platform/app/(dashboard)/_components/sidebar-routes.tsx", "TypeScript React", 0, 0, 0, 60, 0, 0, 0, 0, 0, 0, 0, 10, 70
+"/Users/chaunguyen/Documents/lms-platform/app/(dashboard)/_components/sidebar.tsx", "TypeScript React", 0, 0, 0, 14, 0, 0, 0, 0, 0, 0, 0, 1, 15
+"/Users/chaunguyen/Documents/lms-platform/app/(dashboard)/layout.tsx", "TypeScript React", 0, 0, 0, 22, 0, 0, 0, 0, 0, 0, 0, 2, 24
+"/Users/chaunguyen/Documents/lms-platform/app/admin/(components)/AdminNavBar.tsx", "TypeScript React", 0, 0, 0, 82, 0, 0, 0, 0, 0, 0, 1, 3, 86
+"/Users/chaunguyen/Documents/lms-platform/app/admin/(components)/AdminSideBar.tsx", "TypeScript React", 0, 0, 0, 83, 0, 0, 0, 0, 0, 0, 0, 5, 88
+"/Users/chaunguyen/Documents/lms-platform/app/admin/(components)/BarChart.tsx", "TypeScript React", 0, 0, 0, 80, 0, 0, 0, 0, 0, 0, 0, 3, 83
+"/Users/chaunguyen/Documents/lms-platform/app/admin/(components)/UsersTable.tsx", "TypeScript React", 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 1, 5
+"/Users/chaunguyen/Documents/lms-platform/app/admin/class-manage/addClass/page.tsx", "TypeScript React", 0, 0, 0, 128, 0, 0, 0, 0, 0, 0, 2, 22, 152
+"/Users/chaunguyen/Documents/lms-platform/app/admin/class-manage/components/DataTable.tsx", "TypeScript React", 0, 0, 0, 56, 0, 0, 0, 0, 0, 0, 0, 3, 59
+"/Users/chaunguyen/Documents/lms-platform/app/admin/class-manage/components/Modal.tsx", "TypeScript React", 0, 0, 0, 22, 0, 0, 0, 0, 0, 0, 0, 4, 26
+"/Users/chaunguyen/Documents/lms-platform/app/admin/class-manage/details/[detailId]/page.tsx", "TypeScript React", 0, 0, 0, 131, 0, 0, 0, 0, 0, 0, 0, 15, 146
+"/Users/chaunguyen/Documents/lms-platform/app/admin/class-manage/details/components/Modal.tsx", "TypeScript React", 0, 0, 0, 22, 0, 0, 0, 0, 0, 0, 0, 4, 26
+"/Users/chaunguyen/Documents/lms-platform/app/admin/class-manage/page.tsx", "TypeScript React", 0, 0, 0, 117, 0, 0, 0, 0, 0, 0, 2, 15, 134
+"/Users/chaunguyen/Documents/lms-platform/app/admin/layout.tsx", "TypeScript React", 0, 0, 0, 39, 0, 0, 0, 0, 0, 0, 1, 8, 48
+"/Users/chaunguyen/Documents/lms-platform/app/admin/page.tsx", "TypeScript React", 0, 0, 0, 78, 0, 0, 0, 0, 0, 0, 0, 3, 81
+"/Users/chaunguyen/Documents/lms-platform/app/admin/services/AsssignmentService.ts", "TypeScript", 0, 0, 17, 0, 0, 0, 0, 0, 0, 0, 0, 6, 23
+"/Users/chaunguyen/Documents/lms-platform/app/admin/services/ClassroomService.ts", "TypeScript", 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 2, 7, 41
+"/Users/chaunguyen/Documents/lms-platform/app/admin/services/QuestionService.ts", "TypeScript", 0, 0, 25, 0, 0, 0, 0, 0, 0, 0, 1, 9, 35
+"/Users/chaunguyen/Documents/lms-platform/app/admin/services/UserService.ts", "TypeScript", 0, 0, 14, 0, 0, 0, 0, 0, 0, 0, 0, 5, 19
+"/Users/chaunguyen/Documents/lms-platform/app/admin/user-manage/components/DataTable.tsx", "TypeScript React", 0, 0, 0, 56, 0, 0, 0, 0, 0, 0, 0, 3, 59
+"/Users/chaunguyen/Documents/lms-platform/app/admin/user-manage/page.tsx", "TypeScript React", 0, 0, 0, 47, 0, 0, 0, 0, 0, 0, 0, 10, 57
+"/Users/chaunguyen/Documents/lms-platform/app/api/assignments/route.ts", "TypeScript", 0, 0, 42, 0, 0, 0, 0, 0, 0, 0, 2, 8, 52
+"/Users/chaunguyen/Documents/lms-platform/app/api/courses/[courseId]/attachments/[attachmentId]/route.ts", "TypeScript", 0, 0, 34, 0, 0, 0, 0, 0, 0, 0, 0, 7, 41
+"/Users/chaunguyen/Documents/lms-platform/app/api/courses/[courseId]/attachments/route.ts", "TypeScript", 0, 0, 36, 0, 0, 0, 0, 0, 0, 0, 0, 7, 43
+"/Users/chaunguyen/Documents/lms-platform/app/api/courses/[courseId]/checkout/route.ts", "TypeScript", 0, 0, 83, 0, 0, 0, 0, 0, 0, 0, 0, 13, 96
+"/Users/chaunguyen/Documents/lms-platform/app/api/courses/[courseId]/comments/route.ts", "TypeScript", 0, 0, 53, 0, 0, 0, 0, 0, 0, 0, 1, 12, 66
+"/Users/chaunguyen/Documents/lms-platform/app/api/courses/[courseId]/publish/route.ts", "TypeScript", 0, 0, 39, 0, 0, 0, 0, 0, 0, 0, 0, 10, 49
+"/Users/chaunguyen/Documents/lms-platform/app/api/courses/[courseId]/reviews/route.ts", "TypeScript", 0, 0, 57, 0, 0, 0, 0, 0, 0, 0, 1, 12, 70
+"/Users/chaunguyen/Documents/lms-platform/app/api/courses/[courseId]/route.ts", "TypeScript", 0, 0, 61, 0, 0, 0, 0, 0, 0, 0, 0, 12, 73
+"/Users/chaunguyen/Documents/lms-platform/app/api/courses/[courseId]/sections/[sectionId]/chapters/[chapterId]/attachments/[attachmentId]/route.ts", "TypeScript", 0, 0, 34, 0, 0, 0, 0, 0, 0, 0, 0, 7, 41
+"/Users/chaunguyen/Documents/lms-platform/app/api/courses/[courseId]/sections/[sectionId]/chapters/[chapterId]/attachments/route.ts", "TypeScript", 0, 0, 47, 0, 0, 0, 0, 0, 0, 0, 1, 10, 58
+"/Users/chaunguyen/Documents/lms-platform/app/api/courses/[courseId]/sections/[sectionId]/chapters/[chapterId]/progress/route.ts", "TypeScript", 0, 0, 35, 0, 0, 0, 0, 0, 0, 0, 0, 5, 40
+"/Users/chaunguyen/Documents/lms-platform/app/api/courses/[courseId]/sections/[sectionId]/chapters/[chapterId]/publish/route.ts", "TypeScript", 0, 0, 47, 0, 0, 0, 0, 0, 0, 0, 0, 8, 55
+"/Users/chaunguyen/Documents/lms-platform/app/api/courses/[courseId]/sections/[sectionId]/chapters/[chapterId]/questions/[questionId]/route.ts", "TypeScript", 0, 0, 34, 0, 0, 0, 0, 0, 0, 0, 0, 7, 41
+"/Users/chaunguyen/Documents/lms-platform/app/api/courses/[courseId]/sections/[sectionId]/chapters/[chapterId]/questions/route.ts", "TypeScript", 0, 0, 68, 0, 0, 0, 0, 0, 0, 0, 4, 15, 87
+"/Users/chaunguyen/Documents/lms-platform/app/api/courses/[courseId]/sections/[sectionId]/chapters/[chapterId]/route.ts", "TypeScript", 0, 0, 139, 0, 0, 0, 0, 0, 0, 0, 0, 27, 166
+"/Users/chaunguyen/Documents/lms-platform/app/api/courses/[courseId]/sections/[sectionId]/chapters/[chapterId]/unpublish/route.ts", "TypeScript", 0, 0, 54, 0, 0, 0, 0, 0, 0, 0, 0, 9, 63
+"/Users/chaunguyen/Documents/lms-platform/app/api/courses/[courseId]/sections/[sectionId]/chapters/reorder/route.ts", "TypeScript", 0, 0, 34, 0, 0, 0, 0, 0, 0, 0, 0, 9, 43
+"/Users/chaunguyen/Documents/lms-platform/app/api/courses/[courseId]/sections/[sectionId]/chapters/route.ts", "TypeScript", 0, 0, 43, 0, 0, 0, 0, 0, 0, 0, 0, 9, 52
+"/Users/chaunguyen/Documents/lms-platform/app/api/courses/[courseId]/sections/[sectionId]/progress/route.ts", "TypeScript", 0, 0, 35, 0, 0, 0, 0, 0, 0, 0, 0, 5, 40
+"/Users/chaunguyen/Documents/lms-platform/app/api/courses/[courseId]/sections/[sectionId]/publish/route.ts", "TypeScript", 0, 0, 45, 0, 0, 0, 0, 0, 0, 0, 0, 7, 52
+"/Users/chaunguyen/Documents/lms-platform/app/api/courses/[courseId]/sections/[sectionId]/route.ts", "TypeScript", 0, 0, 99, 0, 0, 0, 0, 0, 0, 0, 0, 22, 121
+"/Users/chaunguyen/Documents/lms-platform/app/api/courses/[courseId]/sections/[sectionId]/unpublish/route.ts", "TypeScript", 0, 0, 52, 0, 0, 0, 0, 0, 0, 0, 0, 9, 61
+"/Users/chaunguyen/Documents/lms-platform/app/api/courses/[courseId]/sections/reorder/route.ts", "TypeScript", 0, 0, 34, 0, 0, 0, 0, 0, 0, 0, 0, 9, 43
+"/Users/chaunguyen/Documents/lms-platform/app/api/courses/[courseId]/sections/route.ts", "TypeScript", 0, 0, 45, 0, 0, 0, 0, 0, 0, 0, 0, 9, 54
+"/Users/chaunguyen/Documents/lms-platform/app/api/courses/[courseId]/unpublish/route.ts", "TypeScript", 0, 0, 36, 0, 0, 0, 0, 0, 0, 0, 0, 7, 43
+"/Users/chaunguyen/Documents/lms-platform/app/api/courses/route.ts", "TypeScript", 0, 0, 25, 0, 0, 0, 0, 0, 0, 0, 0, 6, 31
+"/Users/chaunguyen/Documents/lms-platform/app/api/quesBanks/[quesBankId]/questions/[questionId]/route.ts", "TypeScript", 0, 0, 53, 0, 0, 0, 0, 0, 0, 0, 0, 10, 63
+"/Users/chaunguyen/Documents/lms-platform/app/api/quesBanks/[quesBankId]/questions/route.ts", "TypeScript", 0, 0, 51, 0, 0, 0, 0, 0, 0, 0, 4, 12, 67
+"/Users/chaunguyen/Documents/lms-platform/app/api/quesBanks/route.ts", "TypeScript", 0, 0, 25, 0, 0, 0, 0, 0, 0, 0, 0, 6, 31
+"/Users/chaunguyen/Documents/lms-platform/app/api/uploadthing/core.ts", "TypeScript", 0, 0, 25, 0, 0, 0, 0, 0, 0, 0, 0, 8, 33
+"/Users/chaunguyen/Documents/lms-platform/app/api/uploadthing/route.ts", "TypeScript", 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 2, 7
+"/Users/chaunguyen/Documents/lms-platform/app/api/webhook/route.ts", "TypeScript", 0, 0, 36, 0, 0, 0, 0, 0, 0, 0, 0, 8, 44
+"/Users/chaunguyen/Documents/lms-platform/app/globals.css", "CSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 94, 0, 27, 121
+"/Users/chaunguyen/Documents/lms-platform/app/layout.tsx", "TypeScript React", 0, 0, 0, 28, 0, 0, 0, 0, 0, 0, 0, 2, 30
+"/Users/chaunguyen/Documents/lms-platform/app/side/SidebarLinkGroup.tsx", "TypeScript React", 0, 0, 0, 18, 0, 0, 0, 0, 0, 0, 0, 6, 24
+"/Users/chaunguyen/Documents/lms-platform/components.json", "JSON", 0, 17, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 17
+"/Users/chaunguyen/Documents/lms-platform/components/ModeToggle.tsx", "TypeScript React", 0, 0, 0, 36, 0, 0, 0, 0, 0, 0, 0, 5, 41
+"/Users/chaunguyen/Documents/lms-platform/components/Profile.tsx", "TypeScript React", 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 3, 66
+"/Users/chaunguyen/Documents/lms-platform/components/UploadQuestionForm.tsx", "TypeScript React", 0, 0, 0, 46, 0, 0, 0, 0, 0, 0, 0, 11, 57
+"/Users/chaunguyen/Documents/lms-platform/components/banner.tsx", "TypeScript React", 0, 0, 0, 36, 0, 0, 0, 0, 0, 0, 0, 6, 42
+"/Users/chaunguyen/Documents/lms-platform/components/course-card.tsx", "TypeScript React", 0, 0, 0, 66, 0, 0, 0, 0, 0, 0, 0, 3, 69
+"/Users/chaunguyen/Documents/lms-platform/components/course-progress.tsx", "TypeScript React", 0, 0, 0, 37, 0, 0, 0, 0, 0, 0, 0, 4, 41
+"/Users/chaunguyen/Documents/lms-platform/components/courses-list.tsx", "TypeScript React", 0, 0, 0, 37, 0, 0, 0, 0, 0, 0, 0, 4, 41
+"/Users/chaunguyen/Documents/lms-platform/components/editor.tsx", "TypeScript React", 0, 0, 0, 19, 0, 0, 0, 0, 0, 0, 0, 5, 24
+"/Users/chaunguyen/Documents/lms-platform/components/file-upload.tsx", "TypeScript React", 0, 0, 0, 24, 0, 0, 0, 0, 0, 0, 0, 3, 27
+"/Users/chaunguyen/Documents/lms-platform/components/icon-badge.tsx", "TypeScript React", 0, 0, 0, 57, 0, 0, 0, 0, 0, 0, 0, 7, 64
+"/Users/chaunguyen/Documents/lms-platform/components/modals/confirm-modal.tsx", "TypeScript React", 0, 0, 0, 38, 0, 0, 0, 0, 0, 0, 0, 5, 43
+"/Users/chaunguyen/Documents/lms-platform/components/navbar-routes.tsx", "TypeScript React", 0, 0, 0, 47, 0, 0, 0, 0, 0, 0, 0, 8, 55
+"/Users/chaunguyen/Documents/lms-platform/components/preview.tsx", "TypeScript React", 0, 0, 0, 17, 0, 0, 0, 0, 0, 0, 0, 5, 22
+"/Users/chaunguyen/Documents/lms-platform/components/providers/confetti-provider.tsx", "TypeScript React", 0, 0, 0, 17, 0, 0, 0, 0, 0, 0, 0, 5, 22
+"/Users/chaunguyen/Documents/lms-platform/components/providers/toaster-provider.tsx", "TypeScript React", 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 2, 7
+"/Users/chaunguyen/Documents/lms-platform/components/search-input.tsx", "TypeScript React", 0, 0, 0, 38, 0, 0, 0, 0, 0, 0, 0, 8, 46
+"/Users/chaunguyen/Documents/lms-platform/components/ui/accordion.tsx", "TypeScript React", 0, 0, 0, 53, 0, 0, 0, 0, 0, 0, 0, 8, 61
+"/Users/chaunguyen/Documents/lms-platform/components/ui/admin-layout.tsx", "TypeScript React", 0, 0, 0, 19, 0, 0, 0, 0, 0, 0, 1, 3, 23
+"/Users/chaunguyen/Documents/lms-platform/components/ui/alert-dialog.tsx", "TypeScript React", 0, 0, 0, 127, 0, 0, 0, 0, 0, 0, 0, 15, 142
+"/Users/chaunguyen/Documents/lms-platform/components/ui/avatar.tsx", "TypeScript React", 0, 0, 0, 44, 0, 0, 0, 0, 0, 0, 0, 7, 51
+"/Users/chaunguyen/Documents/lms-platform/components/ui/badge.tsx", "TypeScript React", 0, 0, 0, 31, 0, 0, 0, 0, 0, 0, 0, 6, 37
+"/Users/chaunguyen/Documents/lms-platform/components/ui/button.tsx", "TypeScript React", 0, 0, 0, 52, 0, 0, 0, 0, 0, 0, 0, 6, 58
+"/Users/chaunguyen/Documents/lms-platform/components/ui/card.tsx", "TypeScript React", 0, 0, 0, 71, 0, 0, 0, 0, 0, 0, 0, 9, 80
+"/Users/chaunguyen/Documents/lms-platform/components/ui/checkbox.tsx", "TypeScript React", 0, 0, 0, 26, 0, 0, 0, 0, 0, 0, 0, 5, 31
+"/Users/chaunguyen/Documents/lms-platform/components/ui/combobox.tsx", "TypeScript React", 0, 0, 0, 72, 0, 0, 0, 0, 0, 0, 0, 6, 78
+"/Users/chaunguyen/Documents/lms-platform/components/ui/command.tsx", "TypeScript React", 0, 0, 0, 137, 0, 0, 0, 0, 0, 0, 0, 19, 156
+"/Users/chaunguyen/Documents/lms-platform/components/ui/dialog.tsx", "TypeScript React", 0, 0, 0, 109, 0, 0, 0, 0, 0, 0, 0, 14, 123
+"/Users/chaunguyen/Documents/lms-platform/components/ui/dropdown-menu.tsx", "TypeScript React", 0, 0, 0, 182, 0, 0, 0, 0, 0, 0, 0, 19, 201
+"/Users/chaunguyen/Documents/lms-platform/components/ui/form.tsx", "TypeScript React", 0, 0, 0, 152, 0, 0, 0, 0, 0, 0, 0, 25, 177
+"/Users/chaunguyen/Documents/lms-platform/components/ui/input.tsx", "TypeScript React", 0, 0, 0, 21, 0, 0, 0, 0, 0, 0, 0, 5, 26
+"/Users/chaunguyen/Documents/lms-platform/components/ui/label.tsx", "TypeScript React", 0, 0, 0, 21, 0, 0, 0, 0, 0, 0, 0, 6, 27
+"/Users/chaunguyen/Documents/lms-platform/components/ui/navigation-menu.tsx", "TypeScript React", 0, 0, 0, 117, 0, 0, 0, 0, 0, 0, 0, 12, 129
+"/Users/chaunguyen/Documents/lms-platform/components/ui/popover.tsx", "TypeScript React", 0, 0, 0, 25, 0, 0, 0, 0, 0, 0, 0, 7, 32
+"/Users/chaunguyen/Documents/lms-platform/components/ui/progress.tsx", "TypeScript React", 0, 0, 0, 43, 0, 0, 0, 0, 0, 0, 0, 8, 51
+"/Users/chaunguyen/Documents/lms-platform/components/ui/scroll-area.tsx", "TypeScript React", 0, 0, 0, 43, 0, 0, 0, 0, 0, 0, 0, 6, 49
+"/Users/chaunguyen/Documents/lms-platform/components/ui/separator.tsx", "TypeScript React", 0, 0, 0, 27, 0, 0, 0, 0, 0, 0, 0, 5, 32
+"/Users/chaunguyen/Documents/lms-platform/components/ui/sheet.tsx", "TypeScript React", 0, 0, 0, 125, 0, 0, 0, 0, 0, 0, 0, 16, 141
+"/Users/chaunguyen/Documents/lms-platform/components/ui/skeleton.tsx", "TypeScript React", 0, 0, 0, 13, 0, 0, 0, 0, 0, 0, 0, 3, 16
+"/Users/chaunguyen/Documents/lms-platform/components/ui/table.tsx", "TypeScript React", 0, 0, 0, 107, 0, 0, 0, 0, 0, 0, 0, 11, 118
+"/Users/chaunguyen/Documents/lms-platform/components/ui/tabs.tsx", "TypeScript React", 0, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 8, 56
+"/Users/chaunguyen/Documents/lms-platform/components/ui/textarea.tsx", "TypeScript React", 0, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 5, 25
+"/Users/chaunguyen/Documents/lms-platform/constants/index.ts", "TypeScript", 0, 0, 95, 0, 0, 0, 0, 0, 0, 0, 1, 5, 101
+"/Users/chaunguyen/Documents/lms-platform/hooks/use-confetti-store.ts", "TypeScript", 0, 0, 11, 0, 0, 0, 0, 0, 0, 0, 0, 2, 13
+"/Users/chaunguyen/Documents/lms-platform/hooks/use-debounce.ts", "TypeScript", 0, 0, 13, 0, 0, 0, 0, 0, 0, 0, 0, 5, 18
+"/Users/chaunguyen/Documents/lms-platform/lib/admin.ts", "TypeScript", 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 2, 6
+"/Users/chaunguyen/Documents/lms-platform/lib/db.ts", "TypeScript", 0, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, 5, 11
+"/Users/chaunguyen/Documents/lms-platform/lib/formats.ts", "TypeScript", 0, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6
+"/Users/chaunguyen/Documents/lms-platform/lib/stripe.ts", "TypeScript", 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 1, 6
+"/Users/chaunguyen/Documents/lms-platform/lib/teacher.ts", "TypeScript", 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 1, 4
+"/Users/chaunguyen/Documents/lms-platform/lib/uploadthing.ts", "TypeScript", 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 2, 6
+"/Users/chaunguyen/Documents/lms-platform/lib/utils.ts", "TypeScript", 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 2, 7
+"/Users/chaunguyen/Documents/lms-platform/middleware.ts", "TypeScript", 0, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, 4, 10
+"/Users/chaunguyen/Documents/lms-platform/next.config.mjs", "JavaScript", 0, 0, 0, 0, 0, 0, 0, 0, 8, 0, 1, 2, 11
+"/Users/chaunguyen/Documents/lms-platform/package-lock.json", "JSON", 0, 11204, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 11205
+"/Users/chaunguyen/Documents/lms-platform/package.json", "JSON", 0, 88, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 89
+"/Users/chaunguyen/Documents/lms-platform/postcss.config.mjs", "JavaScript", 0, 0, 0, 0, 0, 0, 0, 0, 6, 0, 1, 2, 9
+"/Users/chaunguyen/Documents/lms-platform/prisma/migrations/20240603155548_init/migration.sql", "SQL", 0, 0, 0, 0, 0, 0, 0, 113, 0, 0, 11, 22, 146
+"/Users/chaunguyen/Documents/lms-platform/prisma/migrations/20240603210753_remove_unique_constraint_from_section_id/migration.sql", "SQL", 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 3
+"/Users/chaunguyen/Documents/lms-platform/prisma/migrations/20240604160545_remove_userprogress/migration.sql", "SQL", 0, 0, 0, 0, 0, 0, 0, 6, 0, 0, 13, 5, 24
+"/Users/chaunguyen/Documents/lms-platform/prisma/migrations/20240604162202_redone_userprogress/migration.sql", "SQL", 0, 0, 0, 0, 0, 0, 0, 6, 0, 0, 13, 5, 24
+"/Users/chaunguyen/Documents/lms-platform/prisma/migrations/20240605073400_add/migration.sql", "SQL", 0, 0, 0, 0, 0, 0, 0, 10, 0, 0, 1, 2, 13
+"/Users/chaunguyen/Documents/lms-platform/prisma/migrations/20240605185814_redone_userid/migration.sql", "SQL", 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 7, 1, 11
+"/Users/chaunguyen/Documents/lms-platform/prisma/migrations/20240606094348_init/migration.sql", "SQL", 0, 0, 0, 0, 0, 0, 0, 21, 0, 0, 9, 5, 35
+"/Users/chaunguyen/Documents/lms-platform/prisma/migrations/20240606174832_redone_user/migration.sql", "SQL", 0, 0, 0, 0, 0, 0, 0, 4, 0, 0, 10, 2, 16
+"/Users/chaunguyen/Documents/lms-platform/prisma/migrations/20240608231121_add_category_model/migration.sql", "SQL", 0, 0, 0, 0, 0, 0, 0, 10, 0, 0, 1, 2, 13
+"/Users/chaunguyen/Documents/lms-platform/prisma/migrations/20240609004258_init/migration.sql", "SQL", 0, 0, 0, 0, 0, 0, 0, 11, 0, 0, 8, 3, 22
+"/Users/chaunguyen/Documents/lms-platform/prisma/migrations/20240609004516_init/migration.sql", "SQL", 0, 0, 0, 0, 0, 0, 0, 11, 0, 0, 8, 3, 22
+"/Users/chaunguyen/Documents/lms-platform/prisma/migrations/20240609010537_init/migration.sql", "SQL", 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 7, 1, 9
+"/Users/chaunguyen/Documents/lms-platform/prisma/migrations/20240609011036_init/migration.sql", "SQL", 0, 0, 0, 0, 0, 0, 0, 10, 0, 0, 1, 2, 13
+"/Users/chaunguyen/Documents/lms-platform/prisma/migrations/20240609072841_init1/migration.sql", "SQL", 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 7, 1, 9
+"/Users/chaunguyen/Documents/lms-platform/prisma/migrations/20240609092835_init/migration.sql", "SQL", 0, 0, 0, 0, 0, 0, 0, 7, 0, 0, 14, 4, 25
+"/Users/chaunguyen/Documents/lms-platform/prisma/migrations/20240610151552_addcomment/migration.sql", "SQL", 0, 0, 0, 0, 0, 0, 0, 9, 0, 0, 1, 2, 12
+"/Users/chaunguyen/Documents/lms-platform/prisma/migrations/20240619080937_add_ques_cate/migration.sql", "SQL", 0, 0, 0, 0, 0, 0, 0, 20, 0, 0, 11, 7, 38
+"/Users/chaunguyen/Documents/lms-platform/prisma/migrations/20240619084428_edit_ques_cate/migration.sql", "SQL", 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 8, 1, 12
+"/Users/chaunguyen/Documents/lms-platform/prisma/schema.prisma", "Prisma", 0, 0, 0, 0, 0, 0, 184, 0, 0, 0, 4, 72, 260
+"/Users/chaunguyen/Documents/lms-platform/public/hero-image.svg", "XML", 0, 0, 0, 0, 0, 53, 0, 0, 0, 0, 0, 1, 54
+"/Users/chaunguyen/Documents/lms-platform/public/img/brands/amazon.svg", "XML", 0, 0, 0, 0, 0, 12, 0, 0, 0, 0, 0, 1, 13
+"/Users/chaunguyen/Documents/lms-platform/public/img/brands/microsoft.svg", "XML", 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 1, 5
+"/Users/chaunguyen/Documents/lms-platform/public/img/brands/netflix.svg", "XML", 0, 0, 0, 0, 0, 10, 0, 0, 0, 0, 0, 1, 11
+"/Users/chaunguyen/Documents/lms-platform/public/img/brands/sony.svg", "XML", 0, 0, 0, 0, 0, 11, 0, 0, 0, 0, 0, 1, 12
+"/Users/chaunguyen/Documents/lms-platform/public/img/brands/verizon.svg", "XML", 0, 0, 0, 0, 0, 11, 0, 0, 0, 0, 0, 1, 12
+"/Users/chaunguyen/Documents/lms-platform/public/img/logo.svg", "XML", 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 1, 5
+"/Users/chaunguyen/Documents/lms-platform/public/img/vercel.svg", "XML", 0, 0, 0, 0, 0, 6, 0, 0, 0, 0, 0, 1, 7
+"/Users/chaunguyen/Documents/lms-platform/public/logo.svg", "XML", 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1
+"/Users/chaunguyen/Documents/lms-platform/public/next.svg", "XML", 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1
+"/Users/chaunguyen/Documents/lms-platform/public/stat-image.svg", "XML", 0, 0, 0, 0, 0, 53, 0, 0, 0, 0, 0, 1, 54
+"/Users/chaunguyen/Documents/lms-platform/public/vercel copy.svg", "XML", 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1
+"/Users/chaunguyen/Documents/lms-platform/public/vercel.svg", "XML", 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1
+"/Users/chaunguyen/Documents/lms-platform/registry/.eslintrc.json", "JSON", 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7
+"/Users/chaunguyen/Documents/lms-platform/registry/blocks.ts", "TypeScript", 0, 0, 139, 0, 0, 0, 0, 0, 0, 0, 0, 2, 141
+"/Users/chaunguyen/Documents/lms-platform/registry/colors.ts", "TypeScript", 0, 0, 1555, 0, 0, 0, 0, 0, 0, 0, 0, 2, 1557
+"/Users/chaunguyen/Documents/lms-platform/registry/default/block/authentication-01.tsx", "TypeScript React", 0, 0, 0, 41, 0, 0, 0, 0, 0, 0, 0, 5, 46
+"/Users/chaunguyen/Documents/lms-platform/registry/default/block/authentication-02.tsx", "TypeScript React", 0, 0, 0, 62, 0, 0, 0, 0, 0, 0, 0, 6, 68
+"/Users/chaunguyen/Documents/lms-platform/registry/default/block/authentication-03.tsx", "TypeScript React", 0, 0, 0, 67, 0, 0, 0, 0, 0, 0, 0, 6, 73
+"/Users/chaunguyen/Documents/lms-platform/registry/default/block/authentication-04.tsx", "TypeScript React", 0, 0, 0, 69, 0, 0, 0, 0, 0, 0, 0, 6, 75
+"/Users/chaunguyen/Documents/lms-platform/registry/default/block/dashboard-01-chunk-0.tsx", "TypeScript React", 0, 0, 0, 21, 0, 0, 0, 0, 0, 0, 0, 3, 24
+"/Users/chaunguyen/Documents/lms-platform/registry/default/block/dashboard-01-chunk-1.tsx", "TypeScript React", 0, 0, 0, 21, 0, 0, 0, 0, 0, 0, 0, 3, 24
+"/Users/chaunguyen/Documents/lms-platform/registry/default/block/dashboard-01-chunk-2.tsx", "TypeScript React", 0, 0, 0, 21, 0, 0, 0, 0, 0, 0, 0, 3, 24
+"/Users/chaunguyen/Documents/lms-platform/registry/default/block/dashboard-01-chunk-3.tsx", "TypeScript React", 0, 0, 0, 21, 0, 0, 0, 0, 0, 0, 0, 3, 24
+"/Users/chaunguyen/Documents/lms-platform/registry/default/block/dashboard-01-chunk-4.tsx", "TypeScript React", 0, 0, 0, 146, 0, 0, 0, 0, 0, 0, 0, 3, 149
+"/Users/chaunguyen/Documents/lms-platform/registry/default/block/dashboard-01-chunk-5.tsx", "TypeScript React", 0, 0, 0, 85, 0, 0, 0, 0, 0, 0, 0, 2, 87
+"/Users/chaunguyen/Documents/lms-platform/registry/default/block/dashboard-01.tsx", "TypeScript React", 0, 0, 0, 453, 0, 0, 0, 0, 0, 0, 0, 6, 459
+"/Users/chaunguyen/Documents/lms-platform/registry/default/block/dashboard-02-chunk-0.tsx", "TypeScript React", 0, 0, 0, 25, 0, 0, 0, 0, 0, 0, 0, 2, 27
+"/Users/chaunguyen/Documents/lms-platform/registry/default/block/dashboard-02-chunk-1.tsx", "TypeScript React", 0, 0, 0, 19, 0, 0, 0, 0, 0, 0, 0, 2, 21
+"/Users/chaunguyen/Documents/lms-platform/registry/default/block/dashboard-02.tsx", "TypeScript React", 0, 0, 0, 242, 0, 0, 0, 0, 0, 0, 0, 6, 248
+"/Users/chaunguyen/Documents/lms-platform/registry/default/block/dashboard-03-chunk-0.tsx", "TypeScript React", 0, 0, 0, 124, 0, 0, 0, 0, 0, 0, 0, 3, 127
+"/Users/chaunguyen/Documents/lms-platform/registry/default/block/dashboard-03-chunk-1.tsx", "TypeScript React", 0, 0, 0, 50, 0, 0, 0, 0, 0, 0, 0, 3, 53
+"/Users/chaunguyen/Documents/lms-platform/registry/default/block/dashboard-03.tsx", "TypeScript React", 0, 0, 0, 459, 0, 0, 0, 0, 0, 0, 0, 6, 465
+"/Users/chaunguyen/Documents/lms-platform/registry/default/block/dashboard-04-chunk-0.tsx", "TypeScript React", 0, 0, 0, 18, 0, 0, 0, 0, 0, 0, 0, 2, 20
+"/Users/chaunguyen/Documents/lms-platform/registry/default/block/dashboard-04-chunk-1.tsx", "TypeScript React", 0, 0, 0, 30, 0, 0, 0, 0, 0, 0, 0, 2, 32
+"/Users/chaunguyen/Documents/lms-platform/registry/default/block/dashboard-04-chunk-2.tsx", "TypeScript React", 0, 0, 0, 40, 0, 0, 0, 0, 0, 0, 0, 2, 42
+"/Users/chaunguyen/Documents/lms-platform/registry/default/block/dashboard-04.tsx", "TypeScript React", 0, 0, 0, 219, 0, 0, 0, 0, 0, 0, 0, 6, 225
+"/Users/chaunguyen/Documents/lms-platform/registry/default/block/dashboard-05-chunk-0.tsx", "TypeScript React", 0, 0, 0, 24, 0, 0, 0, 0, 0, 0, 0, 2, 26
+"/Users/chaunguyen/Documents/lms-platform/registry/default/block/dashboard-05-chunk-1.tsx", "TypeScript React", 0, 0, 0, 25, 0, 0, 0, 0, 0, 0, 0, 2, 27
+"/Users/chaunguyen/Documents/lms-platform/registry/default/block/dashboard-05-chunk-2.tsx", "TypeScript React", 0, 0, 0, 27, 0, 0, 0, 0, 0, 0, 0, 2, 29
+"/Users/chaunguyen/Documents/lms-platform/registry/default/block/dashboard-05-chunk-3.tsx", "TypeScript React", 0, 0, 0, 171, 0, 0, 0, 0, 0, 0, 0, 2, 173
+"/Users/chaunguyen/Documents/lms-platform/registry/default/block/dashboard-05-chunk-4.tsx", "TypeScript React", 0, 0, 0, 185, 0, 0, 0, 0, 0, 0, 0, 3, 188
+"/Users/chaunguyen/Documents/lms-platform/registry/default/block/dashboard-05.tsx", "TypeScript React", 0, 0, 0, 721, 0, 0, 0, 0, 0, 0, 0, 6, 727
+"/Users/chaunguyen/Documents/lms-platform/registry/default/block/dashboard-06-chunk-0.tsx", "TypeScript React", 0, 0, 0, 285, 0, 0, 0, 0, 0, 0, 0, 3, 288
+"/Users/chaunguyen/Documents/lms-platform/registry/default/block/dashboard-06.tsx", "TypeScript React", 0, 0, 0, 632, 0, 0, 0, 0, 0, 0, 0, 6, 638
+"/Users/chaunguyen/Documents/lms-platform/registry/default/block/dashboard-07-chunk-0.tsx", "TypeScript React", 0, 0, 0, 43, 0, 0, 0, 0, 0, 0, 0, 2, 45
+"/Users/chaunguyen/Documents/lms-platform/registry/default/block/dashboard-07-chunk-1.tsx", "TypeScript React", 0, 0, 0, 122, 0, 0, 0, 0, 0, 0, 0, 3, 125
+"/Users/chaunguyen/Documents/lms-platform/registry/default/block/dashboard-07-chunk-2.tsx", "TypeScript React", 0, 0, 0, 53, 0, 0, 0, 0, 0, 0, 0, 2, 55
+"/Users/chaunguyen/Documents/lms-platform/registry/default/block/dashboard-07-chunk-3.tsx", "TypeScript React", 0, 0, 0, 40, 0, 0, 0, 0, 0, 0, 0, 2, 42
+"/Users/chaunguyen/Documents/lms-platform/registry/default/block/dashboard-07-chunk-4.tsx", "TypeScript React", 0, 0, 0, 56, 0, 0, 0, 0, 0, 0, 0, 3, 59
+"/Users/chaunguyen/Documents/lms-platform/registry/default/block/dashboard-07-chunk-5.tsx", "TypeScript React", 0, 0, 0, 26, 0, 0, 0, 0, 0, 0, 0, 2, 28
+"/Users/chaunguyen/Documents/lms-platform/registry/default/block/dashboard-07.tsx", "TypeScript React", 0, 0, 0, 605, 0, 0, 0, 0, 0, 0, 0, 6, 611
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/accordion-demo.tsx", "TypeScript React", 0, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 2, 34
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/alert-demo.tsx", "TypeScript React", 0, 0, 0, 17, 0, 0, 0, 0, 0, 0, 0, 3, 20
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/alert-destructive.tsx", "TypeScript React", 0, 0, 0, 17, 0, 0, 0, 0, 0, 0, 0, 3, 20
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/alert-dialog-demo.tsx", "TypeScript React", 0, 0, 0, 34, 0, 0, 0, 0, 0, 0, 0, 2, 36
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/aspect-ratio-demo.tsx", "TypeScript React", 0, 0, 0, 14, 0, 0, 0, 0, 0, 0, 0, 3, 17
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/avatar-demo.tsx", "TypeScript React", 0, 0, 0, 13, 0, 0, 0, 0, 0, 0, 0, 2, 15
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/badge-demo.tsx", "TypeScript React", 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 2, 6
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/badge-destructive.tsx", "TypeScript React", 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 2, 6
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/badge-outline.tsx", "TypeScript React", 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 2, 6
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/badge-secondary.tsx", "TypeScript React", 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 2, 6
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/breadcrumb-demo.tsx", "TypeScript React", 0, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 2, 50
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/breadcrumb-dropdown.tsx", "TypeScript React", 0, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 3, 51
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/breadcrumb-ellipsis.tsx", "TypeScript React", 0, 0, 0, 37, 0, 0, 0, 0, 0, 0, 0, 3, 40
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/breadcrumb-link.tsx", "TypeScript React", 0, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 3, 35
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/breadcrumb-responsive.tsx", "TypeScript React", 0, 0, 0, 127, 0, 0, 0, 0, 0, 0, 0, 7, 134
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/breadcrumb-separator.tsx", "TypeScript React", 0, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 3, 35
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/button-as-child.tsx", "TypeScript React", 0, 0, 0, 9, 0, 0, 0, 0, 0, 0, 0, 3, 12
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/button-demo.tsx", "TypeScript React", 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 2, 6
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/button-destructive.tsx", "TypeScript React", 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 2, 6
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/button-ghost.tsx", "TypeScript React", 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 2, 6
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/button-icon.tsx", "TypeScript React", 0, 0, 0, 9, 0, 0, 0, 0, 0, 0, 0, 3, 12
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/button-link.tsx", "TypeScript React", 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 2, 6
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/button-loading.tsx", "TypeScript React", 0, 0, 0, 10, 0, 0, 0, 0, 0, 0, 0, 3, 13
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/button-outline.tsx", "TypeScript React", 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 2, 6
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/button-secondary.tsx", "TypeScript React", 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 2, 6
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/button-with-icon.tsx", "TypeScript React", 0, 0, 0, 9, 0, 0, 0, 0, 0, 0, 0, 3, 12
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/calendar-demo.tsx", "TypeScript React", 0, 0, 0, 14, 0, 0, 0, 0, 0, 0, 0, 5, 19
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/calendar-form.tsx", "TypeScript React", 0, 0, 0, 95, 0, 0, 0, 0, 0, 0, 0, 7, 102
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/calendar-react-hook-form.tsx", "TypeScript React", 0, 0, 0, 95, 0, 0, 0, 0, 0, 0, 0, 7, 102
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/card-demo.tsx", "TypeScript React", 0, 0, 0, 74, 0, 0, 0, 0, 0, 0, 0, 5, 79
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/card-with-form.tsx", "TypeScript React", 0, 0, 0, 57, 0, 0, 0, 0, 0, 0, 0, 3, 60
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/cards/activity-goal.tsx", "TypeScript React", 0, 0, 0, 125, 0, 0, 0, 0, 0, 0, 0, 8, 133
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/cards/calendar.tsx", "TypeScript React", 0, 0, 0, 22, 0, 0, 0, 0, 0, 0, 0, 5, 27
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/cards/chat.tsx", "TypeScript React", 0, 0, 0, 253, 0, 0, 0, 0, 0, 0, 0, 8, 261
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/cards/cookie-settings.tsx", "TypeScript React", 0, 0, 0, 58, 0, 0, 0, 0, 0, 0, 0, 3, 61
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/cards/create-account.tsx", "TypeScript React", 0, 0, 0, 58, 0, 0, 0, 0, 0, 0, 0, 3, 61
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/cards/data-table.tsx", "TypeScript React", 0, 0, 0, 323, 0, 0, 0, 0, 0, 0, 1, 12, 336
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/cards/index.tsx", "TypeScript React", 0, 0, 0, 62, 0, 0, 0, 0, 0, 0, 0, 2, 64
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/cards/metric.tsx", "TypeScript React", 0, 0, 0, 136, 0, 0, 0, 0, 0, 0, 0, 7, 143
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/cards/payment-method.tsx", "TypeScript React", 0, 0, 0, 152, 0, 0, 0, 0, 0, 0, 0, 5, 157
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/cards/report-issue.tsx", "TypeScript React", 0, 0, 0, 86, 0, 0, 0, 0, 0, 0, 0, 5, 91
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/cards/share.tsx", "TypeScript React", 0, 0, 0, 126, 0, 0, 0, 0, 0, 0, 0, 3, 129
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/cards/stats.tsx", "TypeScript React", 0, 0, 0, 126, 0, 0, 0, 0, 0, 0, 0, 6, 132
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/cards/team-members.tsx", "TypeScript React", 0, 0, 0, 206, 0, 0, 0, 0, 0, 0, 0, 4, 210
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/carousel-api.tsx", "TypeScript React", 0, 0, 0, 47, 0, 0, 0, 0, 0, 0, 0, 7, 54
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/carousel-demo.tsx", "TypeScript React", 0, 0, 0, 30, 0, 0, 0, 0, 0, 0, 0, 3, 33
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/carousel-orientation.tsx", "TypeScript React", 0, 0, 0, 36, 0, 0, 0, 0, 0, 0, 0, 3, 39
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/carousel-plugin.tsx", "TypeScript React", 0, 0, 0, 39, 0, 0, 0, 0, 0, 0, 0, 4, 43
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/carousel-size.tsx", "TypeScript React", 0, 0, 0, 35, 0, 0, 0, 0, 0, 0, 0, 3, 38
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/carousel-spacing.tsx", "TypeScript React", 0, 0, 0, 30, 0, 0, 0, 0, 0, 0, 0, 3, 33
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/checkbox-demo.tsx", "TypeScript React", 0, 0, 0, 15, 0, 0, 0, 0, 0, 0, 0, 3, 18
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/checkbox-disabled.tsx", "TypeScript React", 0, 0, 0, 14, 0, 0, 0, 0, 0, 0, 0, 2, 16
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/checkbox-form-multiple.tsx", "TypeScript React", 0, 0, 0, 120, 0, 0, 0, 0, 0, 0, 0, 8, 128
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/checkbox-form-single.tsx", "TypeScript React", 0, 0, 0, 67, 0, 0, 0, 0, 0, 0, 0, 7, 74
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/checkbox-with-text.tsx", "TypeScript React", 0, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 3, 23
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/collapsible-demo.tsx", "TypeScript React", 0, 0, 0, 42, 0, 0, 0, 0, 0, 0, 0, 5, 47
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/combobox-demo.tsx", "TypeScript React", 0, 0, 0, 86, 0, 0, 0, 0, 0, 0, 0, 6, 92
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/combobox-dropdown-menu.tsx", "TypeScript React", 0, 0, 0, 106, 0, 0, 0, 0, 0, 0, 0, 6, 112
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/combobox-form.tsx", "TypeScript React", 0, 0, 0, 128, 0, 0, 0, 0, 0, 0, 0, 8, 136
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/combobox-popover.tsx", "TypeScript React", 0, 0, 0, 119, 0, 0, 0, 0, 0, 0, 0, 7, 126
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/combobox-responsive.tsx", "TypeScript React", 0, 0, 0, 115, 0, 0, 0, 0, 0, 0, 0, 9, 124
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/command-demo.tsx", "TypeScript React", 0, 0, 0, 60, 0, 0, 0, 0, 0, 0, 0, 3, 63
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/command-dialog.tsx", "TypeScript React", 0, 0, 0, 81, 0, 0, 0, 0, 0, 0, 0, 7, 88
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/context-menu-demo.tsx", "TypeScript React", 0, 0, 0, 66, 0, 0, 0, 0, 0, 0, 0, 2, 68
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/data-table-demo.tsx", "TypeScript React", 0, 0, 0, 300, 0, 0, 0, 0, 0, 0, 1, 12, 313
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/date-picker-demo.tsx", "TypeScript React", 0, 0, 0, 39, 0, 0, 0, 0, 0, 0, 0, 5, 44
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/date-picker-form.tsx", "TypeScript React", 0, 0, 0, 95, 0, 0, 0, 0, 0, 0, 0, 7, 102
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/date-picker-with-presets.tsx", "TypeScript React", 0, 0, 0, 58, 0, 0, 0, 0, 0, 0, 0, 5, 63
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/date-picker-with-range.tsx", "TypeScript React", 0, 0, 0, 61, 0, 0, 0, 0, 0, 0, 0, 5, 66
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/dialog-close-button.tsx", "TypeScript React", 0, 0, 0, 54, 0, 0, 0, 0, 0, 0, 0, 3, 57
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/dialog-demo.tsx", "TypeScript React", 0, 0, 0, 54, 0, 0, 0, 0, 0, 0, 0, 2, 56
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/drawer-demo.tsx", "TypeScript React", 0, 0, 0, 129, 0, 0, 0, 0, 0, 0, 0, 6, 135
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/drawer-dialog.tsx", "TypeScript React", 0, 0, 0, 82, 0, 0, 0, 0, 0, 0, 0, 6, 88
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/dropdown-menu-checkboxes.tsx", "TypeScript React", 0, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 6, 54
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/dropdown-menu-demo.tsx", "TypeScript React", 0, 0, 0, 120, 0, 0, 0, 0, 0, 0, 0, 3, 123
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/dropdown-menu-radio-group.tsx", "TypeScript React", 0, 0, 0, 31, 0, 0, 0, 0, 0, 0, 0, 5, 36
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/hover-card-demo.tsx", "TypeScript React", 0, 0, 0, 41, 0, 0, 0, 0, 0, 0, 0, 3, 44
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/input-demo.tsx", "TypeScript React", 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 2, 6
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/input-disabled.tsx", "TypeScript React", 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 2, 6
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/input-file.tsx", "TypeScript React", 0, 0, 0, 10, 0, 0, 0, 0, 0, 0, 0, 2, 12
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/input-form.tsx", "TypeScript React", 0, 0, 0, 62, 0, 0, 0, 0, 0, 0, 0, 7, 69
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/input-otp-controlled.tsx", "TypeScript React", 0, 0, 0, 35, 0, 0, 0, 0, 0, 0, 0, 5, 40
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/input-otp-demo.tsx", "TypeScript React", 0, 0, 0, 23, 0, 0, 0, 0, 0, 0, 0, 2, 25
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/input-otp-form.tsx", "TypeScript React", 0, 0, 0, 75, 0, 0, 0, 0, 0, 0, 0, 8, 83
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/input-otp-pattern.tsx", "TypeScript React", 0, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 3, 23
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/input-otp-separator.tsx", "TypeScript React", 0, 0, 0, 27, 0, 0, 0, 0, 0, 0, 0, 3, 30
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/input-with-button.tsx", "TypeScript React", 0, 0, 0, 10, 0, 0, 0, 0, 0, 0, 0, 2, 12
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/input-with-label.tsx", "TypeScript React", 0, 0, 0, 10, 0, 0, 0, 0, 0, 0, 0, 2, 12
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/input-with-text.tsx", "TypeScript React", 0, 0, 0, 11, 0, 0, 0, 0, 0, 0, 0, 2, 13
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/label-demo.tsx", "TypeScript React", 0, 0, 0, 12, 0, 0, 0, 0, 0, 0, 0, 2, 14
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/menubar-demo.tsx", "TypeScript React", 0, 0, 0, 106, 0, 0, 0, 0, 0, 0, 0, 2, 108
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/mode-toggle.tsx", "TypeScript React", 0, 0, 0, 36, 0, 0, 0, 0, 0, 0, 0, 5, 41
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/navigation-menu-demo.tsx", "TypeScript React", 0, 0, 0, 141, 0, 0, 0, 0, 0, 0, 0, 6, 147
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/pagination-demo.tsx", "TypeScript React", 0, 0, 0, 37, 0, 0, 0, 0, 0, 0, 0, 2, 39
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/popover-demo.tsx", "TypeScript React", 0, 0, 0, 61, 0, 0, 0, 0, 0, 0, 0, 2, 63
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/progress-demo.tsx", "TypeScript React", 0, 0, 0, 11, 0, 0, 0, 0, 0, 0, 0, 6, 17
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/radio-group-demo.tsx", "TypeScript React", 0, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 2, 22
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/radio-group-form.tsx", "TypeScript React", 0, 0, 0, 82, 0, 0, 0, 0, 0, 0, 0, 7, 89
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/resizable-demo-with-handle.tsx", "TypeScript React", 0, 0, 0, 35, 0, 0, 0, 0, 0, 0, 0, 2, 37
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/resizable-demo.tsx", "TypeScript React", 0, 0, 0, 35, 0, 0, 0, 0, 0, 0, 0, 2, 37
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/resizable-handle.tsx", "TypeScript React", 0, 0, 0, 25, 0, 0, 0, 0, 0, 0, 0, 2, 27
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/resizable-vertical.tsx", "TypeScript React", 0, 0, 0, 25, 0, 0, 0, 0, 0, 0, 0, 2, 27
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/scroll-area-demo.tsx", "TypeScript React", 0, 0, 0, 23, 0, 0, 0, 0, 0, 0, 0, 4, 27
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/scroll-area-horizontal-demo.tsx", "TypeScript React", 0, 0, 0, 49, 0, 0, 0, 0, 0, 0, 0, 5, 54
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/select-demo.tsx", "TypeScript React", 0, 0, 0, 29, 0, 0, 0, 0, 0, 0, 0, 3, 32
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/select-form.tsx", "TypeScript React", 0, 0, 0, 78, 0, 0, 0, 0, 0, 0, 0, 7, 85
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/select-scrollable.tsx", "TypeScript React", 0, 0, 0, 73, 0, 0, 0, 0, 0, 0, 0, 3, 76
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/separator-demo.tsx", "TypeScript React", 0, 0, 0, 21, 0, 0, 0, 0, 0, 0, 0, 2, 23
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/sheet-demo.tsx", "TypeScript React", 0, 0, 0, 49, 0, 0, 0, 0, 0, 0, 0, 2, 51
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/sheet-side.tsx", "TypeScript React", 0, 0, 0, 56, 0, 0, 0, 0, 0, 0, 0, 5, 61
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/skeleton-card.tsx", "TypeScript React", 0, 0, 0, 12, 0, 0, 0, 0, 0, 0, 0, 2, 14
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/skeleton-demo.tsx", "TypeScript React", 0, 0, 0, 12, 0, 0, 0, 0, 0, 0, 0, 2, 14
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/slider-demo.tsx", "TypeScript React", 0, 0, 0, 14, 0, 0, 0, 0, 0, 0, 0, 3, 17
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/sonner-demo.tsx", "TypeScript React", 0, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 3, 23
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/switch-demo.tsx", "TypeScript React", 0, 0, 0, 10, 0, 0, 0, 0, 0, 0, 0, 2, 12
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/switch-form.tsx", "TypeScript React", 0, 0, 0, 93, 0, 0, 0, 0, 0, 0, 0, 7, 100
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/table-demo.tsx", "TypeScript React", 0, 0, 0, 85, 0, 0, 0, 0, 0, 0, 0, 3, 88
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/tabs-demo.tsx", "TypeScript React", 0, 0, 0, 73, 0, 0, 0, 0, 0, 0, 0, 2, 75
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/textarea-demo.tsx", "TypeScript React", 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 2, 6
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/textarea-disabled.tsx", "TypeScript React", 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 2, 6
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/textarea-form.tsx", "TypeScript React", 0, 0, 0, 68, 0, 0, 0, 0, 0, 0, 0, 7, 75
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/textarea-with-button.tsx", "TypeScript React", 0, 0, 0, 10, 0, 0, 0, 0, 0, 0, 0, 2, 12
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/textarea-with-label.tsx", "TypeScript React", 0, 0, 0, 10, 0, 0, 0, 0, 0, 0, 0, 2, 12
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/textarea-with-text.tsx", "TypeScript React", 0, 0, 0, 13, 0, 0, 0, 0, 0, 0, 0, 2, 15
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/toast-demo.tsx", "TypeScript React", 0, 0, 0, 23, 0, 0, 0, 0, 0, 0, 0, 4, 27
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/toast-destructive.tsx", "TypeScript React", 0, 0, 0, 22, 0, 0, 0, 0, 0, 0, 0, 4, 26
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/toast-simple.tsx", "TypeScript React", 0, 0, 0, 18, 0, 0, 0, 0, 0, 0, 0, 4, 22
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/toast-with-action.tsx", "TypeScript React", 0, 0, 0, 21, 0, 0, 0, 0, 0, 0, 0, 4, 25
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/toast-with-title.tsx", "TypeScript React", 0, 0, 0, 19, 0, 0, 0, 0, 0, 0, 0, 4, 23
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/toggle-demo.tsx", "TypeScript React", 0, 0, 0, 9, 0, 0, 0, 0, 0, 0, 0, 3, 12
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/toggle-disabled.tsx", "TypeScript React", 0, 0, 0, 9, 0, 0, 0, 0, 0, 0, 0, 3, 12
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/toggle-group-demo.tsx", "TypeScript React", 0, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 3, 23
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/toggle-group-disabled.tsx", "TypeScript React", 0, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 3, 23
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/toggle-group-lg.tsx", "TypeScript React", 0, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 3, 23
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/toggle-group-outline.tsx", "TypeScript React", 0, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 3, 23
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/toggle-group-single.tsx", "TypeScript React", 0, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 3, 23
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/toggle-group-sm.tsx", "TypeScript React", 0, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 3, 23
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/toggle-lg.tsx", "TypeScript React", 0, 0, 0, 9, 0, 0, 0, 0, 0, 0, 0, 3, 12
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/toggle-outline.tsx", "TypeScript React", 0, 0, 0, 9, 0, 0, 0, 0, 0, 0, 0, 3, 12
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/toggle-sm.tsx", "TypeScript React", 0, 0, 0, 9, 0, 0, 0, 0, 0, 0, 0, 3, 12
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/toggle-with-text.tsx", "TypeScript React", 0, 0, 0, 10, 0, 0, 0, 0, 0, 0, 0, 3, 13
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/tooltip-demo.tsx", "TypeScript React", 0, 0, 0, 21, 0, 0, 0, 0, 0, 0, 0, 2, 23
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/typography-blockquote.tsx", "TypeScript React", 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 1, 9
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/typography-demo.tsx", "TypeScript React", 0, 0, 0, 119, 0, 0, 0, 0, 0, 0, 0, 1, 120
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/typography-h1.tsx", "TypeScript React", 0, 0, 0, 7, 0, 0, 0, 0, 0, 0, 0, 1, 8
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/typography-h2.tsx", "TypeScript React", 0, 0, 0, 7, 0, 0, 0, 0, 0, 0, 0, 1, 8
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/typography-h3.tsx", "TypeScript React", 0, 0, 0, 7, 0, 0, 0, 0, 0, 0, 0, 1, 8
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/typography-h4.tsx", "TypeScript React", 0, 0, 0, 7, 0, 0, 0, 0, 0, 0, 0, 1, 8
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/typography-inline-code.tsx", "TypeScript React", 0, 0, 0, 7, 0, 0, 0, 0, 0, 0, 0, 1, 8
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/typography-large.tsx", "TypeScript React", 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 1, 4
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/typography-lead.tsx", "TypeScript React", 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 1, 9
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/typography-list.tsx", "TypeScript React", 0, 0, 0, 9, 0, 0, 0, 0, 0, 0, 0, 1, 10
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/typography-muted.tsx", "TypeScript React", 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 1, 6
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/typography-p.tsx", "TypeScript React", 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 1, 9
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/typography-small.tsx", "TypeScript React", 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 1, 6
+"/Users/chaunguyen/Documents/lms-platform/registry/default/example/typography-table.tsx", "TypeScript React", 0, 0, 0, 44, 0, 0, 0, 0, 0, 0, 0, 1, 45
+"/Users/chaunguyen/Documents/lms-platform/registry/default/ui/accordion.tsx", "TypeScript React", 0, 0, 0, 50, 0, 0, 0, 0, 0, 0, 0, 9, 59
+"/Users/chaunguyen/Documents/lms-platform/registry/default/ui/alert-dialog.tsx", "TypeScript React", 0, 0, 0, 127, 0, 0, 0, 0, 0, 0, 0, 15, 142
+"/Users/chaunguyen/Documents/lms-platform/registry/default/ui/alert.tsx", "TypeScript React", 0, 0, 0, 53, 0, 0, 0, 0, 0, 0, 0, 7, 60
+"/Users/chaunguyen/Documents/lms-platform/registry/default/ui/aspect-ratio.tsx", "TypeScript React", 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 4, 8
+"/Users/chaunguyen/Documents/lms-platform/registry/default/ui/avatar.tsx", "TypeScript React", 0, 0, 0, 44, 0, 0, 0, 0, 0, 0, 0, 7, 51
+"/Users/chaunguyen/Documents/lms-platform/registry/default/ui/badge.tsx", "TypeScript React", 0, 0, 0, 31, 0, 0, 0, 0, 0, 0, 0, 6, 37
+"/Users/chaunguyen/Documents/lms-platform/registry/default/ui/breadcrumb.tsx", "TypeScript React", 0, 0, 0, 105, 0, 0, 0, 0, 0, 0, 0, 11, 116
+"/Users/chaunguyen/Documents/lms-platform/registry/default/ui/button.tsx", "TypeScript React", 0, 0, 0, 51, 0, 0, 0, 0, 0, 0, 0, 6, 57
+"/Users/chaunguyen/Documents/lms-platform/registry/default/ui/calendar.tsx", "TypeScript React", 0, 0, 0, 61, 0, 0, 0, 0, 0, 0, 0, 6, 67
+"/Users/chaunguyen/Documents/lms-platform/registry/default/ui/card.tsx", "TypeScript React", 0, 0, 0, 71, 0, 0, 0, 0, 0, 0, 0, 9, 80
+"/Users/chaunguyen/Documents/lms-platform/registry/default/ui/carousel.tsx", "TypeScript React", 0, 0, 0, 232, 0, 0, 0, 0, 0, 0, 0, 31, 263
+"/Users/chaunguyen/Documents/lms-platform/registry/default/ui/checkbox.tsx", "TypeScript React", 0, 0, 0, 26, 0, 0, 0, 0, 0, 0, 0, 5, 31
+"/Users/chaunguyen/Documents/lms-platform/registry/default/ui/collapsible.tsx", "TypeScript React", 0, 0, 0, 6, 0, 0, 0, 0, 0, 0, 0, 6, 12
+"/Users/chaunguyen/Documents/lms-platform/registry/default/ui/command.tsx", "TypeScript React", 0, 0, 0, 137, 0, 0, 0, 0, 0, 0, 0, 19, 156
+"/Users/chaunguyen/Documents/lms-platform/registry/default/ui/context-menu.tsx", "TypeScript React", 0, 0, 0, 182, 0, 0, 0, 0, 0, 0, 0, 19, 201
+"/Users/chaunguyen/Documents/lms-platform/registry/default/ui/dialog.tsx", "TypeScript React", 0, 0, 0, 109, 0, 0, 0, 0, 0, 0, 0, 14, 123
+"/Users/chaunguyen/Documents/lms-platform/registry/default/ui/drawer.tsx", "TypeScript React", 0, 0, 0, 105, 0, 0, 0, 0, 0, 0, 0, 14, 119
+"/Users/chaunguyen/Documents/lms-platform/registry/default/ui/dropdown-menu.tsx", "TypeScript React", 0, 0, 0, 182, 0, 0, 0, 0, 0, 0, 0, 19, 201
+"/Users/chaunguyen/Documents/lms-platform/registry/default/ui/form.tsx", "TypeScript React", 0, 0, 0, 152, 0, 0, 0, 0, 0, 0, 0, 25, 177
+"/Users/chaunguyen/Documents/lms-platform/registry/default/ui/hover-card.tsx", "TypeScript React", 0, 0, 0, 23, 0, 0, 0, 0, 0, 0, 0, 7, 30
+"/Users/chaunguyen/Documents/lms-platform/registry/default/ui/input-otp.tsx", "TypeScript React", 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 9, 72
+"/Users/chaunguyen/Documents/lms-platform/registry/default/ui/input.tsx", "TypeScript React", 0, 0, 0, 21, 0, 0, 0, 0, 0, 0, 0, 5, 26
+"/Users/chaunguyen/Documents/lms-platform/registry/default/ui/label.tsx", "TypeScript React", 0, 0, 0, 21, 0, 0, 0, 0, 0, 0, 0, 6, 27
+"/Users/chaunguyen/Documents/lms-platform/registry/default/ui/menubar.tsx", "TypeScript React", 0, 0, 0, 217, 0, 0, 0, 0, 0, 0, 0, 20, 237
+"/Users/chaunguyen/Documents/lms-platform/registry/default/ui/navigation-menu.tsx", "TypeScript React", 0, 0, 0, 117, 0, 0, 0, 0, 0, 0, 0, 12, 129
+"/Users/chaunguyen/Documents/lms-platform/registry/default/ui/pagination.tsx", "TypeScript React", 0, 0, 0, 107, 0, 0, 0, 0, 0, 0, 0, 11, 118
+"/Users/chaunguyen/Documents/lms-platform/registry/default/ui/popover.tsx", "TypeScript React", 0, 0, 0, 25, 0, 0, 0, 0, 0, 0, 0, 7, 32
+"/Users/chaunguyen/Documents/lms-platform/registry/default/ui/progress.tsx", "TypeScript React", 0, 0, 0, 24, 0, 0, 0, 0, 0, 0, 0, 5, 29
+"/Users/chaunguyen/Documents/lms-platform/registry/default/ui/radio-group.tsx", "TypeScript React", 0, 0, 0, 39, 0, 0, 0, 0, 0, 0, 0, 6, 45
+"/Users/chaunguyen/Documents/lms-platform/registry/default/ui/resizable.tsx", "TypeScript React", 0, 0, 0, 39, 0, 0, 0, 0, 0, 0, 0, 7, 46
+"/Users/chaunguyen/Documents/lms-platform/registry/default/ui/scroll-area.tsx", "TypeScript React", 0, 0, 0, 43, 0, 0, 0, 0, 0, 0, 0, 6, 49
+"/Users/chaunguyen/Documents/lms-platform/registry/default/ui/select.tsx", "TypeScript React", 0, 0, 0, 146, 0, 0, 0, 0, 0, 0, 0, 15, 161
+"/Users/chaunguyen/Documents/lms-platform/registry/default/ui/separator.tsx", "TypeScript React", 0, 0, 0, 27, 0, 0, 0, 0, 0, 0, 0, 5, 32
+"/Users/chaunguyen/Documents/lms-platform/registry/default/ui/sheet.tsx", "TypeScript React", 0, 0, 0, 125, 0, 0, 0, 0, 0, 0, 0, 16, 141
+"/Users/chaunguyen/Documents/lms-platform/registry/default/ui/skeleton.tsx", "TypeScript React", 0, 0, 0, 13, 0, 0, 0, 0, 0, 0, 0, 3, 16
+"/Users/chaunguyen/Documents/lms-platform/registry/default/ui/slider.tsx", "TypeScript React", 0, 0, 0, 24, 0, 0, 0, 0, 0, 0, 0, 5, 29
+"/Users/chaunguyen/Documents/lms-platform/registry/default/ui/sonner.tsx", "TypeScript React", 0, 0, 0, 26, 0, 0, 0, 0, 0, 0, 0, 6, 32
+"/Users/chaunguyen/Documents/lms-platform/registry/default/ui/switch.tsx", "TypeScript React", 0, 0, 0, 25, 0, 0, 0, 0, 0, 0, 0, 5, 30
+"/Users/chaunguyen/Documents/lms-platform/registry/default/ui/table.tsx", "TypeScript React", 0, 0, 0, 107, 0, 0, 0, 0, 0, 0, 0, 11, 118
+"/Users/chaunguyen/Documents/lms-platform/registry/default/ui/tabs.tsx", "TypeScript React", 0, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 8, 56
+"/Users/chaunguyen/Documents/lms-platform/registry/default/ui/textarea.tsx", "TypeScript React", 0, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 5, 25
+"/Users/chaunguyen/Documents/lms-platform/registry/default/ui/toast.tsx", "TypeScript React", 0, 0, 0, 116, 0, 0, 0, 0, 0, 0, 0, 14, 130
+"/Users/chaunguyen/Documents/lms-platform/registry/default/ui/toaster.tsx", "TypeScript React", 0, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 4, 36
+"/Users/chaunguyen/Documents/lms-platform/registry/default/ui/toggle-group.tsx", "TypeScript React", 0, 0, 0, 52, 0, 0, 0, 0, 0, 0, 0, 10, 62
+"/Users/chaunguyen/Documents/lms-platform/registry/default/ui/toggle.tsx", "TypeScript React", 0, 0, 0, 39, 0, 0, 0, 0, 0, 0, 0, 7, 46
+"/Users/chaunguyen/Documents/lms-platform/registry/default/ui/tooltip.tsx", "TypeScript React", 0, 0, 0, 23, 0, 0, 0, 0, 0, 0, 0, 8, 31
+"/Users/chaunguyen/Documents/lms-platform/registry/default/ui/use-toast.ts", "TypeScript", 0, 0, 160, 0, 0, 0, 0, 0, 0, 0, 3, 32, 195
+"/Users/chaunguyen/Documents/lms-platform/registry/examples.ts", "TypeScript", 0, 0, 849, 0, 0, 0, 0, 0, 0, 0, 0, 2, 851
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/block/authentication-01.tsx", "TypeScript React", 0, 0, 0, 41, 0, 0, 0, 0, 0, 0, 0, 5, 46
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/block/authentication-02.tsx", "TypeScript React", 0, 0, 0, 62, 0, 0, 0, 0, 0, 0, 0, 6, 68
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/block/authentication-03.tsx", "TypeScript React", 0, 0, 0, 67, 0, 0, 0, 0, 0, 0, 0, 6, 73
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/block/authentication-04.tsx", "TypeScript React", 0, 0, 0, 69, 0, 0, 0, 0, 0, 0, 0, 6, 75
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/block/dashboard-01-chunk-0.tsx", "TypeScript React", 0, 0, 0, 21, 0, 0, 0, 0, 0, 0, 0, 3, 24
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/block/dashboard-01-chunk-1.tsx", "TypeScript React", 0, 0, 0, 21, 0, 0, 0, 0, 0, 0, 0, 3, 24
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/block/dashboard-01-chunk-2.tsx", "TypeScript React", 0, 0, 0, 21, 0, 0, 0, 0, 0, 0, 0, 3, 24
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/block/dashboard-01-chunk-3.tsx", "TypeScript React", 0, 0, 0, 21, 0, 0, 0, 0, 0, 0, 0, 3, 24
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/block/dashboard-01-chunk-4.tsx", "TypeScript React", 0, 0, 0, 146, 0, 0, 0, 0, 0, 0, 0, 3, 149
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/block/dashboard-01-chunk-5.tsx", "TypeScript React", 0, 0, 0, 85, 0, 0, 0, 0, 0, 0, 0, 2, 87
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/block/dashboard-01.tsx", "TypeScript React", 0, 0, 0, 453, 0, 0, 0, 0, 0, 0, 0, 6, 459
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/block/dashboard-02-chunk-0.tsx", "TypeScript React", 0, 0, 0, 25, 0, 0, 0, 0, 0, 0, 0, 2, 27
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/block/dashboard-02-chunk-1.tsx", "TypeScript React", 0, 0, 0, 19, 0, 0, 0, 0, 0, 0, 0, 2, 21
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/block/dashboard-02.tsx", "TypeScript React", 0, 0, 0, 242, 0, 0, 0, 0, 0, 0, 0, 6, 248
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/block/dashboard-03-chunk-0.tsx", "TypeScript React", 0, 0, 0, 124, 0, 0, 0, 0, 0, 0, 0, 3, 127
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/block/dashboard-03-chunk-1.tsx", "TypeScript React", 0, 0, 0, 50, 0, 0, 0, 0, 0, 0, 0, 3, 53
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/block/dashboard-03.tsx", "TypeScript React", 0, 0, 0, 459, 0, 0, 0, 0, 0, 0, 0, 6, 465
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/block/dashboard-04-chunk-0.tsx", "TypeScript React", 0, 0, 0, 18, 0, 0, 0, 0, 0, 0, 0, 2, 20
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/block/dashboard-04-chunk-1.tsx", "TypeScript React", 0, 0, 0, 30, 0, 0, 0, 0, 0, 0, 0, 2, 32
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/block/dashboard-04-chunk-2.tsx", "TypeScript React", 0, 0, 0, 40, 0, 0, 0, 0, 0, 0, 0, 2, 42
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/block/dashboard-04.tsx", "TypeScript React", 0, 0, 0, 219, 0, 0, 0, 0, 0, 0, 0, 6, 225
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/block/dashboard-05-chunk-0.tsx", "TypeScript React", 0, 0, 0, 24, 0, 0, 0, 0, 0, 0, 0, 2, 26
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/block/dashboard-05-chunk-1.tsx", "TypeScript React", 0, 0, 0, 25, 0, 0, 0, 0, 0, 0, 0, 2, 27
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/block/dashboard-05-chunk-2.tsx", "TypeScript React", 0, 0, 0, 27, 0, 0, 0, 0, 0, 0, 0, 2, 29
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/block/dashboard-05-chunk-3.tsx", "TypeScript React", 0, 0, 0, 155, 0, 0, 0, 0, 0, 0, 20, 2, 177
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/block/dashboard-05-chunk-4.tsx", "TypeScript React", 0, 0, 0, 185, 0, 0, 0, 0, 0, 0, 0, 3, 188
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/block/dashboard-05-chunk-5.tsx", "TypeScript React", 0, 0, 0, 185, 0, 0, 0, 0, 0, 0, 0, 3, 188
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/block/dashboard-05.tsx", "TypeScript React", 0, 0, 0, 702, 0, 0, 0, 0, 0, 0, 20, 6, 728
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/block/dashboard-06-chunk-0.tsx", "TypeScript React", 0, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 3, 35
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/block/dashboard-06-chunk-1.tsx", "TypeScript React", 0, 0, 0, 285, 0, 0, 0, 0, 0, 0, 0, 3, 288
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/block/dashboard-06.tsx", "TypeScript React", 0, 0, 0, 618, 0, 0, 0, 0, 0, 0, 0, 6, 624
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/block/dashboard-07-chunk-0.tsx", "TypeScript React", 0, 0, 0, 43, 0, 0, 0, 0, 0, 0, 0, 2, 45
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/block/dashboard-07-chunk-1.tsx", "TypeScript React", 0, 0, 0, 122, 0, 0, 0, 0, 0, 0, 0, 3, 125
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/block/dashboard-07-chunk-2.tsx", "TypeScript React", 0, 0, 0, 53, 0, 0, 0, 0, 0, 0, 0, 2, 55
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/block/dashboard-07-chunk-3.tsx", "TypeScript React", 0, 0, 0, 40, 0, 0, 0, 0, 0, 0, 0, 2, 42
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/block/dashboard-07-chunk-4.tsx", "TypeScript React", 0, 0, 0, 56, 0, 0, 0, 0, 0, 0, 0, 3, 59
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/block/dashboard-07-chunk-5.tsx", "TypeScript React", 0, 0, 0, 26, 0, 0, 0, 0, 0, 0, 0, 2, 28
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/block/dashboard-07.tsx", "TypeScript React", 0, 0, 0, 605, 0, 0, 0, 0, 0, 0, 0, 6, 611
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/accordion-demo.tsx", "TypeScript React", 0, 0, 0, 31, 0, 0, 0, 0, 0, 0, 0, 2, 33
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/alert-demo.tsx", "TypeScript React", 0, 0, 0, 17, 0, 0, 0, 0, 0, 0, 0, 3, 20
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/alert-destructive.tsx", "TypeScript React", 0, 0, 0, 17, 0, 0, 0, 0, 0, 0, 0, 3, 20
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/alert-dialog-demo.tsx", "TypeScript React", 0, 0, 0, 34, 0, 0, 0, 0, 0, 0, 0, 2, 36
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/aspect-ratio-demo.tsx", "TypeScript React", 0, 0, 0, 14, 0, 0, 0, 0, 0, 0, 0, 3, 17
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/avatar-demo.tsx", "TypeScript React", 0, 0, 0, 13, 0, 0, 0, 0, 0, 0, 0, 2, 15
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/badge-demo.tsx", "TypeScript React", 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 2, 6
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/badge-destructive.tsx", "TypeScript React", 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 2, 6
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/badge-outline.tsx", "TypeScript React", 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 2, 6
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/badge-secondary.tsx", "TypeScript React", 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 2, 6
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/breadcrumb-demo.tsx", "TypeScript React", 0, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 2, 50
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/breadcrumb-dropdown.tsx", "TypeScript React", 0, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 3, 51
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/breadcrumb-ellipsis.tsx", "TypeScript React", 0, 0, 0, 37, 0, 0, 0, 0, 0, 0, 0, 3, 40
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/breadcrumb-link.tsx", "TypeScript React", 0, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 3, 35
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/breadcrumb-responsive.tsx", "TypeScript React", 0, 0, 0, 127, 0, 0, 0, 0, 0, 0, 0, 7, 134
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/breadcrumb-separator.tsx", "TypeScript React", 0, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 3, 35
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/button-as-child.tsx", "TypeScript React", 0, 0, 0, 9, 0, 0, 0, 0, 0, 0, 0, 3, 12
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/button-demo.tsx", "TypeScript React", 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 2, 6
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/button-destructive.tsx", "TypeScript React", 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 2, 6
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/button-ghost.tsx", "TypeScript React", 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 2, 6
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/button-icon.tsx", "TypeScript React", 0, 0, 0, 9, 0, 0, 0, 0, 0, 0, 0, 3, 12
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/button-link.tsx", "TypeScript React", 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 2, 6
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/button-loading.tsx", "TypeScript React", 0, 0, 0, 10, 0, 0, 0, 0, 0, 0, 0, 3, 13
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/button-outline.tsx", "TypeScript React", 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 2, 6
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/button-secondary.tsx", "TypeScript React", 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 2, 6
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/button-with-icon.tsx", "TypeScript React", 0, 0, 0, 9, 0, 0, 0, 0, 0, 0, 0, 3, 12
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/calendar-demo.tsx", "TypeScript React", 0, 0, 0, 14, 0, 0, 0, 0, 0, 0, 0, 5, 19
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/calendar-form.tsx", "TypeScript React", 0, 0, 0, 95, 0, 0, 0, 0, 0, 0, 0, 7, 102
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/card-demo.tsx", "TypeScript React", 0, 0, 0, 74, 0, 0, 0, 0, 0, 0, 0, 5, 79
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/card-with-form.tsx", "TypeScript React", 0, 0, 0, 57, 0, 0, 0, 0, 0, 0, 0, 3, 60
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/cards/activity-goal.tsx", "TypeScript React", 0, 0, 0, 125, 0, 0, 0, 0, 0, 0, 0, 8, 133
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/cards/calendar.tsx", "TypeScript React", 0, 0, 0, 22, 0, 0, 0, 0, 0, 0, 0, 5, 27
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/cards/chat.tsx", "TypeScript React", 0, 0, 0, 253, 0, 0, 0, 0, 0, 0, 0, 8, 261
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/cards/cookie-settings.tsx", "TypeScript React", 0, 0, 0, 58, 0, 0, 0, 0, 0, 0, 0, 3, 61
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/cards/create-account.tsx", "TypeScript React", 0, 0, 0, 58, 0, 0, 0, 0, 0, 0, 0, 3, 61
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/cards/data-table.tsx", "TypeScript React", 0, 0, 0, 323, 0, 0, 0, 0, 0, 0, 1, 12, 336
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/cards/index.tsx", "TypeScript React", 0, 0, 0, 62, 0, 0, 0, 0, 0, 0, 0, 2, 64
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/cards/metric.tsx", "TypeScript React", 0, 0, 0, 136, 0, 0, 0, 0, 0, 0, 0, 7, 143
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/cards/payment-method.tsx", "TypeScript React", 0, 0, 0, 152, 0, 0, 0, 0, 0, 0, 0, 3, 155
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/cards/report-issue.tsx", "TypeScript React", 0, 0, 0, 86, 0, 0, 0, 0, 0, 0, 0, 5, 91
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/cards/share.tsx", "TypeScript React", 0, 0, 0, 124, 0, 0, 0, 0, 0, 0, 0, 3, 127
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/cards/stats.tsx", "TypeScript React", 0, 0, 0, 126, 0, 0, 0, 0, 0, 0, 0, 6, 132
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/cards/team-members.tsx", "TypeScript React", 0, 0, 0, 206, 0, 0, 0, 0, 0, 0, 0, 4, 210
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/carousel-api.tsx", "TypeScript React", 0, 0, 0, 47, 0, 0, 0, 0, 0, 0, 0, 7, 54
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/carousel-demo.tsx", "TypeScript React", 0, 0, 0, 30, 0, 0, 0, 0, 0, 0, 0, 3, 33
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/carousel-orientation.tsx", "TypeScript React", 0, 0, 0, 36, 0, 0, 0, 0, 0, 0, 0, 3, 39
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/carousel-plugin.tsx", "TypeScript React", 0, 0, 0, 39, 0, 0, 0, 0, 0, 0, 0, 4, 43
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/carousel-size.tsx", "TypeScript React", 0, 0, 0, 35, 0, 0, 0, 0, 0, 0, 0, 3, 38
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/carousel-spacing.tsx", "TypeScript React", 0, 0, 0, 30, 0, 0, 0, 0, 0, 0, 0, 3, 33
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/checkbox-demo.tsx", "TypeScript React", 0, 0, 0, 15, 0, 0, 0, 0, 0, 0, 0, 3, 18
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/checkbox-disabled.tsx", "TypeScript React", 0, 0, 0, 14, 0, 0, 0, 0, 0, 0, 0, 2, 16
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/checkbox-form-multiple.tsx", "TypeScript React", 0, 0, 0, 120, 0, 0, 0, 0, 0, 0, 0, 8, 128
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/checkbox-form-single.tsx", "TypeScript React", 0, 0, 0, 67, 0, 0, 0, 0, 0, 0, 0, 7, 74
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/checkbox-with-text.tsx", "TypeScript React", 0, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 3, 23
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/collapsible-demo.tsx", "TypeScript React", 0, 0, 0, 42, 0, 0, 0, 0, 0, 0, 0, 5, 47
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/combobox-demo.tsx", "TypeScript React", 0, 0, 0, 86, 0, 0, 0, 0, 0, 0, 0, 6, 92
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/combobox-dropdown-menu.tsx", "TypeScript React", 0, 0, 0, 97, 0, 0, 0, 0, 0, 0, 0, 6, 103
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/combobox-form.tsx", "TypeScript React", 0, 0, 0, 131, 0, 0, 0, 0, 0, 0, 0, 8, 139
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/combobox-popover.tsx", "TypeScript React", 0, 0, 0, 85, 0, 0, 0, 0, 0, 0, 0, 7, 92
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/combobox-responsive.tsx", "TypeScript React", 0, 0, 0, 115, 0, 0, 0, 0, 0, 0, 0, 9, 124
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/command-demo.tsx", "TypeScript React", 0, 0, 0, 60, 0, 0, 0, 0, 0, 0, 0, 3, 63
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/command-dialog.tsx", "TypeScript React", 0, 0, 0, 81, 0, 0, 0, 0, 0, 0, 0, 7, 88
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/context-menu-demo.tsx", "TypeScript React", 0, 0, 0, 66, 0, 0, 0, 0, 0, 0, 0, 2, 68
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/data-table-demo.tsx", "TypeScript React", 0, 0, 0, 304, 0, 0, 0, 0, 0, 0, 1, 12, 317
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/date-picker-demo.tsx", "TypeScript React", 0, 0, 0, 39, 0, 0, 0, 0, 0, 0, 0, 5, 44
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/date-picker-form.tsx", "TypeScript React", 0, 0, 0, 95, 0, 0, 0, 0, 0, 0, 0, 7, 102
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/date-picker-with-presets.tsx", "TypeScript React", 0, 0, 0, 61, 0, 0, 0, 0, 0, 0, 0, 5, 66
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/date-picker-with-range.tsx", "TypeScript React", 0, 0, 0, 61, 0, 0, 0, 0, 0, 0, 0, 5, 66
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/dialog-close-button.tsx", "TypeScript React", 0, 0, 0, 54, 0, 0, 0, 0, 0, 0, 0, 3, 57
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/dialog-demo.tsx", "TypeScript React", 0, 0, 0, 46, 0, 0, 0, 0, 0, 0, 0, 2, 48
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/drawer-demo.tsx", "TypeScript React", 0, 0, 0, 129, 0, 0, 0, 0, 0, 0, 0, 6, 135
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/drawer-dialog.tsx", "TypeScript React", 0, 0, 0, 82, 0, 0, 0, 0, 0, 0, 0, 6, 88
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/dropdown-menu-checkboxes.tsx", "TypeScript React", 0, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 6, 54
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/dropdown-menu-demo.tsx", "TypeScript React", 0, 0, 0, 74, 0, 0, 0, 0, 0, 0, 0, 2, 76
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/dropdown-menu-radio-group.tsx", "TypeScript React", 0, 0, 0, 31, 0, 0, 0, 0, 0, 0, 0, 5, 36
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/hover-card-demo.tsx", "TypeScript React", 0, 0, 0, 41, 0, 0, 0, 0, 0, 0, 0, 3, 44
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/input-demo.tsx", "TypeScript React", 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 2, 6
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/input-disabled.tsx", "TypeScript React", 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 2, 6
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/input-file.tsx", "TypeScript React", 0, 0, 0, 10, 0, 0, 0, 0, 0, 0, 0, 2, 12
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/input-form.tsx", "TypeScript React", 0, 0, 0, 62, 0, 0, 0, 0, 0, 0, 0, 7, 69
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/input-otp-controlled.tsx", "TypeScript React", 0, 0, 0, 35, 0, 0, 0, 0, 0, 0, 0, 5, 40
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/input-otp-demo.tsx", "TypeScript React", 0, 0, 0, 23, 0, 0, 0, 0, 0, 0, 0, 2, 25
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/input-otp-form.tsx", "TypeScript React", 0, 0, 0, 75, 0, 0, 0, 0, 0, 0, 0, 8, 83
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/input-otp-pattern.tsx", "TypeScript React", 0, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 3, 23
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/input-otp-separator.tsx", "TypeScript React", 0, 0, 0, 27, 0, 0, 0, 0, 0, 0, 0, 3, 30
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/input-with-button.tsx", "TypeScript React", 0, 0, 0, 10, 0, 0, 0, 0, 0, 0, 0, 2, 12
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/input-with-label.tsx", "TypeScript React", 0, 0, 0, 10, 0, 0, 0, 0, 0, 0, 0, 2, 12
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/input-with-text.tsx", "TypeScript React", 0, 0, 0, 11, 0, 0, 0, 0, 0, 0, 0, 2, 13
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/label-demo.tsx", "TypeScript React", 0, 0, 0, 12, 0, 0, 0, 0, 0, 0, 0, 2, 14
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/menubar-demo.tsx", "TypeScript React", 0, 0, 0, 106, 0, 0, 0, 0, 0, 0, 0, 2, 108
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/mode-toggle.tsx", "TypeScript React", 0, 0, 0, 36, 0, 0, 0, 0, 0, 0, 0, 5, 41
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/navigation-menu-demo.tsx", "TypeScript React", 0, 0, 0, 140, 0, 0, 0, 0, 0, 0, 0, 6, 146
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/pagination-demo.tsx", "TypeScript React", 0, 0, 0, 37, 0, 0, 0, 0, 0, 0, 0, 2, 39
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/popover-demo.tsx", "TypeScript React", 0, 0, 0, 61, 0, 0, 0, 0, 0, 0, 0, 2, 63
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/progress-demo.tsx", "TypeScript React", 0, 0, 0, 11, 0, 0, 0, 0, 0, 0, 0, 6, 17
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/radio-group-demo.tsx", "TypeScript React", 0, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 2, 22
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/radio-group-form.tsx", "TypeScript React", 0, 0, 0, 82, 0, 0, 0, 0, 0, 0, 0, 7, 89
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/resizable-demo-with-handle.tsx", "TypeScript React", 0, 0, 0, 35, 0, 0, 0, 0, 0, 0, 0, 2, 37
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/resizable-demo.tsx", "TypeScript React", 0, 0, 0, 35, 0, 0, 0, 0, 0, 0, 0, 2, 37
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/resizable-handle.tsx", "TypeScript React", 0, 0, 0, 25, 0, 0, 0, 0, 0, 0, 0, 2, 27
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/resizable-vertical.tsx", "TypeScript React", 0, 0, 0, 25, 0, 0, 0, 0, 0, 0, 0, 2, 27
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/scroll-area-demo.tsx", "TypeScript React", 0, 0, 0, 23, 0, 0, 0, 0, 0, 0, 0, 4, 27
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/scroll-area-horizontal-demo.tsx", "TypeScript React", 0, 0, 0, 49, 0, 0, 0, 0, 0, 0, 0, 5, 54
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/select-demo.tsx", "TypeScript React", 0, 0, 0, 29, 0, 0, 0, 0, 0, 0, 0, 3, 32
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/select-form.tsx", "TypeScript React", 0, 0, 0, 78, 0, 0, 0, 0, 0, 0, 0, 7, 85
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/select-scrollable.tsx", "TypeScript React", 0, 0, 0, 73, 0, 0, 0, 0, 0, 0, 0, 3, 76
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/separator-demo.tsx", "TypeScript React", 0, 0, 0, 21, 0, 0, 0, 0, 0, 0, 0, 2, 23
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/sheet-demo.tsx", "TypeScript React", 0, 0, 0, 49, 0, 0, 0, 0, 0, 0, 0, 2, 51
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/sheet-side.tsx", "TypeScript React", 0, 0, 0, 56, 0, 0, 0, 0, 0, 0, 0, 5, 61
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/skeleton-card.tsx", "TypeScript React", 0, 0, 0, 12, 0, 0, 0, 0, 0, 0, 0, 2, 14
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/skeleton-demo.tsx", "TypeScript React", 0, 0, 0, 12, 0, 0, 0, 0, 0, 0, 0, 2, 14
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/slider-demo.tsx", "TypeScript React", 0, 0, 0, 14, 0, 0, 0, 0, 0, 0, 0, 3, 17
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/sonner-demo.tsx", "TypeScript React", 0, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 3, 23
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/switch-demo.tsx", "TypeScript React", 0, 0, 0, 10, 0, 0, 0, 0, 0, 0, 0, 2, 12
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/switch-form.tsx", "TypeScript React", 0, 0, 0, 91, 0, 0, 0, 0, 0, 0, 0, 7, 98
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/table-demo.tsx", "TypeScript React", 0, 0, 0, 85, 0, 0, 0, 0, 0, 0, 0, 3, 88
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/tabs-demo.tsx", "TypeScript React", 0, 0, 0, 73, 0, 0, 0, 0, 0, 0, 0, 2, 75
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/textarea-demo.tsx", "TypeScript React", 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 2, 6
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/textarea-disabled.tsx", "TypeScript React", 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 2, 6
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/textarea-form.tsx", "TypeScript React", 0, 0, 0, 68, 0, 0, 0, 0, 0, 0, 0, 7, 75
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/textarea-with-button.tsx", "TypeScript React", 0, 0, 0, 10, 0, 0, 0, 0, 0, 0, 0, 2, 12
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/textarea-with-label.tsx", "TypeScript React", 0, 0, 0, 10, 0, 0, 0, 0, 0, 0, 0, 2, 12
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/textarea-with-text.tsx", "TypeScript React", 0, 0, 0, 13, 0, 0, 0, 0, 0, 0, 0, 2, 15
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/toast-demo.tsx", "TypeScript React", 0, 0, 0, 23, 0, 0, 0, 0, 0, 0, 0, 4, 27
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/toast-destructive.tsx", "TypeScript React", 0, 0, 0, 22, 0, 0, 0, 0, 0, 0, 0, 4, 26
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/toast-simple.tsx", "TypeScript React", 0, 0, 0, 18, 0, 0, 0, 0, 0, 0, 0, 4, 22
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/toast-with-action.tsx", "TypeScript React", 0, 0, 0, 21, 0, 0, 0, 0, 0, 0, 0, 4, 25
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/toast-with-title.tsx", "TypeScript React", 0, 0, 0, 19, 0, 0, 0, 0, 0, 0, 0, 4, 23
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/toggle-demo.tsx", "TypeScript React", 0, 0, 0, 9, 0, 0, 0, 0, 0, 0, 0, 3, 12
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/toggle-disabled.tsx", "TypeScript React", 0, 0, 0, 9, 0, 0, 0, 0, 0, 0, 0, 3, 12
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/toggle-group-demo.tsx", "TypeScript React", 0, 0, 0, 24, 0, 0, 0, 0, 0, 0, 0, 3, 27
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/toggle-group-disabled.tsx", "TypeScript React", 0, 0, 0, 24, 0, 0, 0, 0, 0, 0, 0, 3, 27
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/toggle-group-lg.tsx", "TypeScript React", 0, 0, 0, 24, 0, 0, 0, 0, 0, 0, 0, 3, 27
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/toggle-group-outline.tsx", "TypeScript React", 0, 0, 0, 24, 0, 0, 0, 0, 0, 0, 0, 3, 27
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/toggle-group-single.tsx", "TypeScript React", 0, 0, 0, 24, 0, 0, 0, 0, 0, 0, 0, 3, 27
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/toggle-group-sm.tsx", "TypeScript React", 0, 0, 0, 24, 0, 0, 0, 0, 0, 0, 0, 3, 27
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/toggle-lg.tsx", "TypeScript React", 0, 0, 0, 9, 0, 0, 0, 0, 0, 0, 0, 3, 12
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/toggle-outline.tsx", "TypeScript React", 0, 0, 0, 9, 0, 0, 0, 0, 0, 0, 0, 3, 12
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/toggle-sm.tsx", "TypeScript React", 0, 0, 0, 9, 0, 0, 0, 0, 0, 0, 0, 3, 12
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/toggle-with-text.tsx", "TypeScript React", 0, 0, 0, 10, 0, 0, 0, 0, 0, 0, 0, 3, 13
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/tooltip-demo.tsx", "TypeScript React", 0, 0, 0, 21, 0, 0, 0, 0, 0, 0, 0, 2, 23
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/typography-blockquote.tsx", "TypeScript React", 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 1, 9
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/typography-demo.tsx", "TypeScript React", 0, 0, 0, 119, 0, 0, 0, 0, 0, 0, 0, 1, 120
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/typography-h1.tsx", "TypeScript React", 0, 0, 0, 7, 0, 0, 0, 0, 0, 0, 0, 1, 8
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/typography-h2.tsx", "TypeScript React", 0, 0, 0, 7, 0, 0, 0, 0, 0, 0, 0, 1, 8
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/typography-h3.tsx", "TypeScript React", 0, 0, 0, 7, 0, 0, 0, 0, 0, 0, 0, 1, 8
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/typography-h4.tsx", "TypeScript React", 0, 0, 0, 7, 0, 0, 0, 0, 0, 0, 0, 1, 8
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/typography-inline-code.tsx", "TypeScript React", 0, 0, 0, 7, 0, 0, 0, 0, 0, 0, 0, 1, 8
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/typography-large.tsx", "TypeScript React", 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 1, 4
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/typography-lead.tsx", "TypeScript React", 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 1, 9
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/typography-list.tsx", "TypeScript React", 0, 0, 0, 9, 0, 0, 0, 0, 0, 0, 0, 1, 10
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/typography-muted.tsx", "TypeScript React", 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 1, 6
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/typography-p.tsx", "TypeScript React", 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 1, 9
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/typography-small.tsx", "TypeScript React", 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 1, 6
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/example/typography-table.tsx", "TypeScript React", 0, 0, 0, 44, 0, 0, 0, 0, 0, 0, 0, 1, 45
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/ui/accordion.tsx", "TypeScript React", 0, 0, 0, 50, 0, 0, 0, 0, 0, 0, 0, 8, 58
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/ui/alert-dialog.tsx", "TypeScript React", 0, 0, 0, 127, 0, 0, 0, 0, 0, 0, 0, 15, 142
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/ui/alert.tsx", "TypeScript React", 0, 0, 0, 53, 0, 0, 0, 0, 0, 0, 0, 7, 60
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/ui/aspect-ratio.tsx", "TypeScript React", 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 4, 8
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/ui/avatar.tsx", "TypeScript React", 0, 0, 0, 44, 0, 0, 0, 0, 0, 0, 0, 7, 51
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/ui/badge.tsx", "TypeScript React", 0, 0, 0, 31, 0, 0, 0, 0, 0, 0, 0, 6, 37
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/ui/breadcrumb.tsx", "TypeScript React", 0, 0, 0, 105, 0, 0, 0, 0, 0, 0, 0, 11, 116
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/ui/button.tsx", "TypeScript React", 0, 0, 0, 52, 0, 0, 0, 0, 0, 0, 0, 6, 58
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/ui/calendar.tsx", "TypeScript React", 0, 0, 0, 67, 0, 0, 0, 0, 0, 0, 0, 6, 73
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/ui/card.tsx", "TypeScript React", 0, 0, 0, 68, 0, 0, 0, 0, 0, 0, 0, 9, 77
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/ui/carousel.tsx", "TypeScript React", 0, 0, 0, 232, 0, 0, 0, 0, 0, 0, 0, 31, 263
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/ui/checkbox.tsx", "TypeScript React", 0, 0, 0, 26, 0, 0, 0, 0, 0, 0, 0, 5, 31
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/ui/collapsible.tsx", "TypeScript React", 0, 0, 0, 6, 0, 0, 0, 0, 0, 0, 0, 6, 12
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/ui/command.tsx", "TypeScript React", 0, 0, 0, 137, 0, 0, 0, 0, 0, 0, 0, 19, 156
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/ui/context-menu.tsx", "TypeScript React", 0, 0, 0, 186, 0, 0, 0, 0, 0, 0, 0, 19, 205
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/ui/dialog.tsx", "TypeScript React", 0, 0, 0, 109, 0, 0, 0, 0, 0, 0, 0, 14, 123
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/ui/drawer.tsx", "TypeScript React", 0, 0, 0, 105, 0, 0, 0, 0, 0, 0, 0, 14, 119
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/ui/dropdown-menu.tsx", "TypeScript React", 0, 0, 0, 187, 0, 0, 0, 0, 0, 0, 0, 19, 206
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/ui/form.tsx", "TypeScript React", 0, 0, 0, 152, 0, 0, 0, 0, 0, 0, 0, 25, 177
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/ui/hover-card.tsx", "TypeScript React", 0, 0, 0, 23, 0, 0, 0, 0, 0, 0, 0, 7, 30
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/ui/input-otp.tsx", "TypeScript React", 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 9, 72
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/ui/input.tsx", "TypeScript React", 0, 0, 0, 21, 0, 0, 0, 0, 0, 0, 0, 5, 26
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/ui/label.tsx", "TypeScript React", 0, 0, 0, 21, 0, 0, 0, 0, 0, 0, 0, 6, 27
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/ui/menubar.tsx", "TypeScript React", 0, 0, 0, 221, 0, 0, 0, 0, 0, 0, 0, 20, 241
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/ui/navigation-menu.tsx", "TypeScript React", 0, 0, 0, 117, 0, 0, 0, 0, 0, 0, 0, 12, 129
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/ui/pagination.tsx", "TypeScript React", 0, 0, 0, 111, 0, 0, 0, 0, 0, 0, 0, 11, 122
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/ui/popover.tsx", "TypeScript React", 0, 0, 0, 26, 0, 0, 0, 0, 0, 0, 0, 8, 34
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/ui/progress.tsx", "TypeScript React", 0, 0, 0, 24, 0, 0, 0, 0, 0, 0, 0, 5, 29
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/ui/radio-group.tsx", "TypeScript React", 0, 0, 0, 39, 0, 0, 0, 0, 0, 0, 0, 6, 45
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/ui/resizable.tsx", "TypeScript React", 0, 0, 0, 39, 0, 0, 0, 0, 0, 0, 0, 7, 46
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/ui/scroll-area.tsx", "TypeScript React", 0, 0, 0, 43, 0, 0, 0, 0, 0, 0, 0, 6, 49
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/ui/select.tsx", "TypeScript React", 0, 0, 0, 151, 0, 0, 0, 0, 0, 0, 0, 14, 165
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/ui/separator.tsx", "TypeScript React", 0, 0, 0, 27, 0, 0, 0, 0, 0, 0, 0, 5, 32
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/ui/sheet.tsx", "TypeScript React", 0, 0, 0, 125, 0, 0, 0, 0, 0, 0, 0, 16, 141
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/ui/skeleton.tsx", "TypeScript React", 0, 0, 0, 13, 0, 0, 0, 0, 0, 0, 0, 3, 16
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/ui/slider.tsx", "TypeScript React", 0, 0, 0, 24, 0, 0, 0, 0, 0, 0, 0, 5, 29
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/ui/sonner.tsx", "TypeScript React", 0, 0, 0, 26, 0, 0, 0, 0, 0, 0, 0, 6, 32
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/ui/switch.tsx", "TypeScript React", 0, 0, 0, 25, 0, 0, 0, 0, 0, 0, 0, 5, 30
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/ui/table.tsx", "TypeScript React", 0, 0, 0, 110, 0, 0, 0, 0, 0, 0, 0, 11, 121
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/ui/tabs.tsx", "TypeScript React", 0, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 8, 56
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/ui/textarea.tsx", "TypeScript React", 0, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 5, 25
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/ui/toast.tsx", "TypeScript React", 0, 0, 0, 116, 0, 0, 0, 0, 0, 0, 0, 14, 130
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/ui/toaster.tsx", "TypeScript React", 0, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 4, 36
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/ui/toggle-group.tsx", "TypeScript React", 0, 0, 0, 52, 0, 0, 0, 0, 0, 0, 0, 10, 62
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/ui/toggle.tsx", "TypeScript React", 0, 0, 0, 39, 0, 0, 0, 0, 0, 0, 0, 7, 46
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/ui/tooltip.tsx", "TypeScript React", 0, 0, 0, 23, 0, 0, 0, 0, 0, 0, 0, 8, 31
+"/Users/chaunguyen/Documents/lms-platform/registry/new-york/ui/use-toast.ts", "TypeScript", 0, 0, 160, 0, 0, 0, 0, 0, 0, 0, 3, 32, 195
+"/Users/chaunguyen/Documents/lms-platform/registry/registry.ts", "TypeScript", 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 2, 7
+"/Users/chaunguyen/Documents/lms-platform/registry/schema.ts", "TypeScript", 0, 0, 49, 0, 0, 0, 0, 0, 0, 0, 0, 9, 58
+"/Users/chaunguyen/Documents/lms-platform/registry/styles.ts", "TypeScript", 0, 0, 11, 0, 0, 0, 0, 0, 0, 0, 0, 2, 13
+"/Users/chaunguyen/Documents/lms-platform/registry/themes.ts", "TypeScript", 0, 0, 635, 0, 0, 0, 0, 0, 0, 0, 0, 2, 637
+"/Users/chaunguyen/Documents/lms-platform/registry/ui.ts", "TypeScript", 0, 0, 278, 0, 0, 0, 0, 0, 0, 0, 0, 2, 280
+"/Users/chaunguyen/Documents/lms-platform/scripts/seed.ts", "TypeScript", 0, 0, 22, 0, 0, 0, 0, 0, 0, 0, 0, 5, 27
+"/Users/chaunguyen/Documents/lms-platform/tailwind.config.ts", "TypeScript", 0, 0, 79, 0, 0, 0, 0, 0, 0, 0, 0, 4, 83
+"/Users/chaunguyen/Documents/lms-platform/tsconfig.json", "JSON with Comments", 33, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 41
+"/Users/chaunguyen/Documents/lms-platform/types.d.ts", "TypeScript", 0, 0, 47, 0, 0, 0, 0, 0, 0, 0, 0, 7, 54
+"Total", "-", 33, 11318, 6271, 41412, 23, 168, 184, 247, 14, 132, 258, 4214, 64274

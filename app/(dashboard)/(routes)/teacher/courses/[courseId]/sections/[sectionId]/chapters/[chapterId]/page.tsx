@@ -14,6 +14,7 @@ import { Banner } from "@/components/banner";
 import { ChapterActions } from "./_components/chapter-actions";
 import { ChapterQuizForm } from "./_components/chapter-quiz-form";
 import { ChapterAttachmentForm } from "./_components/chapter-attachments-form";
+import { ChapterAssignmentForm } from "./_components/chapter-assignment-form";
 
 const ChapterIdPage = async ({
     params
@@ -110,7 +111,6 @@ const ChapterIdPage = async ({
                                 courseId={params.courseId}
                                 sectionId={params.sectionId}
                                 chapterId={params.chapterId}/>
-
                             <ChapterAttachmentForm
                                 initialData={chapter}
                                 courseId={params.courseId}

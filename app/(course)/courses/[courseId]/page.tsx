@@ -28,6 +28,12 @@ const CourseIdPage = async ({
         orderBy: {
           position: "asc"
         }
+      },
+      comments: {
+        
+      },
+      reviews:{
+
       }
     }
   });

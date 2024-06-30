@@ -36,8 +36,14 @@ export const getChapter = async ({
       },
       select: {
         price: true,
+        purchases: true,
         description:true,
-        comments: true
+        comments: true,
+        reviews: {
+          select:{
+            star: true
+          }
+        }
       }
     });
 

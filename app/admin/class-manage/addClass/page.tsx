@@ -1,11 +1,19 @@
 "use client";
+import toast from "react-hot-toast";
 
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import UserService from '../../services/UserService';
 import ClassroomService from '../../services/ClassroomService';
 
+import { useRouter } from 'next/navigation';
+
+
 const AddClassPage = () => {
+
+  const router = useRouter();
+
+
   const [formData, setFormData] = useState({
     subjectName: '',
     teacherId: '',
@@ -50,6 +58,10 @@ const AddClassPage = () => {
       console.log(dataToSubmit)
 
       const response = await ClassroomService.addClassroom(dataToSubmit);
+      toast.success("Class added succesfully!");
+      router.push("/admin/class-manage"); 
+
+
       console.log('Form data submitted successfully:', response.data);
       // Optionally, reset the form or redirect the user
       setFormData({
@@ -58,6 +70,9 @@ const AddClassPage = () => {
         startTime: '',
         endTime: '',
       });
+
+      
+
     } catch (error) {
       console.error('Error submitting form data:', error);
     }

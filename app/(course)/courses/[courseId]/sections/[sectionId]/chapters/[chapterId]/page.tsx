@@ -16,6 +16,7 @@ import HtmlRenderer from "./_components/html-renderer";
 import QuizForm from "./_components/quiz-form";
 import SlideForm from "./_components/slide-form";
 import DiscussForm from "./_components/discuss-form";
+import ReviewForm from "./_components/review-form";
 
 const ChapterIdPage = async ({
   params
@@ -50,10 +51,13 @@ const ChapterIdPage = async ({
     return redirect("/sign-in");
   }
 
-  console.log(course);
-
   const isLocked = !chapter.isFree && !purchase;
   const completeOnEnd = !!purchase && !userProgress?.isCompleted;
+
+  const reviewsCount = course.reviews.length
+  const averageRating = reviewsCount
+      ? course.reviews.reduce((acc, review) => acc + review.star, 0) / reviewsCount
+      : 0;
 
   return ( 
     <div className="flex flex-col min-h-screen">
@@ -133,16 +137,10 @@ const ChapterIdPage = async ({
                 Overview
               </TabsTrigger>
               <TabsTrigger 
-                value="notes" 
-                className="px-6 font-medium border-b-2 border-transparent hover:border-gray-300 w-full text-center"
-              >
-                Notes
-              </TabsTrigger>
-              <TabsTrigger 
                 value="announcements" 
                 className="px-6 font-medium border-b-2 border-transparent hover:border-gray-300 w-full text-center"
               >
-                Discuss
+                Discussion
               </TabsTrigger>
               <TabsTrigger 
                 value="reviews" 
@@ -154,7 +152,7 @@ const ChapterIdPage = async ({
             <Separator />
             <TabsContent value="overview" className="flex-grow">
               <p className="text-xl p-4">{course.description!} </p>
-              <CourseInfo/>
+              <CourseInfo courseRatings={course.reviews.length} students={course.purchases.length} averageRating={averageRating} />
               {!!attachments.length && (
                 <>
                   <Separator />
@@ -176,22 +174,11 @@ const ChapterIdPage = async ({
                 </>
               )}
             </TabsContent>
-            <TabsContent value="notes" className="flex-grow">
-              <div className="flex flex-col items-center justify-center text-center p-4">
-                <b className="text-xl">No notes posted yet</b>
-                <p className="text-slate-500">The instructor hasn’t added any notes to this course yet.</p>
-              </div>
-            </TabsContent>
             <TabsContent value="announcements" className="flex-grow">
-              <div className="flex flex-col items-center justify-center text-center p-4">
-                <DiscussForm courseId={params.courseId}/>
-              </div>
+                <DiscussForm comments={course.comments} courseId={params.courseId} userId={userId}/>
             </TabsContent>
             <TabsContent value="reviews" className="flex-grow">
-              <div className="flex flex-col items-center justify-center text-center p-4">
-                <b className="text-xl">No reviews posted yet</b>
-                <p className="text-slate-500">There are no reviews for this course yet.</p>
-              </div>
+              <ReviewForm courseId={params.courseId} userId={userId}/>
             </TabsContent>
           </Tabs>
         </div>

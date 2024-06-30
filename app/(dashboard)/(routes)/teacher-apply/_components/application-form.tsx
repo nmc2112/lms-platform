@@ -8,7 +8,6 @@ import { Pencil, PlusCircle } from "lucide-react";
 import { useState } from "react";
 import toast from "react-hot-toast";
 import { useRouter } from "next/navigation";
-import { TeacherRequest, User } from "@prisma/client";
 import { ImageIcon } from "lucide-react";
 import  Image   from "next/image";
 import { FileUpload } from "@/components/file-upload";

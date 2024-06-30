@@ -49,7 +49,7 @@ export const CourseSidebarItem = ({
   const [resourcesOpen, setResourcesOpen] = useState<{ [key: string]: boolean }>({});
 
   useEffect(() => {
-    console.log("Chapters with Questions:", chapters); // Log chapters with questions
+    // console.log("Chapters with Questions:", chapters); // Log chapters with questions
 
     const completedChapters = chapters.filter(chapter => 
       Array.isArray(chapter.userProgress) && chapter.userProgress.length > 0 
@@ -70,6 +70,7 @@ export const CourseSidebarItem = ({
       }
       setVideoDurations(durations);
       setTotalDuration(total);
+
     };
 
     fetchDurations();

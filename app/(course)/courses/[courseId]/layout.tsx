@@ -60,6 +60,9 @@ const CourseLayout = async ({
           position: "asc"
         }
       },
+      comments: {
+        
+      }
     },
   });
 

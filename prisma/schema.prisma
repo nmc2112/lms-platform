@@ -47,6 +47,7 @@ model User{
   name String
   email String
   role String
+
 }
 
 
@@ -65,6 +66,7 @@ model Course{
   sections Section[]
   attachments Attachment[]
   comments Comment[]
+  reviews Review[]
   purchases Purchase[]
 
   createdAt DateTime @default(now())
@@ -73,6 +75,39 @@ model Course{
   @@index([categoryId])
   @@fulltext([title])
 }
+
+
+model QuesCategory{
+  id            String   @id @default(uuid())
+  userId     String
+  name       String
+  questions Question[]
+  assignments Assignment[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+
+model Assignment{
+  id Int @id @default(autoincrement())
+  name String
+  duration Int
+  numberOfQuestions Int
+  classroomId Int
+  userId String 
+  
+  quesCategoryId String
+  quesCategory QuesCategory @relation(fields: [quesCategoryId], references: [id], onDelete: Cascade)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+
+  @@index([quesCategoryId])
+}
+
+
 
 model Purchase{
   id String @id @default(uuid())
@@ -90,14 +125,28 @@ model Purchase{
 
 }
 model Comment {
-  id        String    @id @default(uuid())
-  text      String    @db.Text
+  id        String   @id @default(uuid())
+  text      String
   userId    String
-
+  userName  String
   courseId  String
-  course    Course    @relation(fields: [courseId], references: [id], onDelete: Cascade)
-  
-  createdAt DateTime  @default(now())
+  createdAt DateTime @default(now())
+
+  course    Course   @relation(fields: [courseId], references: [id])
+
+  @@index([courseId])
+}
+
+model Review {
+  id        String   @id @default(uuid())
+  text      String
+  star      Int
+  userId    String
+  userName  String
+  courseId  String
+  createdAt DateTime @default(now())
+
+  course    Course   @relation(fields: [courseId], references: [id])
 
   @@index([courseId])
 }
@@ -165,12 +214,15 @@ model Question {
   content       String
   options       Json     // JSON array to store multiple options
   correctOption Int      // Index of the correct option
-  chapter       Chapter  @relation(fields: [chapterId], references: [id], onDelete: Cascade)
+  
+  quesCategoryId String?
+  quesCategory QuesCategory? @relation(fields: [quesCategoryId], references: [id], onDelete: Cascade)
+
   chapterId     String
-
+  chapter       Chapter  @relation(fields: [chapterId], references: [id], onDelete: Cascade)
   @@index([chapterId])
+  @@index([quesCategoryId])
 }
-
 
 model MuxData{
   id String @id @default(uuid())
@@ -205,4 +257,3 @@ model StripeCustomer {
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 }
-
