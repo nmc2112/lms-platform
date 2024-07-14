@@ -89,16 +89,16 @@ const ChapterIdPage = async ({
           ) : (
             <>
               {chapter.questions && chapter.questions.length > 0 ? (
-                <QuizForm questions={chapter.questions} />
+                <QuizForm questions={chapter.questions} isLocked={isLocked} />
               ) : (
                 <>
                   {chapter.attachments.length === 1 ? (
                     <div className="flex flex-col min-h-[50vh] p-5">
-                      <SlideForm url={chapter.attachments[0].url} />
+                      <SlideForm url={chapter.attachments[0].url} isLocked={isLocked}/>
                     </div>
                   ) : (
                     <div className="flex flex-col min-h-[50vh] p-5">
-                      <HtmlRenderer content={chapter.description} />
+                      <HtmlRenderer content={chapter.description} isLocked={isLocked}/>
                     </div>
                   )}
                 </>

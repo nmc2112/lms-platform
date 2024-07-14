@@ -39,6 +39,61 @@ export const columns: ColumnDef<Assignment>[] = [
             </Button>
         ) 
     },
+  },{
+    accessorKey: "classroomSubjectName",
+    header: ({column}) => {
+        return(
+            <Button
+                variant="ghost"
+                onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
+            >
+                 Classroosm
+                <ArrowUpDown className="ml-2 h-4 w-4" />
+            </Button>
+        ) 
+    },
+  },
+  {
+    accessorKey: "duration",
+    header: ({column}) => {
+        return(
+            <Button
+                variant="ghost"
+                onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
+            >
+                 Duration
+                <ArrowUpDown className="ml-2 h-4 w-4" />
+            </Button>
+        ) 
+    },
+  },
+  {
+    accessorKey: "numberOfQuestions",
+    header: ({column}) => {
+        return(
+            <Button
+                variant="ghost"
+                onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
+            >
+                 Number Of Questions
+                <ArrowUpDown className="ml-2 h-4 w-4" />
+            </Button>
+        ) 
+    },
+  },
+  {
+    accessorKey: "quesCategoryName",
+    header: ({column}) => {
+        return(
+            <Button
+                variant="ghost"
+                onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
+            >
+                 Question Bank Category
+                <ArrowUpDown className="ml-2 h-4 w-4" />
+            </Button>
+        ) 
+    },
   },
   {
     id: "actions",
@@ -54,10 +109,10 @@ export const columns: ColumnDef<Assignment>[] = [
                     </Button>
                 </DropdownMenuTrigger>
                 <DropdownMenuContent align="end">
-                    <Link href={`/teacher/assignments/${id}/edit`}>
+                    <Link href={`/teacher/assignments/${id}`}>
                     <DropdownMenuItem>
                         <Pencil className="h-4 w-4 mr-2"/> 
-                        Edit   
+                        Show Students Assignments   
                     </DropdownMenuItem>
                     </Link>
                 </DropdownMenuContent>

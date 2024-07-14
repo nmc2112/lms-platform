@@ -6,6 +6,8 @@ import { QuesCategory } from '@prisma/client';
 import axios from 'axios';
 import toast from 'react-hot-toast';
 import styles from './ClassAssignment.module.css';  // Assuming CSS module setup
+import Router from 'next/router';
+import { useRouter } from 'next/navigation';
 
 interface ClassAssignmentProps {
     userId: string;
@@ -30,6 +32,7 @@ export function ClassAssignment({ userId, quesCategories }: ClassAssignmentProps
     const [numberOfQuestions, setNumberOfQuestions] = useState("");
     const [categories, setCategories] = useState<Category[]>([]);
     const [selectedCategoryId, setSelectedCategoryId] = useState("");
+    const router = useRouter();
 
     useEffect(() => {
         async function fetchData() {
@@ -71,6 +74,7 @@ export function ClassAssignment({ userId, quesCategories }: ClassAssignmentProps
             const response = await axios.post(`/api/assignments`, payload);
             if (response.status === 201) {
                 toast.success("Assignment created successfully!");
+                router.push("/teacher/assignments")
             }
         } catch (error) {
             console.error('Error creating assignment:', error);
@@ -80,7 +84,7 @@ export function ClassAssignment({ userId, quesCategories }: ClassAssignmentProps
 
     return (
         <div className={styles.container}>
-            <h1 className={styles.title}>Set up assignment for your class</h1>
+            <h2 className="text-2xl font-bold mb-4">Set up assignment for your class</h2>
             <form onSubmit={handleSubmit} className={styles.form}>
                 <label className={styles.label}>
                     Classroom

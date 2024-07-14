@@ -26,7 +26,7 @@ const AssignmentIdPage = async({
 
     return(
         <div className="p-6">
-            <QuizForm assignmentId={params.assignmentId}/>
+            <QuizForm assignmentId={params.assignmentId} userId={userId}/>
         </div>
     );
 }

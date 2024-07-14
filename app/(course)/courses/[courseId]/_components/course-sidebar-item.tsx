@@ -49,8 +49,6 @@ export const CourseSidebarItem = ({
   const [resourcesOpen, setResourcesOpen] = useState<{ [key: string]: boolean }>({});
 
   useEffect(() => {
-    // console.log("Chapters with Questions:", chapters); // Log chapters with questions
-
     const completedChapters = chapters.filter(chapter => 
       Array.isArray(chapter.userProgress) && chapter.userProgress.length > 0 
       && chapter.userProgress[0].isCompleted
@@ -147,8 +145,6 @@ export const CourseSidebarItem = ({
             const isViewing = pathname?.includes(chapter.id);
             const duration = videoDurations[chapter.id];
 
-            console.log(`Questions for Chapter ${chapter.id}:`, chapter.questions); // Log questions for each chapter
-
             return (
               <div 
                 key={chapter.id} 
@@ -192,7 +188,7 @@ export const CourseSidebarItem = ({
                         </>
                       )}
                     </div>
-                    {chapter.attachments && chapter.attachments.length > 0 && (
+                    {chapter.attachments && chapter.attachments.length > 0 && !isLocked && (
                       <div className="relative">
                         <button
                           onClick={(e) => {
@@ -232,4 +228,4 @@ export const CourseSidebarItem = ({
       )}
     </div>
   );
-}
+};

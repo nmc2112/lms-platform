@@ -13,18 +13,11 @@ const AssignmentsPage =  async () => {
     if(!userId) {
         return redirect("/sign-in");
     }
-    const assignments = await db.assignment.findMany({
-        where: {
-            userId,
-        },
-        orderBy: {
-          name: "asc",
-        },
-      });
     return(
         
         <div className="p-6">
-            <DataTable columns={columns} data={assignments} userId={userId} />
+            <h2 className="text-2xl font-bold mb-4">Assignment Management</h2>
+            <DataTable columns={columns} userId={userId} />
         </div>
     );
 }

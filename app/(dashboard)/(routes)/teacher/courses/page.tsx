@@ -27,6 +27,7 @@ const CoursesPage =  async () => {
 
     return(
         <div className="p-6">
+            <h2 className="text-2xl font-bold mb-4">Courses Management</h2>
             <DataTable columns={columns} data={courses} />
         </div>
     );

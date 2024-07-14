@@ -4,8 +4,13 @@ interface ClockDurationProps {
   initialDuration: number; // Duration in seconds
 }
 
-const ClockDuration = ({ initialDuration }: ClockDurationProps) => {
-  const [time, setTime] = useState(initialDuration); // Initialize with the provided duration
+const ClockDuration = ({ initialDuration }: { initialDuration: number }) => {
+  const [time, setTime] = useState(initialDuration * 60); // Initialize with the provided duration in seconds
+
+  useEffect(() => {
+    console.log("ClockDuration initialized with:", initialDuration);
+    setTime(initialDuration * 60); // Ensure time is set when initialDuration changes
+  }, [initialDuration]);
 
   useEffect(() => {
     if (time > 0) {

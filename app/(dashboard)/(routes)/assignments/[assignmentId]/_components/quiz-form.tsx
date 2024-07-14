@@ -1,68 +1,70 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import AsssignmentService from "@/app/admin/services/AsssignmentService";
+import ClockDuration from "./clock-duration";
+import { useRouter } from "next/navigation";
+import toast from "react-hot-toast";
 
 interface Question {
-  id: number;
+  id: string;
   content: string;
   options: string[];
   correctOption: number;
 }
 
-interface QuizFormProps {
-  assignmentId: number;
+interface Answer {
+  questionId: string;
+  answer: number;
 }
 
-const ClockDuration = ({ initialDuration }: { initialDuration: number }) => {
-  const [time, setTime] = useState(initialDuration); // Initialize with the provided duration
+interface QuizFormProps {
+  assignmentId: number;
+  userId: string;
+}
 
-  useEffect(() => {
-    console.log("ClockDuration initialized with:", initialDuration);
-    setTime(initialDuration); // Ensure time is set when initialDuration changes
-  }, [initialDuration]);
-
-  useEffect(() => {
-    if (time > 0) {
-      const timerId = setInterval(() => {
-        setTime((prevTime) => prevTime - 1);
-      }, 1000); // Update time every second
-
-      return () => clearInterval(timerId); // Cleanup on unmount
-    }
-  }, [time]);
-
-  // Helper function to format time
-  const formatTime = (time: number) => {
-    const hours = Math.floor(time / 3600);
-    const minutes = Math.floor((time % 3600) / 60);
-    const seconds = time % 60;
-    return `${String(hours).padStart(2, "0")}:${String(minutes).padStart(2, "0")}:${String(seconds).padStart(2, "0")}`;
-  };
-
-  return (
-    <div>
-      <h2>Time Remaining: {formatTime(time)}</h2>
-    </div>
-  );
-};
-
-const QuizForm = ({ assignmentId }: QuizFormProps) => {
+const QuizForm = ({ assignmentId, userId }: QuizFormProps) => {
   const [questions, setQuestions] = useState<Question[]>([]);
-  const [duration, setDuration] = useState<number>(0); // Duration in seconds
+  const [duration, setDuration] = useState<number>(0); // Duration in minutes
+  const [assignmentStatus, setAssignmentStatus] = useState<number>(0);
+  const [selectedOptions, setSelectedOptions] = useState<number[]>([]);
+  const [answers, setAnswers] = useState<Answer[]>([]);
+  const [teacherComment, setTeacherComment] = useState<string>('');
+  const router = useRouter();
 
   useEffect(() => {
-    async function fetchData() {
+    async function checkAssignmentStatus() {
+      try {
+        const response = await AsssignmentService.getFinishedAssignment(userId, assignmentId);
+        const status = response.data.status;
+        setAssignmentStatus(status);
+        if (status === 1) {
+          const detail = Array.isArray(response.data.detail) ? response.data.detail : JSON.parse(response.data.detail);
+          setAnswers(detail);
+          const questions = response.data.questions.map((question) => {
+            return {
+              ...question,
+              options: JSON.parse(question.options)
+            };
+          });
+          setTeacherComment(response.data.teacherComment || '');
+          setQuestions(questions);
+        } else {
+          fetchQuestions();
+        }
+      } catch (error) {
+        console.error("Error checking assignment status:", error);
+      }
+    }
+
+    async function fetchQuestions() {
       try {
         const assignmentResponse = await AsssignmentService.getQuestionsByAssignment(assignmentId);
-        console.log("Raw Data: ", assignmentResponse.data);
         const fetchedQuestions: Question[] = assignmentResponse.data.questions;
 
-        // Parse options if they are JSON strings
         const validatedQuestions = fetchedQuestions.map((question) => {
-          console.log("Question before validation: ", question);
           let options = [];
-          if (typeof question.options === 'string') {
+          if (typeof question.options === "string") {
             try {
               options = JSON.parse(question.options);
             } catch (error) {
@@ -71,31 +73,21 @@ const QuizForm = ({ assignmentId }: QuizFormProps) => {
           } else if (Array.isArray(question.options)) {
             options = question.options;
           }
-          const validatedQuestion = {
+          return {
             ...question,
             options,
           };
-          console.log("Question after validation: ", validatedQuestion);
-          return validatedQuestion;
         });
 
         setQuestions(validatedQuestions);
-
-        // Ensure duration is set
-        const durationInSeconds = assignmentResponse.data.duration;
-        setDuration(durationInSeconds);
-        console.log("Assignment duration set to:", durationInSeconds);
-
-        console.log("Validated Questions: ", validatedQuestions);
+        setDuration(assignmentResponse.data.duration);
       } catch (error) {
         console.error("Error fetching data:", error);
       }
     }
-    fetchData();
+    
+    checkAssignmentStatus();
   }, [assignmentId]);
-
-  const [selectedOptions, setSelectedOptions] = useState<number[]>([]);
-  const [feedback, setFeedback] = useState<string[]>([]);
 
   const handleOptionChange = (questionIndex: number, optionIndex: number) => {
     const newSelectedOptions = [...selectedOptions];
@@ -103,53 +95,113 @@ const QuizForm = ({ assignmentId }: QuizFormProps) => {
     setSelectedOptions(newSelectedOptions);
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    const newFeedback = questions.map((question, index) => {
-      if (selectedOptions[index] === question.correctOption) {
-        return "Correct!";
-      } else {
-        return "Wrong!";
-      }
-    });
-    setFeedback(newFeedback);
+
+    const correctAnswers = questions.filter((question, index) => selectedOptions[index] === question.correctOption).length;
+    const totalQuestions = questions.length;
+    const grade = (correctAnswers / totalQuestions) * 100;
+
+    const answers = questions.map((question, index) => ({
+      questionId: question.id,
+      answer: selectedOptions[index],
+    }));
+
+    const dataToSubmit = {
+      assignmentId: assignmentId,
+      studentId: userId,
+      result: grade,
+      detail: JSON.stringify(answers),
+    };
+
+    try {
+      const response = await AsssignmentService.addAssignmentStudent(dataToSubmit);
+      toast.success("You have completed this assignment");
+      router.push("/assignments");
+      router.refresh();
+    } catch (error) {
+      console.error("Error saving assignment:", error);
+    }
   };
 
   return (
     <div>
-      <ClockDuration initialDuration={duration} />
+      {assignmentStatus !== 1 && <ClockDuration initialDuration={duration} />}
       <form onSubmit={handleSubmit} className="p-4">
-        <h2 className="text-xl font-semibold mb-4">Chapter Quiz</h2>
-        {questions.map((question, questionIndex) => (
-          <div key={question.id} className="mb-6 p-4 border rounded">
-            <p className="font-medium mb-2">{`${questionIndex + 1}. ${question.content}`}</p>
-            <ul className="list-none pl-0">
-              {question.options.map((option, optionIndex) => (
-                <li key={optionIndex} className="mb-2">
-                  <label className="flex items-center">
-                    <input
-                      type="radio"
-                      name={`question-${questionIndex}`}
-                      value={optionIndex}
-                      checked={selectedOptions[questionIndex] === optionIndex}
-                      onChange={() => handleOptionChange(questionIndex, optionIndex)}
-                      className="form-radio mr-2"
-                    />
-                    {option}
-                  </label>
-                </li>
-              ))}
-            </ul>
-            {feedback[questionIndex] && (
-              <p className={feedback[questionIndex] === "Correct!" ? "text-green-600" : "text-red-600"}>
-                {feedback[questionIndex]}
-              </p>
-            )}
+        <h2 className="text-xl font-semibold mb-4">Assignment</h2>
+        {questions.map((question, questionIndex) => {
+          const userAnswer = answers.find((answer) => answer.questionId === question.id)?.answer;
+          const isCorrect = userAnswer !== undefined && userAnswer === question.correctOption;
+          return (
+            <div key={question.id} className="mb-6 p-4 border rounded">
+              <p className="font-medium mb-2">{`${questionIndex + 1}. ${question.content}`}</p>
+              <ul className="list-none pl-0">
+                {question.options.map((option, optionIndex) => (
+                  <li key={optionIndex} className="mb-2">
+                    <label className="flex items-center">
+                      <input
+                        type="radio"
+                        name={`question-${questionIndex}`}
+                        value={optionIndex}
+                        checked={
+                          assignmentStatus === 1
+                            ? userAnswer === optionIndex
+                            : selectedOptions[questionIndex] === optionIndex
+                        }
+                        onChange={() => handleOptionChange(questionIndex, optionIndex)}
+                        className="form-radio mr-2"
+                        disabled={assignmentStatus === 1} // Disable options if assignment is already submitted
+                      />
+                      {option}
+                    </label>
+                  </li>
+                ))}
+              </ul>
+              {assignmentStatus === 1 && (
+                <div>
+                  <p className={isCorrect ? "text-green-600" : "text-red-600"}>
+                    Your Answer: {question.options[userAnswer || 0]} - {isCorrect ? "Correct" : "Wrong"}
+                  </p>
+                  {!isCorrect && (
+                    <p className="text-blue-600">
+                      Correct Answer: {question.options[question.correctOption]}
+                    </p>
+                  )}
+                </div>
+              )}
+            </div>
+          );
+        })}
+        {assignmentStatus !== 1 && (
+          <button type="submit" className="px-4 py-2 bg-blue-500 text-white rounded">
+            Submit Answers
+          </button>
+        )}
+        {teacherComment !== "" && (
+          <div>
+            <h3 className="text-lg font-semibold mb-4">
+              Your Grade:{" "}
+              {answers && answers.length
+                ? (
+                    (answers.filter((answer) =>
+                      questions.find(
+                        (question) =>
+                          question.id === answer.questionId &&
+                          question.correctOption === answer.answer
+                      )
+                    ).length /
+                      questions.length) *
+                    100
+                  ).toFixed(2)
+                : 0}
+              %
+            </h3>
+            <div className="mt-4 p-4 border rounded bg-gray-100">
+              <h4 className="text-lg font-semibold mb-2">Teacher's Comment:</h4>
+              <p>{teacherComment}</p>
+            </div>
           </div>
-        ))}
-        <button type="submit" className="px-4 py-2 bg-blue-500 text-white rounded">
-          Submit Answers
-        </button>
+        )}
       </form>
     </div>
   );

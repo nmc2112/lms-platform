@@ -26,6 +26,7 @@ const QuesBankPage =  async () => {
 
     return(
         <div className="p-6">
+            <h2 className="text-2xl font-bold mb-4">Question Bank Management</h2>
             <DataTable columns={columns} data={quesCategories} userId={userId} />
         </div>
     );

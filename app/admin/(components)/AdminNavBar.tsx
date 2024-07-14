@@ -31,7 +31,7 @@ export default function DashboardTopNav({ children }: { children: ReactNode }) {
             </SheetHeader>
             <div className="flex flex-col space-y-3 mt-[1rem]">
               <DialogClose asChild>
-                <Link href="/dashboard">
+                <Link href="/admin">
                   <Button variant="outline" className="w-full">
                     <HomeIcon className="mr-2 h-4 w-4" />
                     Home
@@ -39,32 +39,24 @@ export default function DashboardTopNav({ children }: { children: ReactNode }) {
                 </Link>
               </DialogClose>
               <DialogClose asChild>
-                <Link href="/dashboard/projects">
+                <Link href="/admin/user-manage">
                   <Button variant="outline" className="w-full">
                     <Folder className="mr-2 h-4 w-4" />
-                    Projects
+                    User Management
                   </Button>
                 </Link>
               </DialogClose>
               <DialogClose asChild>
-                <Link href="/dashboard/kanban">
+                <Link href="/admin/class-manage">
                   <Button variant="outline" className="w-full">
                     <FaTasks className="mr-2 h-4 w-4" />
-                    Kanban
-                  </Button>
-                </Link>
-              </DialogClose>
-              <DialogClose asChild>
-                <Link href="/dashboard/finance">
-                  <Button variant="outline" className="w-full">
-                    <Banknote className="mr-2 h-4 w-4" />
-                    Finance
+                    Class Management
                   </Button>
                 </Link>
               </DialogClose>
               <Separator className="my-3" />
               <DialogClose asChild>
-                <Link href="/dashboard/settings">
+                <Link href="/admin/settings">
                   <Button variant="outline" className="w-full">
                     <Settings className="mr-2 h-4 w-4" />
                     Settings

@@ -1,13 +1,13 @@
 "use client"
 
-import { Layout, Compass, List, BarChart, FileQuestion, BookOpenCheck } from "lucide-react";
+import { Layout, Compass, List, BarChart, FileQuestion, BookOpenCheck, Glasses } from "lucide-react";
 import {SidebarItem} from "./sidebar-item";
 import { usePathname } from "@/node_modules/next/navigation";
 
 const guestRoutes = [
     {
         icon:Layout,
-        label: "Dashboard",
+        label: "Your Courses",
         href: "/",
     },
     {
@@ -19,6 +19,11 @@ const guestRoutes = [
         icon:BookOpenCheck,
         label: "Assignment",
         href: "/assignments",
+    },
+    {
+        icon:Glasses,
+        label: "Classrooms",
+        href: "/classrooms",
     },
 
 ]
@@ -38,6 +43,11 @@ const teacherRoutes = [
         icon:BookOpenCheck,
         label: "Assignments",
         href: "/teacher/assignments",
+    },
+    {
+        icon:Glasses,
+        label: "Classrooms",
+        href: "/teacher/classrooms",
     },
     {
         icon:BarChart,

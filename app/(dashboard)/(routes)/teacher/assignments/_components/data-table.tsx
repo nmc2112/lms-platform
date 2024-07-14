@@ -26,16 +26,17 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import Link from "next/link"
 import { PlusCircle } from "lucide-react"
+import { useEffect, useState } from "react"
+import { Assignment } from "@prisma/client"
+import AsssignmentService from "@/app/admin/services/AsssignmentService"
 
 interface DataTableProps<TData, TValue> {
   columns: ColumnDef<TData, TValue>[]
-  data: TData[]
   userId: String
 }
 
 export function DataTable<TData, TValue>({
   columns,
-  data,
   userId
 }: DataTableProps<TData, TValue>) {
 
@@ -43,6 +44,20 @@ export function DataTable<TData, TValue>({
   const [columnFilters, setColumnFilters] = React.useState<ColumnFiltersState>(
     []
   )
+
+  const [data, setAssignments] = useState<Assignment[]>([]);
+  useEffect(() => {
+      async function fetchData() {
+          try {
+              const assignmentResponse = await AsssignmentService.getAssignmentByTeacherId(userId);
+              setAssignments(assignmentResponse.data);
+              console.log("Data: ", userId ,assignmentResponse.data)
+          } catch (error) {
+              console.error('Error fetching data:', error);
+          }
+      }
+      fetchData();
+  }, [userId]);
 
   const table = useReactTable({
     data,

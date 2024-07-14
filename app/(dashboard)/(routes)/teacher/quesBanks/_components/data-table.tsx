@@ -28,6 +28,7 @@ import { PlusCircle } from "lucide-react"
 import { useState } from "react"
 import QuestionService from "@/app/admin/services/QuestionService"
 import Modal from "@/app/admin/class-manage/components/Modal"
+import toast from "react-hot-toast"
 
 interface DataTableProps<TData, TValue> {
   columns: ColumnDef<TData, TValue>[]
@@ -96,15 +97,36 @@ export function DataTable<TData, TValue>({
     setFile(event.target.files[0]); // Set the selected file into state
   };
 
+  // const onFileUpload = async () => {
+  //   try {
+  //     const response = await QuestionService.importData(file, userId);
+  //     console.log('Upload successful', response.data);
+  //   } catch (error) {
+  //     console.error('Upload failed', error);
+  //   }
+  // };
+  
   const onFileUpload = async () => {
     try {
+
       const response = await QuestionService.importData(file, userId);
-      console.log('Upload successful', response.data);
+      if (response.data.success) {
+        toast.success('Upload successful');
+        console.log('Upload successful', response.data);
+        setShowModal(false); // Close modal after successful upload
+      } else {
+        response.data.error.forEach((error) => {
+          toast.error(error);
+        });
+        console.error('Upload failed', response.data.error);
+      }
     } catch (error) {
+      const errorMessage = error.response?.data?.error || 'Upload failed';
+      toast.error(errorMessage);
       console.error('Upload failed', error);
     }
   };
-  
+
   return (
     <div>
         <div  style={{ display: 'flex', gap: '10px', margin: "20px" }}>
