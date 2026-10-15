@@ -219,7 +219,7 @@ const QuizForm = ({ assignmentId, studentId }: QuizFormProps) => {
               %
             </h3>
             <div className="mt-4 p-4 border rounded bg-gray-100">
-              <h4 className="text-lg font-semibold mb-2">Teacher's Comment:</h4>
+              <h4 className="text-lg font-semibold mb-2">Teacher&apos;s Comment:</h4>
               <p>{teacherComment}</p>
             </div>
           </div>

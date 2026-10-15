@@ -49,10 +49,11 @@ const DataTable = ({ columns, data }) => {
       <table {...getTableProps()} className="min-w-full divide-y divide-gray-200">
         <thead className="bg-gray-50">
           {headerGroups.map(headerGroup => (
-            <tr {...headerGroup.getHeaderGroupProps()}>
+            <tr {...headerGroup.getHeaderGroupProps()} key={headerGroup.getHeaderGroupProps().key}>
               {headerGroup.headers.map(column => (
                 <th
                   {...column.getHeaderProps()}
+                  key={column.getHeaderProps().key}
                   className="px-6 py-3 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider"
                 >
                   {column.render('Header')}
@@ -72,10 +73,11 @@ const DataTable = ({ columns, data }) => {
             page.map(row => {
               prepareRow(row);
               return (
-                <tr {...row.getRowProps()} className="hover:bg-gray-50">
+                <tr {...row.getRowProps()} key={row.getRowProps().key} className="hover:bg-gray-50">
                   {row.cells.map(cell => (
                     <td
                       {...cell.getCellProps()}
+                      key={cell.getCellProps().key}
                       className="px-6 py-4 whitespace-nowrap text-sm text-gray-700"
                     >
                       {cell.render('Cell')}
